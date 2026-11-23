@@ -20,7 +20,7 @@ import java.util.Random;
 final class UltimateChristmasAura implements CosmeticModel {
 	final Prop[] trees = new Prop[6]; final Prop[] gifts = new Prop[8]; final Prop[] ornaments = new Prop[10]; final Prop[] canes = new Prop[6];
 	final Prop bell = Parts.bell(Tex.GOLD), bellHolly = Parts.holly(.07f), bigStar = new Prop();
-	final Mesh flake = snowflake(1, .06f), smallStar = star(5, .045f, .02f, .015f), bulb = sphere(.018f, 8, 6), ray = box(.1f, 1.9f, .001f), glowBall = sphere(.42f, 24, 16), treeBulb = sphere(.012f, 6, 4);
+	final Mesh flake = snowflake(1, .06f), smallStar = star(5, .045f, .02f, .015f), bulb = octahedron(.022f), ray = box(.1f, 1.9f, .001f), glowBall = sphere(.42f, 16, 10), treeBulb = octahedron(.014f);
 	final float[][] giftD = new float[8][5], ornD = new float[10][4], flakeD = new float[16][5];
 	final List<V3> helix = Parts.spiral(2.1f, .88f, .63f, 3.2f, 90, .15f);
 	final List<V3> treeLights = Parts.spiral(.7f, .36f, .02f, 4, 22, .27f);

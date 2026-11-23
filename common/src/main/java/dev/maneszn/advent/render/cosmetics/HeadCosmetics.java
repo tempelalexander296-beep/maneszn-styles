@@ -37,7 +37,7 @@ final class HeadCosmetics {
 
 	/* Day 7 */
 	static final class ReindeerHorns implements CosmeticModel {
-		final Prop base = new Prop(); final List<V3>[] bulbs = new List[2]; final Mesh bulb = sphere(0.009f, 8, 6);
+		final Prop base = new Prop(); @SuppressWarnings("unchecked") final List<V3>[] bulbs = new List[2]; final Mesh bulb = sphere(0.009f, 8, 6);
 		ReindeerHorns() {
 			List<V3> band = new java.util.ArrayList<>();
 			for (int i = 0; i <= 12; i++) { double a = Math.PI * i / 12; band.add(V3.of(Math.cos(a) * 0.132, 0.02 + Math.sin(a) * 0.12, -0.01)); }
@@ -100,7 +100,7 @@ final class HeadCosmetics {
 
 	/* Day 23 */
 	static final class LegendaryIceCrown implements CosmeticModel {
-		final Prop crown = new Prop(); final Mesh shard = crystal(4, 0.05f, 0.012f, 0.025f), beam = box(0.18f, 0.7f, 0.001f), jewel = octahedron(0.024f);
+		final Prop crown = new Prop(); final Mesh shard = crystal(4, 0.05f, 0.012f, 0.025f), beam = box(0.09f, 0.32f, 0.001f), jewel = octahedron(0.024f);
 		LegendaryIceCrown() {
 			var up = translate(0, 0.075f, 0);
 			crown.add(cylinder(0.132f, 0.126f, 0.06f, 96, false), up, Tex.GOLD);
@@ -126,7 +126,7 @@ final class HeadCosmetics {
 			crown.render(s);
 			s.push(); s.translate(0, 0.175f, 0.162f); s.rotateY(t * 1.5f); s.mesh(jewel, Tex.GEM_BLUE, Layer.GLOW, pulse(0xFFFFFF, 0.75f + 0.25f * sin(t * 3))); s.pop();
 			for (int i = 0; i < 6; i++) { float a = i / 6f * TAU + t * 0.8f; s.push(); s.translate(cos(a) * 0.22f, 0.125f + (i % 2) * 0.05f, sin(a) * 0.22f); s.rotateY(t * 2 + i); s.mesh(shard, Tex.ICE, Layer.TRANSLUCENT); s.pop(); }
-			for (int i = 0; i < 3; i++) { s.push(); s.translate(0, 0.43f, 0); s.rotateY(t * 0.3f + i / 3f * PI); s.mesh(beam, Tex.BEAM, Layer.GLOW, alpha(0xBFE9FF, 0.35f + sin(t * 2) * 0.15f)); s.pop(); }
+			for (int i = 0; i < 3; i++) { s.push(); s.translate(0, 0.3f, 0.162f); s.rotateY(t * 0.3f + i / 3f * PI); s.mesh(beam, Tex.BEAM, Layer.GLOW, alpha(0xBFE9FF, 0.25f + sin(t * 2) * 0.1f)); s.pop(); }
 		}
 		public void tickFx(Fx fx, Wearer w, Random r) { if (r.nextInt(2) == 0) { float a = r.nextFloat() * TAU; fx.spawn(r.nextBoolean() ? Fx.Type.GOLD : Fx.Type.ICE, cos(a) * .3f, 2.1f, sin(a) * .3f, 0, 0.03f, 0); } }
 	}

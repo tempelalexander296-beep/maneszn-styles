@@ -8,3 +8,4 @@ pluginManagement {
 
 rootProject.name = 'advent-cosmetics'
 include 'mc-26.3'
+include 'mc-1.21.11'

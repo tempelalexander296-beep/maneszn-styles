@@ -253,9 +253,9 @@ public final class MeshBuilder {
 	/** Six-armed snowflake with branches, extruded. Unit radius ≈ 1. */
 	public static Mesh snowflake(int variant, float depth) {
 		List<Mesh> parts = new ArrayList<>();
-		float[][] arm = { { -0.055f, 0 }, { 0.055f, 0 }, { 0.03f, 1 }, { 0, 1.09f }, { -0.03f, 1 } };
-		float[][] br = { { -0.032f, 0 }, { 0.032f, 0 }, { 0.02f, 1 }, { 0, 1.15f }, { -0.02f, 1 } };
-		float[][] sets = { { 0.38f, 0.32f }, { 0.62f, variant == 2 ? 0.31f : 0.24f }, { 0.82f, 0.14f } };
+		float[][] arm = { { -0.08f, 0 }, { 0.08f, 0 }, { 0.045f, 1 }, { 0, 1.1f }, { -0.045f, 1 } };
+		float[][] br = { { -0.05f, 0 }, { 0.05f, 0 }, { 0, 1.15f } };
+		float[][] sets = { { 0.42f, 0.36f }, { 0.7f, variant == 2 ? 0.3f : 0.22f } };
 		Mesh armM = extrude(arm, depth), brM = extrude(br, depth * 0.9f);
 		for (int i = 0; i < 6; i++) {
 			float a = i / 6f * TAU;

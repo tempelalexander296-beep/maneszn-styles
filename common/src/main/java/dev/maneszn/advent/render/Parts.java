@@ -21,27 +21,27 @@ public final class Parts {
 		for (int i = 0; i <= 8; i++) pts.add(new V3(0, i / 8f * length, 0));
 		float hook = length * 0.22f;
 		for (int i = 1; i <= 12; i++) { double a = i / 12.0 * Math.PI * 1.08; pts.add(V3.of(hook - Math.cos(a) * hook, length + Math.sin(a) * hook, 0)); }
-		return sweep(pts, t -> radius, 1f, 72, 16, true, length * 7);
+		return sweep(pts, t -> radius, 1f, 44, 10, true, length * 7);
 	}
 
 	public static Prop candyCane(float length, float radius, Tex stripes) { return new Prop().add(candyCaneMesh(length, radius), stripes); }
 
 	public static Prop bow(float size, Tex ribbon) {
 		Prop p = new Prop();
-		Mesh loop = torus(0.5f, 0.16f, 36, 12, TAU).transform(scale(1, 0.55f, 0.35f));
+		Mesh loop = torus(0.5f, 0.16f, 22, 8, TAU).transform(scale(1, 0.55f, 0.35f));
 		for (int s = -1; s <= 1; s += 2) {
 			p.add(loop, trs(s * 0.45f, 0.22f, 0, 0, s * 0.25f, s * 0.45f, 1, 1, 1), ribbon, Layer.SOLID);
-			p.add(roundedBox(0.22f, 0.75f, 0.05f, 0.02f, 2), trs(s * 0.28f, -0.1f, 0.15f, 0.6f, 0, s * 0.5f, 1, 1, 1), ribbon, Layer.SOLID);
+			p.add(box(0.22f, 0.75f, 0.05f), trs(s * 0.28f, -0.1f, 0.15f, 0.6f, 0, s * 0.5f, 1, 1, 1), ribbon, Layer.SOLID);
 		}
-		p.add(ellipsoid(0.2f, 0.17f, 0.16f, 20, 12), translate(0, 0.2f, 0), ribbon, Layer.SOLID);
+		p.add(ellipsoid(0.2f, 0.17f, 0.16f, 14, 8), translate(0, 0.2f, 0), ribbon, Layer.SOLID);
 		Prop out = new Prop(); out.add(p, scale(size, size, size)); return out;
 	}
 
 	/** Gift box (origin at bottom centre). */
 	public static Prop gift(float w, float h, float d, Tex paper, Tex ribbon, boolean withBow) {
 		Prop p = new Prop(); float r = Math.min(w, Math.min(h, d)) * 0.06f;
-		p.add(roundedBox(w, h * 0.82f, d, r, 2), translate(0, h * 0.41f, 0), paper);
-		p.add(roundedBox(w * 1.06f, h * 0.2f, d * 1.06f, r, 2), translate(0, h * 0.86f, 0), paper);
+		p.add(roundedBox(w, h * 0.82f, d, r, 1), translate(0, h * 0.41f, 0), paper);
+		p.add(roundedBox(w * 1.06f, h * 0.2f, d * 1.06f, r, 1), translate(0, h * 0.86f, 0), paper);
 		float bw = Math.min(w, d) * 0.16f;
 		p.add(box(bw, h * 1.0f, d * 1.085f), translate(0, h * 0.48f, 0), ribbon);
 		p.add(box(w * 1.085f, h * 1.0f, bw), translate(0, h * 0.48f, 0), ribbon);
@@ -50,12 +50,12 @@ public final class Parts {
 	}
 
 	public static Prop ornament(Tex ball, float r) {
-		return new Prop().add(sphere(r, 28, 18), ball).add(cylinder(r * .25f, r * .28f, r * .25f, 14, true), translate(0, r, 0), Tex.GOLD)
+		return new Prop().add(sphere(r, 18, 12), ball).add(cylinder(r * .25f, r * .28f, r * .25f, 14, true), translate(0, r, 0), Tex.GOLD)
 			.add(torus(r * .12f, r * .03f, 16, 6, TAU), translate(0, r * 1.2f, 0), Tex.GOLD);
 	}
 
 	public static Mesh bellMesh() {
-		return lathe(new float[][] { { 0, 1 }, { .12f, .99f }, { .22f, .94f }, { .28f, .82f }, { .31f, .62f }, { .36f, .4f }, { .46f, .2f }, { .58f, .06f }, { .62f, 0 }, { .6f, -.03f }, { .54f, 0 }, { .42f, .12f }, { .32f, .36f }, { .27f, .6f }, { .24f, .8f }, { .17f, .9f }, { 0, .92f } }, 48);
+		return lathe(new float[][] { { 0, 1 }, { .12f, .99f }, { .22f, .94f }, { .28f, .82f }, { .31f, .62f }, { .36f, .4f }, { .46f, .2f }, { .58f, .06f }, { .62f, 0 }, { .6f, -.03f }, { .54f, 0 }, { .42f, .12f }, { .32f, .36f }, { .27f, .6f }, { .24f, .8f }, { .17f, .9f }, { 0, .92f } }, 32);
 	}
 
 	public static Prop bell(Tex metal) {
@@ -135,7 +135,7 @@ public final class Parts {
 		for (int i = 1; i <= 5; i++) {
 			Mat4 rz = rotZ(-0.12f * mirror); d = rz.dir(d.x, d.y, d.z).norm(); d.y += 0.05f; q = q.add(d.norm().mul(len / 5)); pts.add(q);
 		}
-		p.add(sweep(pts, t -> rad + (rad * 0.35f - rad) * t, 20, 10, true), tex);
+		p.add(sweep(pts, t -> rad + (rad * 0.35f - rad) * t, 14, 8, true), tex);
 		if (depth <= 0) return;
 		MeshBuilder.Curve c = new MeshBuilder.Curve(pts);
 		int count = depth == 2 ? 3 : 2;

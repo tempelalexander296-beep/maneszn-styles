@@ -48,12 +48,12 @@ final class BackCosmetics {
 				List<V3> f = List.of(root, mid, end); MeshBuilder.Curve fc = new MeshBuilder.Curve(f);
 				wing.add(sweep(f, t -> lerp(0.018f, 0.006f, t), 24, 8, true), Tex.ICE, Layer.TRANSLUCENT);
 				for (int i = 0; i < 5; i++) {
-					float t = 0.2f + i / 4f * 0.8f; V3 p = fc.point(t); float sc = lerp(0.17f, 0.08f, t) * (fg[0] > .9f ? 1.2f : 1f);
-					wing.add(snowflake((seed++) % 3, 0.05f), trs(p.x, p.y, p.z, 0.1f, 0.2f, t * 2 + fg[0], sc, sc, sc), Tex.SILVER, Layer.SOLID);
+					float t = 0.2f + i / 4f * 0.8f; V3 p = fc.point(t); float sc = lerp(0.2f, 0.11f, t) * (fg[0] > .9f ? 1.2f : 1f);
+					wing.add(snowflake((seed++) % 3, 0.12f), trs(p.x, p.y, p.z, 0.1f, 0.2f, t * 2 + fg[0], sc, sc, sc), Tex.ICE, Layer.TRANSLUCENT);
 					cores.add(p);
 				}
 			}
-			for (int i = 0; i < 4; i++) { V3 p = arm.point(.25f + i * .22f).add(V3.of(0, -.12f, .02f)); float sc = .13f + i * .01f; wing.add(snowflake(i % 3, .05f), trs(p.x, p.y, p.z, 0, 0, i, sc, sc, sc), Tex.SILVER, Layer.SOLID); }
+			for (int i = 0; i < 4; i++) { V3 p = arm.point(.25f + i * .22f).add(V3.of(0, -.12f, .02f)); float sc = .16f + i * .01f; wing.add(snowflake(i % 3, .12f), trs(p.x, p.y, p.z, 0, 0, i, sc, sc, sc), Tex.SILVER, Layer.SOLID); }
 		}
 		public void render(Sink s, Wearer w) {
 			wings(s, w, wing, 0.14f, 1.3f, 0.38f, 0.07f, () -> { for (int i = 0; i < cores.size(); i++) { V3 p = cores.get(i); s.push(); s.translate(p.x, p.y, p.z); s.mesh(core, Tex.GLOW_ICE, Layer.GLOW, pulse(0xFFFFFF, .7f + .3f * sin(w.time * 3 + i))); s.pop(); } });

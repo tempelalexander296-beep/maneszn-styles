@@ -88,7 +88,7 @@ final class CompanionCosmetics {
 	/* Day 22 */
 	static final class Dragon implements CosmeticModel {
 		static final int SEG = 22;
-		final Mesh seg = sphere(1, 20, 14), spike = cone(.4f, 1.1f, 8), tip = cone(.018f, .07f, 14), membrane;
+		final Mesh seg = sphere(1, 14, 10), spike = cone(.4f, 1.1f, 8), tip = cone(.018f, .07f, 14), membrane;
 		final Prop head = new Prop(), bones = new Prop();
 		Dragon() {
 			head.add(ellipsoid(.06f, .05f, .052f, 28, 20), Tex.SCALES);
@@ -103,9 +103,9 @@ final class CompanionCosmetics {
 			head.add(sweep(pts(0, 0, 0, 0, .04f, 0, -.03f, .06f, 0), t -> lerp(.032f, .004f, t), 24, 16, true), hat, Tex.VELVET_RED);
 			head.add(torus(.032f, .009f, 32, 10, TAU), hat.mul(rotX(PI / 2)), Tex.FUR);
 			head.add(sphere(.011f, 12, 8), hat.mul(translate(-.032f, .06f, 0)), Tex.FUR);
-			float[][] w = { { 0, 0 }, { .12f, .04f }, { .09f, .12f }, { .04f, .17f }, { -.03f, .2f }, { -.04f, .1f } };
-			membrane = extrude(w, .004f);
-			for (float[] b : new float[][] { { .12f, .04f }, { .04f, .17f }, { -.03f, .2f } }) bones.add(sweep(List.of(V3.of(0, 0, 0), V3.of(b[0], b[1], 0)), t -> lerp(.005f, .0015f, t), 8, 6, true), Tex.GOLD);
+			float[][] w = { { 0, 0 }, { .08f, .02f }, { .07f, .07f }, { .035f, .11f }, { -.01f, .13f }, { -.02f, .06f } };
+			membrane = extrude(w, .003f);
+			for (float[] b : new float[][] { { .08f, .02f }, { .035f, .11f }, { -.01f, .13f } }) bones.add(sweep(List.of(V3.of(0, 0, 0), V3.of(b[0], b[1], 0)), t -> lerp(.005f, .0015f, t), 8, 6, true), Tex.GOLD);
 		}
 		static V3 path(float t) { return V3.of(sin(t * .6f) * .28f, sin(t * 1.2f) * .1f + .05f, sin(t * 1.2f) * .16f); }
 		static void look(Sink s, V3 from, V3 to) {
