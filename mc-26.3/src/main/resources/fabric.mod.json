@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "adventcosmetics",
+  "version": "${version}",
+  "name": "Christmas Advent Calendar",
+  "description": "Premium Christmas advent calendar: 24 exclusive 3D cosmetics from Dec 1 to Dec 24, finale: ULTIMATE CHRISTMAS AURA (Mythic).",
+  "authors": ["maneszn"],
+  "license": "All-Rights-Reserved",
+  "icon": "assets/adventcosmetics/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["dev.maneszn.advent.AdventMod"],
+    "client": ["dev.maneszn.advent.client.AdventClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.20.1",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

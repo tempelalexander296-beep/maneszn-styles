@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Christmas Advent Calendar</title>
+  <meta name="description" content="24 Tage exklusive Premium-Cosmetics – mit der ULTIMATE CHRISTMAS AURA am 24. Dezember." />
+  <meta name="theme-color" content="#0a1328" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body>
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <div class="app">
+    <header class="banner">
+      <div class="banner__ornament" aria-hidden="true">
+        <span></span><svg viewBox="0 0 24 24"><path d="M12 1l2.6 7.4H22l-6 4.6 2.3 7.4L12 16l-6.3 4.4L8 13 2 8.4h7.4z"/></svg><span></span>
+      </div>
+      <p class="banner__kicker">Winter Event <span id="event-year"></span> · 24 exklusive Cosmetics</p>
+      <h1 class="banner__title"><span>Christmas</span> Advent Calendar</h1>
+      <div class="countdown" id="countdown" aria-live="polite">
+        <div class="countdown__label" id="countdown-label">Countdown bis Heiligabend</div>
+        <div class="countdown__clock">
+          <div><b id="cd-d">00</b><small>Tage</small></div><i>:</i>
+          <div><b id="cd-h">00</b><small>Std</small></div><i>:</i>
+          <div><b id="cd-m">00</b><small>Min</small></div><i>:</i>
+          <div><b id="cd-s">00</b><small>Sek</small></div>
+        </div>
+        <div class="countdown__next" id="countdown-next"></div>
+      </div>
+    </header>
+
+    <nav class="toolbar">
+      <div class="progress" title="Eingesammelte Cosmetics">
+        <div class="progress__bar"><span id="progress-fill"></span></div>
+        <span id="progress-text">0 / 24</span>
+      </div>
+      <div class="toolbar__actions">
+        <button class="btn btn--ghost" id="btn-collection" type="button">✦ Sammlung</button>
+        <button class="btn btn--ghost btn--icon" id="btn-sound" type="button" aria-label="Sound an/aus" title="Sound">🔔</button>
+      </div>
+    </nav>
+
+    <main class="calendar" id="calendar" aria-label="Adventskalender"></main>
+
+    <section class="legend" aria-label="Seltenheiten">
+      <span class="r-common">Common</span><span class="r-uncommon">Uncommon</span><span class="r-rare">Rare</span>
+      <span class="r-epic">Epic</span><span class="r-legendary">Legendary</span><span class="r-mythic">Mythic</span>
+    </section>
+    <footer class="footer">
+      <span id="tz-info"></span>
+    </footer>
+  </div>
+
+  <!-- 3D showcase / reveal -->
+  <div class="showcase" id="showcase" hidden>
+    <div class="showcase__viewport"><canvas id="stage"></canvas></div>
+    <div class="showcase__rays" aria-hidden="true"></div>
+    <div class="showcase__hud">
+      <div class="reveal-card" id="reveal-card">
+        <div class="reveal-card__day" id="rc-day"></div>
+        <div class="reveal-card__rarity" id="rc-rarity"></div>
+        <h2 class="reveal-card__name" id="rc-name"></h2>
+        <p class="reveal-card__desc" id="rc-desc"></p>
+        <div class="reveal-card__type" id="rc-type"></div>
+      </div>
+      <div class="showcase__footer">
+      <div class="showcase__controls">
+        <button class="btn btn--ghost" id="sc-avatar" type="button">Avatar ausblenden</button>
+        <button class="btn btn--ghost" id="sc-rotate" type="button">Rotation pausieren</button>
+        <button class="btn btn--ghost" id="sc-4k" type="button">4K-Screenshot</button>
+        <button class="btn btn--gold" id="sc-close" type="button">Einsammeln &amp; schließen</button>
+      </div>
+      <p class="showcase__hint">Ziehen zum Drehen · Scrollen zum Zoomen</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- collection drawer -->
+  <aside class="drawer" id="drawer" hidden>
+    <div class="drawer__panel">
+      <header><h2>Deine Sammlung</h2><button class="btn btn--ghost btn--icon" id="drawer-close" type="button" aria-label="Schließen">✕</button></header>
+      <div class="drawer__grid" id="drawer-grid"></div>
+    </div>
+  </aside>
+
+  <div class="finale-flash" id="finale-flash" aria-hidden="true"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="debug" id="debug" hidden></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+plugins {
+	id 'net.fabricmc.fabric-loom'
+}
+
+version = "${rootProject.mod_version}+mc${project.minecraft_version}"
+group = rootProject.maven_group
+base { archivesName = rootProject.archives_base_name }
+
+loom {
+	splitEnvironmentSourceSets()
+	mods {
+		"adventcosmetics" {
+			sourceSet sourceSets.main
+			sourceSet sourceSets.client
+		}
+	}
+}
+
+sourceSets {
+	main { java { srcDir rootProject.file('common/src/main/java') } }
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	implementation "net.fabricmc:fabric-loader:${rootProject.loader_version}"
+	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+}
+
+processResources {
+	def v = project.version
+	inputs.property "version", v
+	from(rootProject.file('common/src/main/resources'))
+	filesMatching("fabric.mod.json") { expand "version": v }
+	duplicatesStrategy = DuplicatesStrategy.INCLUDE
+}
+
+tasks.withType(JavaCompile).configureEach { it.options.release = Integer.parseInt(project.java_release); it.options.encoding = 'UTF-8' }
+java { sourceCompatibility = JavaVersion.VERSION_25; targetCompatibility = JavaVersion.VERSION_25 }
