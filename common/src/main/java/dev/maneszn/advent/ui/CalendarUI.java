@@ -67,6 +67,9 @@ public final class CalendarUI {
 	public void mouseDragged(double x, double y) { if (!Float.isNaN(dragFrom)) { spin += ((float) x - dragFrom) * 2; dragFrom = (float) x; } }
 	public void mouseReleased() { dragFrom = Float.NaN; }
 
+	/** Jump straight to the reveal view of a door (used by the collection + automated tests). */
+	public void showReveal(int day) { revealDay = day; revealStart = now - 10; view = View.REVEAL; }
+
 	/** ESC: go back one level; returns true if handled (screen stays open). */
 	public boolean back() {
 		if (view != View.CALENDAR) { view = View.CALENDAR; game.preview(null, 1); return true; }

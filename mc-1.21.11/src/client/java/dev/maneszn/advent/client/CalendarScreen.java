@@ -17,7 +17,7 @@ import net.minecraft.sounds.SoundEvents;
 
 public final class CalendarScreen extends Screen {
 	static CalendarScreen current;
-	final CalendarUI ui;
+	public final CalendarUI ui;
 
 	public CalendarScreen() {
 		super(Component.literal("Christmas Advent Calendar"));

@@ -37,3 +37,13 @@ processResources {
 
 tasks.withType(JavaCompile).configureEach { it.options.release = Integer.parseInt(project.java_release); it.options.encoding = 'UTF-8' }
 java { sourceCompatibility = JavaVersion.VERSION_21; targetCompatibility = JavaVersion.VERSION_21 }
+
+fabricApi {
+	configureTests {
+		createSourceSet = true
+		modId = "adventcosmetics-test"
+		enableGameTests = false
+		enableClientGameTests = true
+		eula = false
+	}
+}
