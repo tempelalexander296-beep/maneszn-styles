@@ -185,8 +185,8 @@ public final class CalendarUI {
 		door(g, Rewards.byDay(24), bx, y0, bw, bh, st.doorState(24, cur), hov24);
 		// progress + footer buttons
 		int n = st.claimedCount(), fy = H - footer;
-		String prog = n + " / 24 eingesammelt";
-		int pw = Math.max(40, gridW - 180 - g.textWidth(prog) - 10);
+		String prog = gridW > 360 ? n + " / 24 eingesammelt" : n + "/24";
+		int pw = Math.max(30, gridW - 180 - g.textWidth(prog) - 10);
 		Draw.bar(g, x0, fy + 6, x0 + pw, fy + 12, n / 24f, now);
 		g.text(prog, x0 + pw + 6, fy + 5, 0xFFFFE7A8, true);
 		buttons.add(new Btn(x0 + gridW - 170, fy + 1, 90, 18, "✦ Sammlung", true, () -> { view = View.COLLECTION; }));
@@ -342,8 +342,9 @@ public final class CalendarUI {
 			g.text(rl, x + 6, y + 16, Draw.alpha(0xFFFFFF, a), true);
 			float ns = Math.min(2.2f, (w - 6) / (float) Math.max(1, g.textWidth(r.name())));
 			Draw.extruded(g, r.name(), x + (int) (g.textWidth(r.name()) * ns / 2), y + 32, ns, Draw.alpha(r.rarity().glow, a), Draw.alpha(Draw.shade(r.rarity().color, .3f), a), true);
-			g.text(r.description(), x, y + 34 + (int) (9 * ns) + 6, Draw.alpha(0xFFDDE4F0, a), false);
-			g.text(r.type() + " · Slot: " + r.slot().label, x, y + 34 + (int) (9 * ns) + 18, Draw.alpha(0xFF9AA6BC, a), false);
+			int ty = y + 34 + (int) (9 * ns) + 6;
+			for (String line : wrap(g, r.description(), w - 4)) { g.text(line, x, ty, Draw.alpha(0xFFDDE4F0, a), false); ty += 10; }
+			g.text(r.type() + " · Slot: " + r.slot().label, x, ty + 2, Draw.alpha(0xFF9AA6BC, a), false);
 			if (a >= 1) {
 				boolean equipped = r.id().equals(state().equipped().get(r.slot()));
 				int by = y + 96;
@@ -406,6 +407,16 @@ public final class CalendarUI {
 	/* ---------------------------------------------------------------- helpers */
 	static float clamp01(float x) { return Math.max(0, Math.min(1, x)); }
 	static float easeOut(float t) { t = clamp01(t); return 1 - (1 - t) * (1 - t) * (1 - t); }
+
+	static List<String> wrap(Gfx g, String text, int maxW) {
+		List<String> out = new ArrayList<>(); StringBuilder line = new StringBuilder();
+		for (String word : text.split(" ")) {
+			String test = line.isEmpty() ? word : line + " " + word;
+			if (g.textWidth(test) > maxW && !line.isEmpty()) { out.add(line.toString()); line = new StringBuilder(word); } else { line = new StringBuilder(test); }
+		}
+		if (!line.isEmpty()) out.add(line.toString());
+		return out;
+	}
 
 	static String span(long ms) {
 		long s = Math.max(0, ms / 1000), d = s / 86400, h = (s % 86400) / 3600, m = (s % 3600) / 60;

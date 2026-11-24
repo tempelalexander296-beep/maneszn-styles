@@ -75,7 +75,9 @@ final class BackCosmetics {
 			for (int i = 0; i < 3; i++) discPos[i] = arm.point(.12f + i * .4f).add(V3.of(0, 0, .06f));
 		}
 		public void render(Sink s, Wearer w) {
+			s.push(); s.scale(0.7f);
 			wings(s, w, wing, 0.2f, 1.8f, 0.38f, 0.07f, () -> { for (int i = 0; i < 3; i++) { V3 p = discPos[i]; s.push(); s.translate(p.x, p.y, p.z); s.rotateX(PI / 2); s.rotateY(w.time * (0.8f + i * 0.3f)); s.scale(1 - i * 0.15f); s.mesh(disc, Tex.PEPPERMINT, Layer.SOLID); s.pop(); } });
+			s.pop();
 		}
 		public void tickFx(Fx fx, Wearer w, Random r) { if (r.nextInt(3) == 0) { float sd = r.nextBoolean() ? 1 : -1; fx.spawn(r.nextBoolean() ? Fx.Type.RED : Fx.Type.WHITE, sd * (.3f + r.nextFloat()), 0.8f + r.nextFloat() * 1.2f, -.35f, 0, -.02f, 0); } }
 	}
@@ -131,6 +133,7 @@ final class BackCosmetics {
 			wing.add(Parts.bow(.2f, Tex.SATIN_RED), translate(.05f, .05f, .12f));
 		}
 		public void render(Sink s, Wearer w) {
+			s.push(); s.scale(0.72f);
 			wings(s, w, wing, .16f, 1.4f, .35f, .07f, () -> {
 				for (int i = 0; i < 3; i++) {
 					s.push(); s.translate(anchors[i].x, anchors[i].y, anchors[i].z); s.rotateZ(sin(w.time * 2 + i * 1.3f) * .18f); s.rotateX(cos(w.time * 1.7f + i * 1.3f) * .1f);
@@ -138,6 +141,7 @@ final class BackCosmetics {
 					s.translate(0, -lens[i] - .12f, 0); gifts[i].render(s); s.pop();
 				}
 			});
+			s.pop();
 		}
 		public void tickFx(Fx fx, Wearer w, Random r) { for (int i = 0; i < 2; i++) { float sd = r.nextBoolean() ? 1 : -1, k = r.nextFloat(); fx.spawn(Fx.Type.GOLD, sd * (.2f + k * 1.3f), 1.7f - k * 1.5f, -.3f - k * .5f, 0, -.03f, 0); } }
 	}

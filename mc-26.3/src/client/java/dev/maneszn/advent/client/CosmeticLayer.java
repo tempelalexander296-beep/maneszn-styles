@@ -63,6 +63,8 @@ public final class CosmeticLayer extends RenderLayer<AvatarRenderState, PlayerMo
 			case HEAD -> { model.head.translateAndRotate(ps); ps.scale(1, -1, -1); ps.translate(0, 0.25f, 0); ps.scale(2f, 2f, 2f); }
 			case BACK -> { model.body.translateAndRotate(ps); ps.scale(1, -1, -1); ps.translate(0, -0.17f, -0.15f); }
 			case HAND -> { model.rightArm.translateAndRotate(ps); ps.scale(1, -1, -1); ps.translate(-0.06f, -0.62f, 0.02f); ps.rotateDegrees(Axis.XP, 80); ps.scale(0.9f, 0.9f, 0.9f); }
+			case FLOAT -> { ps.translate(0, 1.501f, 0); ps.scale(1, -1, -1); ps.translate(0.62f, 1.5f, 0.1f); }
+			case COMPANION -> { ps.translate(0, 1.501f, 0); ps.scale(1, -1, -1); ps.translate(-0.8f, 1.25f, 0.25f); }
 			default -> { ps.translate(0, 1.501f, 0); ps.scale(1, -1, -1); }
 		}
 		if (intro < 1) {
