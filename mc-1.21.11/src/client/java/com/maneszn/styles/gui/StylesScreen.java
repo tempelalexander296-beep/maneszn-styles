@@ -148,6 +148,12 @@ public class StylesScreen extends Screen {
    private boolean soundsDirty;
    private static final String[] GROUND_STYLES = new String[]{"vanilla", "2d", "flat", "static"};
 
+   /** Opens the screen on a given tab (COLLECTIONS, COSMETICS, EXTRAS) – used by QA tests. */
+   public static StylesScreen withTab(Screen parent, String tab) {
+      lastTab = StylesScreen.Tab.valueOf(tab);
+      return new StylesScreen(parent);
+   }
+
    public StylesScreen(Screen parent) {
       super(Component.literal("Maneszn Styles"));
       this.parent = parent;
@@ -214,7 +220,7 @@ public class StylesScreen extends Screen {
 
    @Override
    public void renderBackground(GuiGraphics g, int mouseX, int mouseY, float partialTick) {
-      g.fill(0, 0, this.width, this.height, -234092014);
+      Ui.background(g, this.width, this.height);
    }
 
    @Override
@@ -265,8 +271,11 @@ public class StylesScreen extends Screen {
    }
 
    private void renderHeader(GuiGraphics g, int mx, int my, Theme th) {
-      Ui.rect(g, 0, 0, this.width, 24, -15462116);
-      Ui.rect(g, 0, 23, this.width, 1, -13752510);
+      g.fillGradient(0, 0, this.width, 24, 0xFF1E1934, 0xFF120F20);
+      g.fill(0, 0, this.width, 1, 0x30FFFFFF);
+      g.fillGradient(0, 23, this.width / 2, 24, th.accentAlpha(0x00), th.accentAlpha(0xFF));
+      g.fillGradient(this.width / 2, 23, this.width, 24, th.accentAlpha(0xFF), th.accentAlpha(0x00));
+      g.fill(0, 24, this.width, 27, 0x40000000);
       g.blit(RenderPipelines.GUI_TEXTURED, LOGO, 6, 3, 0.0F, 0.0F, 18, 18, 64, 64, 64, 64);
       Ui.textShadow(g, "Maneszn", 29, 8, th.accent);
       Ui.text(g, " Styles", 29 + Ui.width("Maneszn"), 8, -1185282);
@@ -293,8 +302,13 @@ public class StylesScreen extends Screen {
       Ui.textRight(g, online, right, 8, -6646866);
       int dotX = right - Ui.width(online) - 9;
       Ui.rect(g, dotX, 9, 5, 5, dotColor);
+      int adventW = Ui.width("🎄 Adventskalender") + 14;
+      int adventX = dotX - 10 - adventW;
+      boolean adventHov = Ui.hover(mx, my, adventX, 4, adventW, 15);
+      Ui.button(g, adventX, 4, adventW, 15, "🎄 Adventskalender", adventHov, true, th);
+      this.zones.add(adventX, 4, adventW, 15, () -> this.minecraft.setScreen(new dev.maneszn.advent.client.CalendarScreen()));
       if (StylePackBuilder.isReloading()) {
-         Ui.textRight(g, Ui.tr("maneszn_styles.ui.reloading"), dotX - 10, 8, th.accent);
+         Ui.textRight(g, Ui.tr("maneszn_styles.ui.reloading"), adventX - 8, 8, th.accent);
       }
    }
 
@@ -316,7 +330,10 @@ public class StylesScreen extends Screen {
             Ui.rect(g, tx, y + 17, tw - 2, 1, th.accent);
          }
 
-         String label = Ui.trim(Ui.tr("maneszn_styles.tab." + t.name().toLowerCase(Locale.ROOT)), tw - 6);
+         String full = Ui.tr("maneszn_styles.tab." + t.name().toLowerCase(Locale.ROOT));
+         String icon = switch (t) { case COLLECTIONS -> "▦"; case COSMETICS -> "✦"; case EXTRAS -> "⚙"; };
+         String label = Ui.width(icon + " " + full) <= tw - 6 ? icon + " " + full : (Ui.width(full) <= tw - 6 ? full : icon);
+         if (hov && !label.contains(full)) g.setTooltipForNextFrame(Component.literal(full), mx, my);
          Ui.textCentered(g, label, tx + (tw - 2) / 2, y + 6, sel ? -1185282 : -6646866);
          this.zones.add(tx, y + 2, tw - 2, 16, () -> {
             this.tab = t;
@@ -449,7 +466,10 @@ public class StylesScreen extends Screen {
          int titleW = this.midW - this.search.getWidth() - 20;
          Ui.textShadow(g, Ui.trim(c.displayName(lang), titleW), x + 8, y + 6, -1185282);
          String sub = Ui.tr("maneszn_styles.ui.count", all.size() + 1) + " · " + (activeStyle == null ? "Vanilla" : activeStyle.name());
-         Ui.text(g, Ui.trim(sub, titleW), x + 8, y + 18, -6646866);
+         int chipsW = 0;
+         for (String l : new String[]{Ui.tr("maneszn_styles.filter.all"), "★ " + Ui.tr("maneszn_styles.filter.favorites") + " (00)", Ui.tr("maneszn_styles.filter.new")}) chipsW += Ui.width(l) + 10;
+         int subW = this.midW - chipsW - 20;
+         if (subW > 30) Ui.text(g, Ui.trim(sub, subW), x + 8, y + 18, -6646866);
          int favCount = 0;
          if (cfg.isFavorite(c.id(), "vanilla")) {
             favCount++;

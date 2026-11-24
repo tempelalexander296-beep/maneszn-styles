@@ -148,7 +148,7 @@ public class ImportScreen extends Screen {
 
    @Override
    public void renderBackground(GuiGraphics g, int mouseX, int mouseY, float partialTick) {
-      g.fill(0, 0, this.width, this.height, -234092014);
+      Ui.background(g, this.width, this.height);
    }
 
    @Override
