@@ -331,7 +331,7 @@ public class StylesScreen extends Screen {
          }
 
          String full = Ui.tr("maneszn_styles.tab." + t.name().toLowerCase(Locale.ROOT));
-         String icon = switch (t) { case COLLECTIONS -> "▦"; case COSMETICS -> "✦"; case EXTRAS -> "⚙"; };
+         String icon = switch (t) { case COLLECTIONS -> "☰"; case COSMETICS -> "✦"; case EXTRAS -> "⚙"; };
          String label = Ui.width(icon + " " + full) <= tw - 6 ? icon + " " + full : (Ui.width(full) <= tw - 6 ? full : icon);
          if (hov && !label.contains(full)) g.setTooltipForNextFrame(Component.literal(full), mx, my);
          Ui.textCentered(g, label, tx + (tw - 2) / 2, y + 6, sel ? -1185282 : -6646866);
