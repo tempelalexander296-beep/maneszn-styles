@@ -1,19 +1,25 @@
 {
   "schemaVersion": 1,
-  "id": "adventcosmetics",
+  "id": "maneszn_styles",
   "version": "${version}",
-  "name": "Christmas Advent Calendar",
-  "description": "Premium Christmas advent calendar: 24 exclusive 3D cosmetics from Dec 1 to Dec 24, finale: ULTIMATE CHRISTMAS AURA (Mythic).",
-  "authors": ["maneszn"],
+  "name": "Maneszn Styles",
+  "description": "All-in-One-Mod für Texturen und Cosmetics: eingebaute Styles pro Item und Block, eigene Bilder importieren, Presets – jetzt mit dem Christmas Advent Calendar (24 exklusive 3D-Cosmetics).",
+  "authors": ["Maneszn"],
+  "contact": { "homepage": "https://maneszn-api.onrender.com" },
   "license": "All-Rights-Reserved",
-  "icon": "assets/adventcosmetics/icon.png",
+  "icon": "assets/maneszn_styles/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": ["dev.maneszn.advent.AdventMod"],
-    "client": ["dev.maneszn.advent.client.AdventClient"]
+    "client": ["com.maneszn.styles.ManesznStyles", "dev.maneszn.advent.client.AdventClient"]
   },
+  "mixins": [
+    { "config": "maneszn_styles.mixins.json", "environment": "client" },
+    { "config": "maneszn_styles.optional.mixins.json", "environment": "client" }
+  ],
+  "provides": ["adventcosmetics"],
   "depends": {
-    "fabricloader": ">=0.20.1",
+    "fabricloader": ">=0.18.1",
     "minecraft": "~1.21.11",
     "java": ">=21",
     "fabric-api": "*"

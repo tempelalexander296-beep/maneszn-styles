@@ -5,5 +5,5 @@
   "name": "Advent Cosmetics – client QA",
   "environment": "*",
   "entrypoints": { "fabric-client-gametest": ["dev.maneszn.advent.test.AdventClientTest"] },
-  "depends": { "adventcosmetics": "*" }
+  "depends": { "maneszn_styles": "*" }
 }

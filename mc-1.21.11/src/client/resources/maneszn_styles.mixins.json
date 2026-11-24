@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.maneszn.styles.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ReloadableResourceManagerMixin",
+    "PlayerMixin",
+    "PlayerTabOverlayMixin",
+    "ChatComponentMixin",
+    "AbstractClientPlayerMixin",
+    "EntityRendererMixin",
+    "HumanoidModelMixin",
+    "EntityTurnMixin",
+    "CameraMixin",
+    "GameRendererMixin",
+    "MouseHandlerMixin",
+    "MultiPlayerGameModeMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

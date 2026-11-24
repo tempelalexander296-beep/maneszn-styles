@@ -1,0 +1,6452 @@
+{
+  "_info": "Alle eingebauten Styles. Neuer Style = Ordner builtin/<kategorie>/<id>/ mit texture.png (oder <target>.png) + Eintrag hier.",
+  "styles": [
+    {
+      "id": "alek_japanese",
+      "name": "Alek Japanese",
+      "category": "sword",
+      "author": "Alek Japanese",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "sword",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "sword",
+      "author": "Blue White Blaze",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "sword",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "kinos_tokyo_ghoul",
+      "name": "Kinos Tokyo Ghoul",
+      "category": "sword",
+      "author": "Kinos Tokyo Ghoul",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "sword",
+      "author": "Maneszn Private",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "sword",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "sword",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "sword",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "sword",
+      "author": "PigPack",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "piratenklingen_pvp",
+      "name": "Piratenklingen PvP",
+      "category": "sword",
+      "author": "Piratenklingen PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "schnee_pvp",
+      "name": "Schnee PvP",
+      "category": "sword",
+      "author": "Schnee PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "sword",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "sword",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_yellow",
+      "name": "TXN Yellow",
+      "category": "sword",
+      "author": "TXN Yellow",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "sword",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blau",
+      "name": "xyzoom Blau",
+      "category": "sword",
+      "author": "xyzoom Blau",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blue_diamonds",
+      "name": "xyzoom Blue Diamonds",
+      "category": "sword",
+      "author": "xyzoom Blue Diamonds",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_cyan",
+      "name": "xyzoom Cyan",
+      "category": "sword",
+      "author": "xyzoom Cyan",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "sword",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "sword",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_lila",
+      "name": "xyzoom Lila",
+      "category": "sword",
+      "author": "xyzoom Lila",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_orange",
+      "name": "xyzoom Orange",
+      "category": "sword",
+      "author": "xyzoom Orange",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_rot",
+      "name": "xyzoom Rot",
+      "category": "sword",
+      "author": "xyzoom Rot",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_tuerkis",
+      "name": "xyzoom Türkis",
+      "category": "sword",
+      "author": "xyzoom Türkis",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "axe",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "axe",
+      "author": "Blue White Blaze",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "axe",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "kinos_tokyo_ghoul",
+      "name": "Kinos Tokyo Ghoul",
+      "category": "axe",
+      "author": "Kinos Tokyo Ghoul",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "axe",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "axe",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "axe",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "piratenklingen_pvp",
+      "name": "Piratenklingen PvP",
+      "category": "axe",
+      "author": "Piratenklingen PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "axe",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "axe",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_yellow",
+      "name": "TXN Yellow",
+      "category": "axe",
+      "author": "TXN Yellow",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "axe",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blau",
+      "name": "xyzoom Blau",
+      "category": "axe",
+      "author": "xyzoom Blau",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blue_diamonds",
+      "name": "xyzoom Blue Diamonds",
+      "category": "axe",
+      "author": "xyzoom Blue Diamonds",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_cyan",
+      "name": "xyzoom Cyan",
+      "category": "axe",
+      "author": "xyzoom Cyan",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "axe",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "axe",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_lila",
+      "name": "xyzoom Lila",
+      "category": "axe",
+      "author": "xyzoom Lila",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_orange",
+      "name": "xyzoom Orange",
+      "category": "axe",
+      "author": "xyzoom Orange",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_rot",
+      "name": "xyzoom Rot",
+      "category": "axe",
+      "author": "xyzoom Rot",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_tuerkis",
+      "name": "xyzoom Türkis",
+      "category": "axe",
+      "author": "xyzoom Türkis",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "alek_japanese",
+      "name": "Alek Japanese",
+      "category": "mace",
+      "author": "Alek Japanese",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "mace",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "mace",
+      "author": "Blue White Blaze",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "mace",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "kinos_tokyo_ghoul",
+      "name": "Kinos Tokyo Ghoul",
+      "category": "mace",
+      "author": "Kinos Tokyo Ghoul",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "mace",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "mace",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "mace",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "mace",
+      "author": "PigPack",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "piratenklingen_pvp",
+      "name": "Piratenklingen PvP",
+      "category": "mace",
+      "author": "Piratenklingen PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "mace",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "mace",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_yellow",
+      "name": "TXN Yellow",
+      "category": "mace",
+      "author": "TXN Yellow",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "mace",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blau",
+      "name": "xyzoom Blau",
+      "category": "mace",
+      "author": "xyzoom Blau",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blue_diamonds",
+      "name": "xyzoom Blue Diamonds",
+      "category": "mace",
+      "author": "xyzoom Blue Diamonds",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_cyan",
+      "name": "xyzoom Cyan",
+      "category": "mace",
+      "author": "xyzoom Cyan",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "mace",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "mace",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_lila",
+      "name": "xyzoom Lila",
+      "category": "mace",
+      "author": "xyzoom Lila",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_orange",
+      "name": "xyzoom Orange",
+      "category": "mace",
+      "author": "xyzoom Orange",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_rot",
+      "name": "xyzoom Rot",
+      "category": "mace",
+      "author": "xyzoom Rot",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_tuerkis",
+      "name": "xyzoom Türkis",
+      "category": "mace",
+      "author": "xyzoom Türkis",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "bow",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "bow",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "bow",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "bow",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "bow",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "bow",
+      "author": "PigPack",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "piratenklingen_pvp",
+      "name": "Piratenklingen PvP",
+      "category": "bow",
+      "author": "Piratenklingen PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "schnee_pvp",
+      "name": "Schnee PvP",
+      "category": "bow",
+      "author": "Schnee PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "bow",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "bow",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "bow",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "bow",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "wind_charge",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "wind_charge",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "kinos_tokyo_ghoul",
+      "name": "Kinos Tokyo Ghoul",
+      "category": "wind_charge",
+      "author": "Kinos Tokyo Ghoul",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "wind_charge",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "wind_charge",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "wind_charge",
+      "author": "PigPack",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "piratenklingen_pvp",
+      "name": "Piratenklingen PvP",
+      "category": "wind_charge",
+      "author": "Piratenklingen PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "wind_charge",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "wind_charge",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_yellow",
+      "name": "TXN Yellow",
+      "category": "wind_charge",
+      "author": "TXN Yellow",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "wind_charge",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "wind_charge",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "crossbow",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "crossbow",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "crossbow",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "crossbow",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "crossbow",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "crossbow",
+      "author": "PigPack",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "crossbow",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "crossbow",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "crossbow",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "spear",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "kinos_tokyo_ghoul",
+      "name": "Kinos Tokyo Ghoul",
+      "category": "spear",
+      "author": "Kinos Tokyo Ghoul",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "spear",
+      "author": "Maneszn Private",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "spear",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "spear",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "piratenklingen_pvp",
+      "name": "Piratenklingen PvP",
+      "category": "spear",
+      "author": "Piratenklingen PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "spear",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "spear",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_yellow",
+      "name": "TXN Yellow",
+      "category": "spear",
+      "author": "TXN Yellow",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "spear",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blau",
+      "name": "xyzoom Blau",
+      "category": "spear",
+      "author": "xyzoom Blau",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blue_diamonds",
+      "name": "xyzoom Blue Diamonds",
+      "category": "spear",
+      "author": "xyzoom Blue Diamonds",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_cyan",
+      "name": "xyzoom Cyan",
+      "category": "spear",
+      "author": "xyzoom Cyan",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "spear",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "spear",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_lila",
+      "name": "xyzoom Lila",
+      "category": "spear",
+      "author": "xyzoom Lila",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_orange",
+      "name": "xyzoom Orange",
+      "category": "spear",
+      "author": "xyzoom Orange",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_rot",
+      "name": "xyzoom Rot",
+      "category": "spear",
+      "author": "xyzoom Rot",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_tuerkis",
+      "name": "xyzoom Türkis",
+      "category": "spear",
+      "author": "xyzoom Türkis",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "alek_japanese",
+      "name": "Alek Japanese",
+      "category": "armor_diamond",
+      "author": "Alek Japanese",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "armor_diamond",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "armor_diamond",
+      "author": "Blue White Blaze",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "champion_krone",
+      "name": "Champion-Krone",
+      "category": "armor_diamond",
+      "author": "Champion-Krone",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "armor_diamond",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "armor_diamond",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "armor_diamond",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "armor_diamond",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "piratenklingen_pvp",
+      "name": "Piratenklingen PvP",
+      "category": "armor_diamond",
+      "author": "Piratenklingen PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "schnee_pvp",
+      "name": "Schnee PvP",
+      "category": "armor_diamond",
+      "author": "Schnee PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween",
+      "name": "TXN Halloween",
+      "category": "armor_diamond",
+      "author": "TXN Halloween",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "armor_diamond",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "armor_diamond",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blau",
+      "name": "xyzoom Blau",
+      "category": "armor_diamond",
+      "author": "xyzoom Blau",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blue_diamonds",
+      "name": "xyzoom Blue Diamonds",
+      "category": "armor_diamond",
+      "author": "xyzoom Blue Diamonds",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_cyan",
+      "name": "xyzoom Cyan",
+      "category": "armor_diamond",
+      "author": "xyzoom Cyan",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "armor_diamond",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "armor_diamond",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_lila",
+      "name": "xyzoom Lila",
+      "category": "armor_diamond",
+      "author": "xyzoom Lila",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_orange",
+      "name": "xyzoom Orange",
+      "category": "armor_diamond",
+      "author": "xyzoom Orange",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_rot",
+      "name": "xyzoom Rot",
+      "category": "armor_diamond",
+      "author": "xyzoom Rot",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_tuerkis",
+      "name": "xyzoom Türkis",
+      "category": "armor_diamond",
+      "author": "xyzoom Türkis",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "alek_japanese",
+      "name": "Alek Japanese",
+      "category": "armor_netherite",
+      "author": "Alek Japanese",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "armor_netherite",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "armor_netherite",
+      "author": "Blue White Blaze",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "armor_netherite",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "kinos_tokyo_ghoul",
+      "name": "Kinos Tokyo Ghoul",
+      "category": "armor_netherite",
+      "author": "Kinos Tokyo Ghoul",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "armor_netherite",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "armor_netherite",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "armor_netherite",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "piratenklingen_pvp",
+      "name": "Piratenklingen PvP",
+      "category": "armor_netherite",
+      "author": "Piratenklingen PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "schnee_pvp",
+      "name": "Schnee PvP",
+      "category": "armor_netherite",
+      "author": "Schnee PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween",
+      "name": "TXN Halloween",
+      "category": "armor_netherite",
+      "author": "TXN Halloween",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "armor_netherite",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_yellow",
+      "name": "TXN Yellow",
+      "category": "armor_netherite",
+      "author": "TXN Yellow",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "armor_netherite",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "armor_netherite",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "armor_other",
+      "author": "Blue White Blaze",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "armor_other",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "piratenklingen_pvp",
+      "name": "Piratenklingen PvP",
+      "category": "armor_other",
+      "author": "Piratenklingen PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "schnee_pvp",
+      "name": "Schnee PvP",
+      "category": "armor_other",
+      "author": "Schnee PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "armor_other",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "armor_other",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "armor_other",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "alek_japanese",
+      "name": "Alek Japanese",
+      "category": "elytra",
+      "author": "Alek Japanese",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "elytra",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "christmas_pack",
+      "name": "Christmas Pack",
+      "category": "elytra",
+      "author": "Christmas Pack",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "elytra",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "kinos_tokyo_ghoul",
+      "name": "Kinos Tokyo Ghoul",
+      "category": "elytra",
+      "author": "Kinos Tokyo Ghoul",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "elytra",
+      "author": "Maneszn Private",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "elytra",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "elytra",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "elytra",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "elytra",
+      "author": "PigPack",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "piratenklingen_pvp",
+      "name": "Piratenklingen PvP",
+      "category": "elytra",
+      "author": "Piratenklingen PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween",
+      "name": "TXN Halloween",
+      "category": "elytra",
+      "author": "TXN Halloween",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "elytra",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "elytra",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_yellow",
+      "name": "TXN Yellow",
+      "category": "elytra",
+      "author": "TXN Yellow",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "elytra",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blau",
+      "name": "xyzoom Blau",
+      "category": "elytra",
+      "author": "xyzoom Blau",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blue_diamonds",
+      "name": "xyzoom Blue Diamonds",
+      "category": "elytra",
+      "author": "xyzoom Blue Diamonds",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_cyan",
+      "name": "xyzoom Cyan",
+      "category": "elytra",
+      "author": "xyzoom Cyan",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "elytra",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "elytra",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_lila",
+      "name": "xyzoom Lila",
+      "category": "elytra",
+      "author": "xyzoom Lila",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_orange",
+      "name": "xyzoom Orange",
+      "category": "elytra",
+      "author": "xyzoom Orange",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_rot",
+      "name": "xyzoom Rot",
+      "category": "elytra",
+      "author": "xyzoom Rot",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_tuerkis",
+      "name": "xyzoom Türkis",
+      "category": "elytra",
+      "author": "xyzoom Türkis",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "alek_japanese",
+      "name": "Alek Japanese",
+      "category": "pickaxe",
+      "author": "Alek Japanese",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "pickaxe",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "pickaxe",
+      "author": "Blue White Blaze",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "pickaxe",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "pickaxe",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "pickaxe",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "pickaxe",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "pickaxe",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "pickaxe",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blau",
+      "name": "xyzoom Blau",
+      "category": "pickaxe",
+      "author": "xyzoom Blau",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blue_diamonds",
+      "name": "xyzoom Blue Diamonds",
+      "category": "pickaxe",
+      "author": "xyzoom Blue Diamonds",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_cyan",
+      "name": "xyzoom Cyan",
+      "category": "pickaxe",
+      "author": "xyzoom Cyan",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "pickaxe",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "pickaxe",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_lila",
+      "name": "xyzoom Lila",
+      "category": "pickaxe",
+      "author": "xyzoom Lila",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_orange",
+      "name": "xyzoom Orange",
+      "category": "pickaxe",
+      "author": "xyzoom Orange",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_rot",
+      "name": "xyzoom Rot",
+      "category": "pickaxe",
+      "author": "xyzoom Rot",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_tuerkis",
+      "name": "xyzoom Türkis",
+      "category": "pickaxe",
+      "author": "xyzoom Türkis",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "shovel",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "shovel",
+      "author": "Blue White Blaze",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "shovel",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "shovel",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "shovel",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "shovel",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "shovel",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "shovel",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blau",
+      "name": "xyzoom Blau",
+      "category": "shovel",
+      "author": "xyzoom Blau",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blue_diamonds",
+      "name": "xyzoom Blue Diamonds",
+      "category": "shovel",
+      "author": "xyzoom Blue Diamonds",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_cyan",
+      "name": "xyzoom Cyan",
+      "category": "shovel",
+      "author": "xyzoom Cyan",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "shovel",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "shovel",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_lila",
+      "name": "xyzoom Lila",
+      "category": "shovel",
+      "author": "xyzoom Lila",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_orange",
+      "name": "xyzoom Orange",
+      "category": "shovel",
+      "author": "xyzoom Orange",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_rot",
+      "name": "xyzoom Rot",
+      "category": "shovel",
+      "author": "xyzoom Rot",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_tuerkis",
+      "name": "xyzoom Türkis",
+      "category": "shovel",
+      "author": "xyzoom Türkis",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "hoe",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "hoe",
+      "author": "Blue White Blaze",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "hoe",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "hoe",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "hoe",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "hoe",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "hoe",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blau",
+      "name": "xyzoom Blau",
+      "category": "hoe",
+      "author": "xyzoom Blau",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blue_diamonds",
+      "name": "xyzoom Blue Diamonds",
+      "category": "hoe",
+      "author": "xyzoom Blue Diamonds",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_cyan",
+      "name": "xyzoom Cyan",
+      "category": "hoe",
+      "author": "xyzoom Cyan",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "hoe",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "hoe",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_lila",
+      "name": "xyzoom Lila",
+      "category": "hoe",
+      "author": "xyzoom Lila",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_orange",
+      "name": "xyzoom Orange",
+      "category": "hoe",
+      "author": "xyzoom Orange",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_rot",
+      "name": "xyzoom Rot",
+      "category": "hoe",
+      "author": "xyzoom Rot",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_tuerkis",
+      "name": "xyzoom Türkis",
+      "category": "hoe",
+      "author": "xyzoom Türkis",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "alek_japanese",
+      "name": "Alek Japanese",
+      "category": "totem",
+      "author": "Alek Japanese",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "totem",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "totem",
+      "author": "Blue White Blaze",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "totem",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "gonasxwamply_v3",
+      "name": "GONASxWAMPLY V3",
+      "category": "totem",
+      "author": "GONASxWAMPLY V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "hochmut_x_wamply",
+      "name": "Hochmut x Wamply",
+      "category": "totem",
+      "author": "Hochmut x Wamply",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "kinos_tokyo_ghoul",
+      "name": "Kinos Tokyo Ghoul",
+      "category": "totem",
+      "author": "Kinos Tokyo Ghoul",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v1",
+      "name": "Loyal V1",
+      "category": "totem",
+      "author": "Loyal V1",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "totem",
+      "author": "Loyal V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "totem",
+      "author": "Maneszn Private",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "totem",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "totem",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "totem",
+      "author": "PigPack",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "piratenklingen_pvp",
+      "name": "Piratenklingen PvP",
+      "category": "totem",
+      "author": "Piratenklingen PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "totem",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "totem",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_yellow",
+      "name": "TXN Yellow",
+      "category": "totem",
+      "author": "TXN Yellow",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "totem",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blau",
+      "name": "xyzoom Blau",
+      "category": "totem",
+      "author": "xyzoom Blau",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blue_diamonds",
+      "name": "xyzoom Blue Diamonds",
+      "category": "totem",
+      "author": "xyzoom Blue Diamonds",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_cyan",
+      "name": "xyzoom Cyan",
+      "category": "totem",
+      "author": "xyzoom Cyan",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "totem",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "totem",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_lila",
+      "name": "xyzoom Lila",
+      "category": "totem",
+      "author": "xyzoom Lila",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_orange",
+      "name": "xyzoom Orange",
+      "category": "totem",
+      "author": "xyzoom Orange",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_rot",
+      "name": "xyzoom Rot",
+      "category": "totem",
+      "author": "xyzoom Rot",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_tuerkis",
+      "name": "xyzoom Türkis",
+      "category": "totem",
+      "author": "xyzoom Türkis",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "alek_japanese",
+      "name": "Alek Japanese",
+      "category": "ender_pearl",
+      "author": "Alek Japanese",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "ender_pearl",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "ender_pearl",
+      "author": "Blue White Blaze",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "ender_pearl",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "gonasxwamply_v3",
+      "name": "GONASxWAMPLY V3",
+      "category": "ender_pearl",
+      "author": "GONASxWAMPLY V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "hochmut_x_wamply",
+      "name": "Hochmut x Wamply",
+      "category": "ender_pearl",
+      "author": "Hochmut x Wamply",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "kinos_tokyo_ghoul",
+      "name": "Kinos Tokyo Ghoul",
+      "category": "ender_pearl",
+      "author": "Kinos Tokyo Ghoul",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v1",
+      "name": "Loyal V1",
+      "category": "ender_pearl",
+      "author": "Loyal V1",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "ender_pearl",
+      "author": "Loyal V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "ender_pearl",
+      "author": "Maneszn Private",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "ender_pearl",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "ender_pearl",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "ender_pearl",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "ender_pearl",
+      "author": "PigPack",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "piratenklingen_pvp",
+      "name": "Piratenklingen PvP",
+      "category": "ender_pearl",
+      "author": "Piratenklingen PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "schnee_pvp",
+      "name": "Schnee PvP",
+      "category": "ender_pearl",
+      "author": "Schnee PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "ender_pearl",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "ender_pearl",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_yellow",
+      "name": "TXN Yellow",
+      "category": "ender_pearl",
+      "author": "TXN Yellow",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "ender_pearl",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blau",
+      "name": "xyzoom Blau",
+      "category": "ender_pearl",
+      "author": "xyzoom Blau",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blue_diamonds",
+      "name": "xyzoom Blue Diamonds",
+      "category": "ender_pearl",
+      "author": "xyzoom Blue Diamonds",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_cyan",
+      "name": "xyzoom Cyan",
+      "category": "ender_pearl",
+      "author": "xyzoom Cyan",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "ender_pearl",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "ender_pearl",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_lila",
+      "name": "xyzoom Lila",
+      "category": "ender_pearl",
+      "author": "xyzoom Lila",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_orange",
+      "name": "xyzoom Orange",
+      "category": "ender_pearl",
+      "author": "xyzoom Orange",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_rot",
+      "name": "xyzoom Rot",
+      "category": "ender_pearl",
+      "author": "xyzoom Rot",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_tuerkis",
+      "name": "xyzoom Türkis",
+      "category": "ender_pearl",
+      "author": "xyzoom Türkis",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "alek_japanese",
+      "name": "Alek Japanese",
+      "category": "golden_apple",
+      "author": "Alek Japanese",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "golden_apple",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "golden_apple",
+      "author": "Blue White Blaze",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "golden_apple",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "gonasxwamply_v3",
+      "name": "GONASxWAMPLY V3",
+      "category": "golden_apple",
+      "author": "GONASxWAMPLY V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "hochmut_x_wamply",
+      "name": "Hochmut x Wamply",
+      "category": "golden_apple",
+      "author": "Hochmut x Wamply",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "kinos_tokyo_ghoul",
+      "name": "Kinos Tokyo Ghoul",
+      "category": "golden_apple",
+      "author": "Kinos Tokyo Ghoul",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v1",
+      "name": "Loyal V1",
+      "category": "golden_apple",
+      "author": "Loyal V1",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "golden_apple",
+      "author": "Loyal V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "golden_apple",
+      "author": "Maneszn Private",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "golden_apple",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "golden_apple",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "golden_apple",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "golden_apple",
+      "author": "PigPack",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "piratenklingen_pvp",
+      "name": "Piratenklingen PvP",
+      "category": "golden_apple",
+      "author": "Piratenklingen PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "schnee_pvp",
+      "name": "Schnee PvP",
+      "category": "golden_apple",
+      "author": "Schnee PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "golden_apple",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "golden_apple",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_yellow",
+      "name": "TXN Yellow",
+      "category": "golden_apple",
+      "author": "TXN Yellow",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "golden_apple",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "golden_apple",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "alek_japanese",
+      "name": "Alek Japanese",
+      "category": "end_crystal",
+      "author": "Alek Japanese",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "end_crystal",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "end_crystal",
+      "author": "Blue White Blaze",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "end_crystal",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "hochmut_x_wamply",
+      "name": "Hochmut x Wamply",
+      "category": "end_crystal",
+      "author": "Hochmut x Wamply",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v1",
+      "name": "Loyal V1",
+      "category": "end_crystal",
+      "author": "Loyal V1",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "end_crystal",
+      "author": "Loyal V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "end_crystal",
+      "author": "Maneszn Private",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "end_crystal",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "end_crystal",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "end_crystal",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "end_crystal",
+      "author": "PigPack",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "piratenklingen_pvp",
+      "name": "Piratenklingen PvP",
+      "category": "end_crystal",
+      "author": "Piratenklingen PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "schnee_pvp",
+      "name": "Schnee PvP",
+      "category": "end_crystal",
+      "author": "Schnee PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "end_crystal",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "end_crystal",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_yellow",
+      "name": "TXN Yellow",
+      "category": "end_crystal",
+      "author": "TXN Yellow",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "end_crystal",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blau",
+      "name": "xyzoom Blau",
+      "category": "end_crystal",
+      "author": "xyzoom Blau",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blue_diamonds",
+      "name": "xyzoom Blue Diamonds",
+      "category": "end_crystal",
+      "author": "xyzoom Blue Diamonds",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_cyan",
+      "name": "xyzoom Cyan",
+      "category": "end_crystal",
+      "author": "xyzoom Cyan",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "end_crystal",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "end_crystal",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_lila",
+      "name": "xyzoom Lila",
+      "category": "end_crystal",
+      "author": "xyzoom Lila",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_orange",
+      "name": "xyzoom Orange",
+      "category": "end_crystal",
+      "author": "xyzoom Orange",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_rot",
+      "name": "xyzoom Rot",
+      "category": "end_crystal",
+      "author": "xyzoom Rot",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_tuerkis",
+      "name": "xyzoom Türkis",
+      "category": "end_crystal",
+      "author": "xyzoom Türkis",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "alek_japanese",
+      "name": "Alek Japanese",
+      "category": "obsidian",
+      "author": "Alek Japanese",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "obsidian",
+      "author": "Blue White Blaze",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "obsidian",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "gonasxwamply_v3",
+      "name": "GONASxWAMPLY V3",
+      "category": "obsidian",
+      "author": "GONASxWAMPLY V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v1",
+      "name": "Loyal V1",
+      "category": "obsidian",
+      "author": "Loyal V1",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "obsidian",
+      "author": "Loyal V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "obsidian",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "obsidian",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "obsidian",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "piratenklingen_pvp",
+      "name": "Piratenklingen PvP",
+      "category": "obsidian",
+      "author": "Piratenklingen PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "obsidian",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "obsidian",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "obsidian",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blau",
+      "name": "xyzoom Blau",
+      "category": "obsidian",
+      "author": "xyzoom Blau",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blue_diamonds",
+      "name": "xyzoom Blue Diamonds",
+      "category": "obsidian",
+      "author": "xyzoom Blue Diamonds",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_cyan",
+      "name": "xyzoom Cyan",
+      "category": "obsidian",
+      "author": "xyzoom Cyan",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "obsidian",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "obsidian",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_lila",
+      "name": "xyzoom Lila",
+      "category": "obsidian",
+      "author": "xyzoom Lila",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_orange",
+      "name": "xyzoom Orange",
+      "category": "obsidian",
+      "author": "xyzoom Orange",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_rot",
+      "name": "xyzoom Rot",
+      "category": "obsidian",
+      "author": "xyzoom Rot",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "tnt",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "tnt",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "tnt",
+      "author": "Loyal V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "tnt",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "tnt",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "tnt",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "tnt",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "cobweb",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "cobweb",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "gonasxwamply_v3",
+      "name": "GONASxWAMPLY V3",
+      "category": "cobweb",
+      "author": "GONASxWAMPLY V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "hochmut_x_wamply",
+      "name": "Hochmut x Wamply",
+      "category": "cobweb",
+      "author": "Hochmut x Wamply",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v1",
+      "name": "Loyal V1",
+      "category": "cobweb",
+      "author": "Loyal V1",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "cobweb",
+      "author": "Loyal V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "cobweb",
+      "author": "Maneszn Private",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "cobweb",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "cobweb",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "piratenklingen_pvp",
+      "name": "Piratenklingen PvP",
+      "category": "cobweb",
+      "author": "Piratenklingen PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "cobweb",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "cobweb",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_yellow",
+      "name": "TXN Yellow",
+      "category": "cobweb",
+      "author": "TXN Yellow",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "cobweb",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "cobweb",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "firework_rocket",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "firework_rocket",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "firework_rocket",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "firework_rocket",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "firework_rocket",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "firework_rocket",
+      "author": "PigPack",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "firework_rocket",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blau",
+      "name": "xyzoom Blau",
+      "category": "firework_rocket",
+      "author": "xyzoom Blau",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blue_diamonds",
+      "name": "xyzoom Blue Diamonds",
+      "category": "firework_rocket",
+      "author": "xyzoom Blue Diamonds",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_cyan",
+      "name": "xyzoom Cyan",
+      "category": "firework_rocket",
+      "author": "xyzoom Cyan",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "firework_rocket",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "firework_rocket",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_lila",
+      "name": "xyzoom Lila",
+      "category": "firework_rocket",
+      "author": "xyzoom Lila",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_orange",
+      "name": "xyzoom Orange",
+      "category": "firework_rocket",
+      "author": "xyzoom Orange",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_rot",
+      "name": "xyzoom Rot",
+      "category": "firework_rocket",
+      "author": "xyzoom Rot",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_tuerkis",
+      "name": "xyzoom Türkis",
+      "category": "firework_rocket",
+      "author": "xyzoom Türkis",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "alek_japanese",
+      "name": "Alek Japanese",
+      "category": "enchanted_golden_apple",
+      "author": "Alek Japanese",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "enchanted_golden_apple",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "enchanted_golden_apple",
+      "author": "Blue White Blaze",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "enchanted_golden_apple",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "gonasxwamply_v3",
+      "name": "GONASxWAMPLY V3",
+      "category": "enchanted_golden_apple",
+      "author": "GONASxWAMPLY V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "hochmut_x_wamply",
+      "name": "Hochmut x Wamply",
+      "category": "enchanted_golden_apple",
+      "author": "Hochmut x Wamply",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "kinos_tokyo_ghoul",
+      "name": "Kinos Tokyo Ghoul",
+      "category": "enchanted_golden_apple",
+      "author": "Kinos Tokyo Ghoul",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v1",
+      "name": "Loyal V1",
+      "category": "enchanted_golden_apple",
+      "author": "Loyal V1",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "enchanted_golden_apple",
+      "author": "Loyal V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "enchanted_golden_apple",
+      "author": "Maneszn Private",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "enchanted_golden_apple",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "enchanted_golden_apple",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "enchanted_golden_apple",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "enchanted_golden_apple",
+      "author": "PigPack",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "piratenklingen_pvp",
+      "name": "Piratenklingen PvP",
+      "category": "enchanted_golden_apple",
+      "author": "Piratenklingen PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "schnee_pvp",
+      "name": "Schnee PvP",
+      "category": "enchanted_golden_apple",
+      "author": "Schnee PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "enchanted_golden_apple",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "enchanted_golden_apple",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_yellow",
+      "name": "TXN Yellow",
+      "category": "enchanted_golden_apple",
+      "author": "TXN Yellow",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "enchanted_golden_apple",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "enchanted_golden_apple",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "alek_japanese",
+      "name": "Alek Japanese",
+      "category": "respawn_anchor",
+      "author": "Alek Japanese",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "respawn_anchor",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "respawn_anchor",
+      "author": "Blue White Blaze",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "respawn_anchor",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "respawn_anchor",
+      "author": "Loyal V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "respawn_anchor",
+      "author": "Maneszn Private",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "respawn_anchor",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "respawn_anchor",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "respawn_anchor",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "piratenklingen_pvp",
+      "name": "Piratenklingen PvP",
+      "category": "respawn_anchor",
+      "author": "Piratenklingen PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "respawn_anchor",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "respawn_anchor",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "respawn_anchor",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blau",
+      "name": "xyzoom Blau",
+      "category": "respawn_anchor",
+      "author": "xyzoom Blau",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blue_diamonds",
+      "name": "xyzoom Blue Diamonds",
+      "category": "respawn_anchor",
+      "author": "xyzoom Blue Diamonds",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_cyan",
+      "name": "xyzoom Cyan",
+      "category": "respawn_anchor",
+      "author": "xyzoom Cyan",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "respawn_anchor",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "respawn_anchor",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_lila",
+      "name": "xyzoom Lila",
+      "category": "respawn_anchor",
+      "author": "xyzoom Lila",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_orange",
+      "name": "xyzoom Orange",
+      "category": "respawn_anchor",
+      "author": "xyzoom Orange",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_rot",
+      "name": "xyzoom Rot",
+      "category": "respawn_anchor",
+      "author": "xyzoom Rot",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "glowstone",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "glowstone",
+      "author": "Blue White Blaze",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "glowstone",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "glowstone",
+      "author": "Loyal V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "glowstone",
+      "author": "Maneszn Private",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "glowstone",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "glowstone",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "glowstone",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "piratenklingen_pvp",
+      "name": "Piratenklingen PvP",
+      "category": "glowstone",
+      "author": "Piratenklingen PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "glowstone",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "glowstone",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "glowstone",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "erz_diamant",
+      "author": "Axxin 20K",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "erz_diamant",
+      "author": "Blue White Blaze",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "erz_diamant",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "erz_diamant",
+      "author": "Loyal V3",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "erz_diamant",
+      "author": "Maneszn Private",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "erz_diamant",
+      "author": "Mint",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "erz_diamant",
+      "author": "Pig White",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "erz_diamant",
+      "author": "PigPack",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "erz_diamant",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_blau",
+      "name": "xyzoom Blau",
+      "category": "erz_diamant",
+      "author": "xyzoom Blau",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_blue_diamonds",
+      "name": "xyzoom Blue Diamonds",
+      "category": "erz_diamant",
+      "author": "xyzoom Blue Diamonds",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_cyan",
+      "name": "xyzoom Cyan",
+      "category": "erz_diamant",
+      "author": "xyzoom Cyan",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "erz_diamant",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "erz_diamant",
+      "author": "xyzoom Grün",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_lila",
+      "name": "xyzoom Lila",
+      "category": "erz_diamant",
+      "author": "xyzoom Lila",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_orange",
+      "name": "xyzoom Orange",
+      "category": "erz_diamant",
+      "author": "xyzoom Orange",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_rot",
+      "name": "xyzoom Rot",
+      "category": "erz_diamant",
+      "author": "xyzoom Rot",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_tuerkis",
+      "name": "xyzoom Türkis",
+      "category": "erz_diamant",
+      "author": "xyzoom Türkis",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "erz_smaragd",
+      "author": "Axxin 20K",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "erz_smaragd",
+      "author": "Blue White Blaze",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "erz_smaragd",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "erz_smaragd",
+      "author": "Loyal V3",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "erz_smaragd",
+      "author": "Maneszn Private",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "erz_smaragd",
+      "author": "Pig White",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "erz_smaragd",
+      "author": "PigPack",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "erz_smaragd",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "erz_smaragd",
+      "author": "xyzoom Grün",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "erz_gold",
+      "author": "Axxin 20K",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "erz_gold",
+      "author": "Blue White Blaze",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "erz_gold",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "erz_gold",
+      "author": "Loyal V3",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "erz_gold",
+      "author": "Maneszn Private",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "erz_gold",
+      "author": "Mint",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "erz_gold",
+      "author": "Pig White",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "erz_gold",
+      "author": "PigPack",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "erz_gold",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "erz_gold",
+      "author": "xyzoom Grün",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "erz_eisen",
+      "author": "Axxin 20K",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "erz_eisen",
+      "author": "Blue White Blaze",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "erz_eisen",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "erz_eisen",
+      "author": "Loyal V3",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "erz_eisen",
+      "author": "Maneszn Private",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "erz_eisen",
+      "author": "Pig White",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "erz_eisen",
+      "author": "PigPack",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "erz_eisen",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "erz_eisen",
+      "author": "xyzoom Grün",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "erz_redstone",
+      "author": "Axxin 20K",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "erz_redstone",
+      "author": "Blue White Blaze",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "erz_redstone",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "erz_redstone",
+      "author": "Loyal V3",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "erz_redstone",
+      "author": "Maneszn Private",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "erz_redstone",
+      "author": "Pig White",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "erz_redstone",
+      "author": "PigPack",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "erz_redstone",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "erz_redstone",
+      "author": "xyzoom Grün",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "erz_lapis",
+      "author": "Axxin 20K",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "erz_lapis",
+      "author": "Blue White Blaze",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "erz_lapis",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "erz_lapis",
+      "author": "Loyal V3",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "erz_lapis",
+      "author": "Maneszn Private",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "erz_lapis",
+      "author": "Pig White",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "erz_lapis",
+      "author": "PigPack",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "erz_lapis",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "erz_lapis",
+      "author": "xyzoom Grün",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "erz_kohle",
+      "author": "Axxin 20K",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "erz_kohle",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "erz_kohle",
+      "author": "Loyal V3",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "erz_kohle",
+      "author": "Maneszn Private",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "erz_kohle",
+      "author": "Pig White",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "erz_kohle",
+      "author": "PigPack",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "erz_kohle",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "erz_kohle",
+      "author": "xyzoom Grün",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "erz_kupfer",
+      "author": "Axxin 20K",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "erz_kupfer",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "erz_kupfer",
+      "author": "Loyal V3",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "erz_kupfer",
+      "author": "Maneszn Private",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "erz_kupfer",
+      "author": "Pig White",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "erz_kupfer",
+      "author": "PigPack",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "erz_kupfer",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "erz_kupfer",
+      "author": "xyzoom Grün",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "erz_quarz",
+      "author": "Axxin 20K",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "erz_quarz",
+      "author": "Blue White Blaze",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "erz_quarz",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "erz_quarz",
+      "author": "Loyal V3",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "erz_quarz",
+      "author": "Maneszn Private",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "erz_quarz",
+      "author": "Mint",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "erz_quarz",
+      "author": "Pig White",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "erz_quarz",
+      "author": "PigPack",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "erz_quarz",
+      "author": "xyzoom Grün",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "antiker_schrott",
+      "author": "Axxin 20K",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "antiker_schrott",
+      "author": "Blue White Blaze",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "antiker_schrott",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "gonasxwamply_v3",
+      "name": "GONASxWAMPLY V3",
+      "category": "antiker_schrott",
+      "author": "GONASxWAMPLY V3",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "antiker_schrott",
+      "author": "Loyal V3",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "antiker_schrott",
+      "author": "Maneszn Private",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "antiker_schrott",
+      "author": "Mint",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "antiker_schrott",
+      "author": "Pig White",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "antiker_schrott",
+      "author": "PigPack",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "antiker_schrott",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "antiker_schrott",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_blau",
+      "name": "xyzoom Blau",
+      "category": "antiker_schrott",
+      "author": "xyzoom Blau",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_blue_diamonds",
+      "name": "xyzoom Blue Diamonds",
+      "category": "antiker_schrott",
+      "author": "xyzoom Blue Diamonds",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_cyan",
+      "name": "xyzoom Cyan",
+      "category": "antiker_schrott",
+      "author": "xyzoom Cyan",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "antiker_schrott",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "antiker_schrott",
+      "author": "xyzoom Grün",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_lila",
+      "name": "xyzoom Lila",
+      "category": "antiker_schrott",
+      "author": "xyzoom Lila",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_orange",
+      "name": "xyzoom Orange",
+      "category": "antiker_schrott",
+      "author": "xyzoom Orange",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_rot",
+      "name": "xyzoom Rot",
+      "category": "antiker_schrott",
+      "author": "xyzoom Rot",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "stone",
+      "author": "Blue White Blaze",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "stone",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "stone",
+      "author": "Loyal V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "stone",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "stone",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "cobblestone",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "cobblestone",
+      "author": "Loyal V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "cobblestone",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "cobblestone",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "christmas_pack",
+      "name": "Christmas Pack",
+      "category": "dirt",
+      "author": "Christmas Pack",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "dirt",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "dirt",
+      "author": "Loyal V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "sand",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "sand",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "sand",
+      "author": "Loyal V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "glass",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "glass",
+      "author": "Loyal V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "schnee_pvp",
+      "name": "Schnee PvP",
+      "category": "glass",
+      "author": "Schnee PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "glass",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "glass",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "netherrack",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "netherrack",
+      "author": "Loyal V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "netherrack",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "netherrack",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "end_stone",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "end_stone",
+      "author": "Loyal V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "schnee_pvp",
+      "name": "Schnee PvP",
+      "category": "end_stone",
+      "author": "Schnee PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "end_stone",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "alek_japanese",
+      "name": "Alek Japanese",
+      "category": "fire",
+      "author": "Alek Japanese",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "fire",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "fire",
+      "author": "Blue White Blaze",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "fire",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "gonasxwamply_v3",
+      "name": "GONASxWAMPLY V3",
+      "category": "fire",
+      "author": "GONASxWAMPLY V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "fire",
+      "author": "Loyal V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "fire",
+      "author": "Maneszn Private",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "fire",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "fire",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "fire",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "fire",
+      "author": "PigPack",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "piratenklingen_pvp",
+      "name": "Piratenklingen PvP",
+      "category": "fire",
+      "author": "Piratenklingen PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "schnee_pvp",
+      "name": "Schnee PvP",
+      "category": "fire",
+      "author": "Schnee PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "fire",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "fire",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_yellow",
+      "name": "TXN Yellow",
+      "category": "fire",
+      "author": "TXN Yellow",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "fire",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blau",
+      "name": "xyzoom Blau",
+      "category": "fire",
+      "author": "xyzoom Blau",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blue_diamonds",
+      "name": "xyzoom Blue Diamonds",
+      "category": "fire",
+      "author": "xyzoom Blue Diamonds",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_cyan",
+      "name": "xyzoom Cyan",
+      "category": "fire",
+      "author": "xyzoom Cyan",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "fire",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "fire",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_lila",
+      "name": "xyzoom Lila",
+      "category": "fire",
+      "author": "xyzoom Lila",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_orange",
+      "name": "xyzoom Orange",
+      "category": "fire",
+      "author": "xyzoom Orange",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_rot",
+      "name": "xyzoom Rot",
+      "category": "fire",
+      "author": "xyzoom Rot",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_tuerkis",
+      "name": "xyzoom Türkis",
+      "category": "fire",
+      "author": "xyzoom Türkis",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "anime_spiegel",
+      "name": "Anime Spiegel",
+      "category": "sky",
+      "author": "Maneszn",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "gonasxwamply_v3",
+      "name": "GONASxWAMPLY V3",
+      "category": "sky",
+      "author": "GONASxWAMPLY V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "graue_wolken",
+      "name": "Graue Wolken",
+      "category": "sky",
+      "author": "Maneszn",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "nebula_lila",
+      "name": "Nebula Lila",
+      "category": "sky",
+      "author": "Maneszn",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "sky",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "sky",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "wolkenmeer",
+      "name": "Wolkenmeer",
+      "category": "sky",
+      "author": "Maneszn",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blau",
+      "name": "xyzoom Blau",
+      "category": "sky",
+      "author": "xyzoom Blau",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blue_diamonds",
+      "name": "xyzoom Blue Diamonds",
+      "category": "sky",
+      "author": "xyzoom Blue Diamonds",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_cyan",
+      "name": "xyzoom Cyan",
+      "category": "sky",
+      "author": "xyzoom Cyan",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "sky",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "sky",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_lila",
+      "name": "xyzoom Lila",
+      "category": "sky",
+      "author": "xyzoom Lila",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_orange",
+      "name": "xyzoom Orange",
+      "category": "sky",
+      "author": "xyzoom Orange",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_rot",
+      "name": "xyzoom Rot",
+      "category": "sky",
+      "author": "xyzoom Rot",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_tuerkis",
+      "name": "xyzoom Türkis",
+      "category": "sky",
+      "author": "xyzoom Türkis",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "crosshair",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "crosshair",
+      "author": "Loyal V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "crosshair",
+      "author": "Maneszn Private",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "crosshair",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "crosshair",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "crosshair",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "crosshair",
+      "author": "PigPack",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "piratenklingen_pvp",
+      "name": "Piratenklingen PvP",
+      "category": "crosshair",
+      "author": "Piratenklingen PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "schnee_pvp",
+      "name": "Schnee PvP",
+      "category": "crosshair",
+      "author": "Schnee PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "crosshair",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "crosshair",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "hearts",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "hearts",
+      "author": "Blue White Blaze",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "christmas_pack",
+      "name": "Christmas Pack",
+      "category": "hearts",
+      "author": "Christmas Pack",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "hearts",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v1",
+      "name": "Loyal V1",
+      "category": "hearts",
+      "author": "Loyal V1",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "hearts",
+      "author": "Loyal V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "hearts",
+      "author": "Maneszn Private",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "hearts",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "hearts",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "hearts",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "hearts",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_yellow",
+      "name": "TXN Yellow",
+      "category": "hearts",
+      "author": "TXN Yellow",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "hearts",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blau",
+      "name": "xyzoom Blau",
+      "category": "hearts",
+      "author": "xyzoom Blau",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blue_diamonds",
+      "name": "xyzoom Blue Diamonds",
+      "category": "hearts",
+      "author": "xyzoom Blue Diamonds",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_cyan",
+      "name": "xyzoom Cyan",
+      "category": "hearts",
+      "author": "xyzoom Cyan",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "hearts",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "hearts",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_lila",
+      "name": "xyzoom Lila",
+      "category": "hearts",
+      "author": "xyzoom Lila",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_orange",
+      "name": "xyzoom Orange",
+      "category": "hearts",
+      "author": "xyzoom Orange",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_rot",
+      "name": "xyzoom Rot",
+      "category": "hearts",
+      "author": "xyzoom Rot",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_tuerkis",
+      "name": "xyzoom Türkis",
+      "category": "hearts",
+      "author": "xyzoom Türkis",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "hunger",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "hunger",
+      "author": "Loyal V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "hunger",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "hunger",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "hunger",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "hunger",
+      "author": "PigPack",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "hunger",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "hunger",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blau",
+      "name": "xyzoom Blau",
+      "category": "hunger",
+      "author": "xyzoom Blau",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blue_diamonds",
+      "name": "xyzoom Blue Diamonds",
+      "category": "hunger",
+      "author": "xyzoom Blue Diamonds",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_cyan",
+      "name": "xyzoom Cyan",
+      "category": "hunger",
+      "author": "xyzoom Cyan",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "hunger",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "hunger",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_lila",
+      "name": "xyzoom Lila",
+      "category": "hunger",
+      "author": "xyzoom Lila",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_orange",
+      "name": "xyzoom Orange",
+      "category": "hunger",
+      "author": "xyzoom Orange",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_rot",
+      "name": "xyzoom Rot",
+      "category": "hunger",
+      "author": "xyzoom Rot",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_tuerkis",
+      "name": "xyzoom Türkis",
+      "category": "hunger",
+      "author": "xyzoom Türkis",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "armor_bar",
+      "author": "Blue White Blaze",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "armor_bar",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "armor_bar",
+      "author": "Loyal V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "armor_bar",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "armor_bar",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "armor_bar",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "armor_bar",
+      "author": "PigPack",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "armor_bar",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blau",
+      "name": "xyzoom Blau",
+      "category": "armor_bar",
+      "author": "xyzoom Blau",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blue_diamonds",
+      "name": "xyzoom Blue Diamonds",
+      "category": "armor_bar",
+      "author": "xyzoom Blue Diamonds",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_cyan",
+      "name": "xyzoom Cyan",
+      "category": "armor_bar",
+      "author": "xyzoom Cyan",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "armor_bar",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "armor_bar",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_lila",
+      "name": "xyzoom Lila",
+      "category": "armor_bar",
+      "author": "xyzoom Lila",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_orange",
+      "name": "xyzoom Orange",
+      "category": "armor_bar",
+      "author": "xyzoom Orange",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_rot",
+      "name": "xyzoom Rot",
+      "category": "armor_bar",
+      "author": "xyzoom Rot",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_tuerkis",
+      "name": "xyzoom Türkis",
+      "category": "armor_bar",
+      "author": "xyzoom Türkis",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "hotbar",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "hotbar",
+      "author": "Blue White Blaze",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "hotbar",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v1",
+      "name": "Loyal V1",
+      "category": "hotbar",
+      "author": "Loyal V1",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "hotbar",
+      "author": "Loyal V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "hotbar",
+      "author": "Maneszn Private",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "hotbar",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "hotbar",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "hotbar",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "hotbar",
+      "author": "PigPack",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "schnee_pvp",
+      "name": "Schnee PvP",
+      "category": "hotbar",
+      "author": "Schnee PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "hotbar",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "hotbar",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_yellow",
+      "name": "TXN Yellow",
+      "category": "hotbar",
+      "author": "TXN Yellow",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "hotbar",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blau",
+      "name": "xyzoom Blau",
+      "category": "hotbar",
+      "author": "xyzoom Blau",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blue_diamonds",
+      "name": "xyzoom Blue Diamonds",
+      "category": "hotbar",
+      "author": "xyzoom Blue Diamonds",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_cyan",
+      "name": "xyzoom Cyan",
+      "category": "hotbar",
+      "author": "xyzoom Cyan",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "hotbar",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "hotbar",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_lila",
+      "name": "xyzoom Lila",
+      "category": "hotbar",
+      "author": "xyzoom Lila",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_orange",
+      "name": "xyzoom Orange",
+      "category": "hotbar",
+      "author": "xyzoom Orange",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_rot",
+      "name": "xyzoom Rot",
+      "category": "hotbar",
+      "author": "xyzoom Rot",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_tuerkis",
+      "name": "xyzoom Türkis",
+      "category": "hotbar",
+      "author": "xyzoom Türkis",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "xp_bar",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "xp_bar",
+      "author": "Blue White Blaze",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "xp_bar",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "kinos_tokyo_ghoul",
+      "name": "Kinos Tokyo Ghoul",
+      "category": "xp_bar",
+      "author": "Kinos Tokyo Ghoul",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v1",
+      "name": "Loyal V1",
+      "category": "xp_bar",
+      "author": "Loyal V1",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "xp_bar",
+      "author": "Loyal V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "xp_bar",
+      "author": "Maneszn Private",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "xp_bar",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "xp_bar",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "xp_bar",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "xp_bar",
+      "author": "PigPack",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "xp_bar",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "xp_bar",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_yellow",
+      "name": "TXN Yellow",
+      "category": "xp_bar",
+      "author": "TXN Yellow",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blau",
+      "name": "xyzoom Blau",
+      "category": "xp_bar",
+      "author": "xyzoom Blau",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blue_diamonds",
+      "name": "xyzoom Blue Diamonds",
+      "category": "xp_bar",
+      "author": "xyzoom Blue Diamonds",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_cyan",
+      "name": "xyzoom Cyan",
+      "category": "xp_bar",
+      "author": "xyzoom Cyan",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "xp_bar",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "xp_bar",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_lila",
+      "name": "xyzoom Lila",
+      "category": "xp_bar",
+      "author": "xyzoom Lila",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_orange",
+      "name": "xyzoom Orange",
+      "category": "xp_bar",
+      "author": "xyzoom Orange",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_rot",
+      "name": "xyzoom Rot",
+      "category": "xp_bar",
+      "author": "xyzoom Rot",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_tuerkis",
+      "name": "xyzoom Türkis",
+      "category": "xp_bar",
+      "author": "xyzoom Türkis",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "alek_japanese",
+      "name": "Alek Japanese",
+      "category": "inventory",
+      "author": "Alek Japanese",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "inventory",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "inventory",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "inventory",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "inventory",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "inventory",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "inventory",
+      "author": "PigPack",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "schnee_pvp",
+      "name": "Schnee PvP",
+      "category": "inventory",
+      "author": "Schnee PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "inventory",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "inventory",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_yellow",
+      "name": "TXN Yellow",
+      "category": "inventory",
+      "author": "TXN Yellow",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "inventory",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "inventory",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "alek_japanese",
+      "name": "Alek Japanese",
+      "category": "containers",
+      "author": "Alek Japanese",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "containers",
+      "author": "Axxin 20K",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "containers",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "containers",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "containers",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "containers",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "containers",
+      "author": "PigPack",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "containers",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "containers",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_yellow",
+      "name": "TXN Yellow",
+      "category": "containers",
+      "author": "TXN Yellow",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "containers",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "christmas_pack",
+      "name": "Christmas Pack",
+      "category": "buttons",
+      "author": "Christmas Pack",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "buttons",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v1",
+      "name": "Loyal V1",
+      "category": "buttons",
+      "author": "Loyal V1",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "buttons",
+      "author": "Loyal V3",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "buttons",
+      "author": "Maneszn Private",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "buttons",
+      "author": "Mint",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "buttons",
+      "author": "Pig Black",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "buttons",
+      "author": "Pig White",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "buttons",
+      "author": "PigPack",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "buttons",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "buttons",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "txn_yellow",
+      "name": "TXN Yellow",
+      "category": "buttons",
+      "author": "TXN Yellow",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blau",
+      "name": "xyzoom Blau",
+      "category": "buttons",
+      "author": "xyzoom Blau",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_blue_diamonds",
+      "name": "xyzoom Blue Diamonds",
+      "category": "buttons",
+      "author": "xyzoom Blue Diamonds",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_cyan",
+      "name": "xyzoom Cyan",
+      "category": "buttons",
+      "author": "xyzoom Cyan",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "buttons",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "buttons",
+      "author": "xyzoom Grün",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_lila",
+      "name": "xyzoom Lila",
+      "category": "buttons",
+      "author": "xyzoom Lila",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_orange",
+      "name": "xyzoom Orange",
+      "category": "buttons",
+      "author": "xyzoom Orange",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_rot",
+      "name": "xyzoom Rot",
+      "category": "buttons",
+      "author": "xyzoom Rot",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "xyzoom_tuerkis",
+      "name": "xyzoom Türkis",
+      "category": "buttons",
+      "author": "xyzoom Türkis",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "alek_japanese",
+      "name": "Alek Japanese",
+      "category": "glint",
+      "author": "Alek Japanese",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "glint",
+      "author": "Axxin 20K",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "glint",
+      "author": "Blue White Blaze",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "maneszn_blau",
+      "name": "Glint Blau",
+      "category": "glint",
+      "author": "Maneszn",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "maneszn_cyan",
+      "name": "Glint Cyan",
+      "category": "glint",
+      "author": "Maneszn",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "maneszn_gold",
+      "name": "Glint Gold",
+      "category": "glint",
+      "author": "Maneszn",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "maneszn_gruen",
+      "name": "Glint Grün",
+      "category": "glint",
+      "author": "Maneszn",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "maneszn_lila",
+      "name": "Glint Lila (stark)",
+      "category": "glint",
+      "author": "Maneszn",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "maneszn_orange",
+      "name": "Glint Orange",
+      "category": "glint",
+      "author": "Maneszn",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "maneszn_pink",
+      "name": "Glint Pink",
+      "category": "glint",
+      "author": "Maneszn",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "maneszn_regenbogen",
+      "name": "Glint Regenbogen",
+      "category": "glint",
+      "author": "Maneszn",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "maneszn_rot",
+      "name": "Glint Rot",
+      "category": "glint",
+      "author": "Maneszn",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "maneszn_weiss",
+      "name": "Glint Weiß",
+      "category": "glint",
+      "author": "Maneszn",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "gonasxwamply_v3",
+      "name": "GONASxWAMPLY V3",
+      "category": "glint",
+      "author": "GONASxWAMPLY V3",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "kinos_tokyo_ghoul",
+      "name": "Kinos Tokyo Ghoul",
+      "category": "glint",
+      "author": "Kinos Tokyo Ghoul",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "glint",
+      "author": "Mint",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "glint",
+      "author": "Pig Black",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "glint",
+      "author": "Pig White",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "glint",
+      "author": "PigPack",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "schnee_pvp",
+      "name": "Schnee PvP",
+      "category": "glint",
+      "author": "Schnee PvP",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "glint",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "glint",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "txn_yellow",
+      "name": "TXN Yellow",
+      "category": "glint",
+      "author": "TXN Yellow",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "glint",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "glint",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "glint",
+      "author": "xyzoom Grün",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "alek_japanese",
+      "name": "Alek Japanese",
+      "category": "crit_particles",
+      "author": "Alek Japanese",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "crit_particles",
+      "author": "Axxin 20K",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "crit_particles",
+      "author": "Blue White Blaze",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "crit_particles",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "kinos_tokyo_ghoul",
+      "name": "Kinos Tokyo Ghoul",
+      "category": "crit_particles",
+      "author": "Kinos Tokyo Ghoul",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "crit_particles",
+      "author": "Pig Black",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "crit_particles",
+      "author": "Pig White",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "crit_particles",
+      "author": "PigPack",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "piratenklingen_pvp",
+      "name": "Piratenklingen PvP",
+      "category": "crit_particles",
+      "author": "Piratenklingen PvP",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pvp_small_handhelds",
+      "name": "PvP Small Handhelds",
+      "category": "crit_particles",
+      "author": "PvP Small Handhelds",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "schnee_pvp",
+      "name": "Schnee PvP",
+      "category": "crit_particles",
+      "author": "Schnee PvP",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "crit_particles",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "crit_particles",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "txn_yellow",
+      "name": "TXN Yellow",
+      "category": "crit_particles",
+      "author": "TXN Yellow",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "crit_particles",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_blau",
+      "name": "xyzoom Blau",
+      "category": "crit_particles",
+      "author": "xyzoom Blau",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_blue_diamonds",
+      "name": "xyzoom Blue Diamonds",
+      "category": "crit_particles",
+      "author": "xyzoom Blue Diamonds",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_cyan",
+      "name": "xyzoom Cyan",
+      "category": "crit_particles",
+      "author": "xyzoom Cyan",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "crit_particles",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "crit_particles",
+      "author": "xyzoom Grün",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_lila",
+      "name": "xyzoom Lila",
+      "category": "crit_particles",
+      "author": "xyzoom Lila",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_orange",
+      "name": "xyzoom Orange",
+      "category": "crit_particles",
+      "author": "xyzoom Orange",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_rot",
+      "name": "xyzoom Rot",
+      "category": "crit_particles",
+      "author": "xyzoom Rot",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_tuerkis",
+      "name": "xyzoom Türkis",
+      "category": "crit_particles",
+      "author": "xyzoom Türkis",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "sweep",
+      "author": "Axxin 20K",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "sweep",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "kinos_tokyo_ghoul",
+      "name": "Kinos Tokyo Ghoul",
+      "category": "sweep",
+      "author": "Kinos Tokyo Ghoul",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "sweep",
+      "author": "Pig Black",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "sweep",
+      "author": "Pig White",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "sweep",
+      "author": "PigPack",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "piratenklingen_pvp",
+      "name": "Piratenklingen PvP",
+      "category": "sweep",
+      "author": "Piratenklingen PvP",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pvp_small_handhelds",
+      "name": "PvP Small Handhelds",
+      "category": "sweep",
+      "author": "PvP Small Handhelds",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "sweep",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "sweep",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "txn_yellow",
+      "name": "TXN Yellow",
+      "category": "sweep",
+      "author": "TXN Yellow",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "sweep",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "sweep",
+      "author": "xyzoom Grün",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "alek_japanese",
+      "name": "Alek Japanese",
+      "category": "shield",
+      "author": "Alek Japanese",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "shield",
+      "author": "Axxin 20K",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "shield",
+      "author": "Pig Black",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "shield",
+      "author": "Pig White",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "shield",
+      "author": "PigPack",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "piratenklingen_pvp",
+      "name": "Piratenklingen PvP",
+      "category": "shield",
+      "author": "Piratenklingen PvP",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "shield",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_blau",
+      "name": "xyzoom Blau",
+      "category": "shield",
+      "author": "xyzoom Blau",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_blue_diamonds",
+      "name": "xyzoom Blue Diamonds",
+      "category": "shield",
+      "author": "xyzoom Blue Diamonds",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_cyan",
+      "name": "xyzoom Cyan",
+      "category": "shield",
+      "author": "xyzoom Cyan",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_dark_purple",
+      "name": "xyzoom Dark Purple",
+      "category": "shield",
+      "author": "xyzoom Dark Purple",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "shield",
+      "author": "xyzoom Grün",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_lila",
+      "name": "xyzoom Lila",
+      "category": "shield",
+      "author": "xyzoom Lila",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_orange",
+      "name": "xyzoom Orange",
+      "category": "shield",
+      "author": "xyzoom Orange",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_rot",
+      "name": "xyzoom Rot",
+      "category": "shield",
+      "author": "xyzoom Rot",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_tuerkis",
+      "name": "xyzoom Türkis",
+      "category": "shield",
+      "author": "xyzoom Türkis",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "potions",
+      "author": "Axxin 20K",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "potions",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "potions",
+      "author": "Pig Black",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "potions",
+      "author": "Pig White",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "potions",
+      "author": "PigPack",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "piratenklingen_pvp",
+      "name": "Piratenklingen PvP",
+      "category": "potions",
+      "author": "Piratenklingen PvP",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "schnee_pvp",
+      "name": "Schnee PvP",
+      "category": "potions",
+      "author": "Schnee PvP",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "weihnachts_pvp",
+      "name": "Weihnachts PvP",
+      "category": "potions",
+      "author": "Weihnachts PvP",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "potions",
+      "author": "xyzoom Grün",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "water",
+      "author": "Axxin 20K",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "water",
+      "author": "Blue White Blaze",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "water",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "water",
+      "author": "Loyal V3",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "water",
+      "author": "Pig White",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "water",
+      "author": "PigPack",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "txn_halloween_ohne_ruestung",
+      "name": "TXN Halloween (ohne Rüstung)",
+      "category": "water",
+      "author": "TXN Halloween (ohne Rüstung)",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "txn_pink_remake",
+      "name": "TXN Pink Remake",
+      "category": "water",
+      "author": "TXN Pink Remake",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "txn_yellow",
+      "name": "TXN Yellow",
+      "category": "water",
+      "author": "TXN Yellow",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "water",
+      "author": "xyzoom Grün",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "blue_white_blaze",
+      "name": "Blue White Blaze",
+      "category": "lava",
+      "author": "Blue White Blaze",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "freddihd23_sakura",
+      "name": "Freddihd23 Sakura",
+      "category": "lava",
+      "author": "Freddihd23 Sakura",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "loyal_v3",
+      "name": "Loyal V3",
+      "category": "lava",
+      "author": "Loyal V3",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "lava",
+      "author": "Mint",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "font",
+      "author": "PigPack",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "xyzoom_gruen",
+      "name": "xyzoom Grün",
+      "category": "font",
+      "author": "xyzoom Grün",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "hit_sound",
+      "author": "Mint",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "hit_sound",
+      "author": "Pig Black",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "hit_sound",
+      "author": "Pig White",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pigpack",
+      "name": "PigPack",
+      "category": "hit_sound",
+      "author": "PigPack",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "maneszn_private",
+      "name": "Maneszn Private",
+      "category": "totem_sound",
+      "author": "Maneszn Private",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "totem_sound",
+      "author": "Pig Black",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pig_white",
+      "name": "Pig White",
+      "category": "totem_sound",
+      "author": "Pig White",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "gonasxwamply_lila",
+      "name": "GONASxWAMPLY Lila",
+      "category": "pearl_sound",
+      "author": "GONASxWAMPLY Lila",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "gonasxwamply_v3",
+      "name": "GONASxWAMPLY V3",
+      "category": "pearl_sound",
+      "author": "GONASxWAMPLY V3",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "hochmut_x_wamply",
+      "name": "Hochmut x Wamply",
+      "category": "pearl_sound",
+      "author": "Hochmut x Wamply",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "axxin_20k",
+      "name": "Axxin 20K",
+      "category": "explode_sound",
+      "author": "Axxin 20K",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "mint",
+      "name": "Mint",
+      "category": "explode_sound",
+      "author": "Mint",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "pig_black",
+      "name": "Pig Black",
+      "category": "explode_sound",
+      "author": "Pig Black",
+      "date": "2026-11-14"
+    },
+    {
+      "id": "maneszn_gelb",
+      "name": "Maneszn Gelb (gut sichtbar)",
+      "category": "erz_diamant",
+      "author": "Maneszn",
+      "date": "2026-11-17"
+    },
+    {
+      "id": "maneszn_gelb",
+      "name": "Maneszn Gelb (gut sichtbar)",
+      "category": "erz_smaragd",
+      "author": "Maneszn",
+      "date": "2026-11-17"
+    },
+    {
+      "id": "maneszn_gelb",
+      "name": "Maneszn Gelb (gut sichtbar)",
+      "category": "erz_gold",
+      "author": "Maneszn",
+      "date": "2026-11-17"
+    },
+    {
+      "id": "maneszn_gelb",
+      "name": "Maneszn Gelb (gut sichtbar)",
+      "category": "erz_eisen",
+      "author": "Maneszn",
+      "date": "2026-11-17"
+    },
+    {
+      "id": "maneszn_gelb",
+      "name": "Maneszn Gelb (gut sichtbar)",
+      "category": "erz_redstone",
+      "author": "Maneszn",
+      "date": "2026-11-17"
+    },
+    {
+      "id": "maneszn_gelb",
+      "name": "Maneszn Gelb (gut sichtbar)",
+      "category": "erz_lapis",
+      "author": "Maneszn",
+      "date": "2026-11-17"
+    },
+    {
+      "id": "maneszn_gelb",
+      "name": "Maneszn Gelb (gut sichtbar)",
+      "category": "erz_kohle",
+      "author": "Maneszn",
+      "date": "2026-11-17"
+    },
+    {
+      "id": "maneszn_gelb",
+      "name": "Maneszn Gelb (gut sichtbar)",
+      "category": "erz_kupfer",
+      "author": "Maneszn",
+      "date": "2026-11-17"
+    },
+    {
+      "id": "maneszn_gelb",
+      "name": "Maneszn Gelb (gut sichtbar)",
+      "category": "antiker_schrott",
+      "author": "Maneszn",
+      "date": "2026-11-17"
+    }
+  ]
+}

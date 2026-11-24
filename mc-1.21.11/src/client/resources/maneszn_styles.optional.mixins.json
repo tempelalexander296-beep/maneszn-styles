@@ -1,0 +1,19 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "com.maneszn.styles.mixinopt",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "LightTextureMixin",
+    "ItemInHandRendererMixin",
+    "ItemEntityRendererMixin",
+    "LevelRendererMixin",
+    "SkyRendererMixin",
+    "ProfilerPieChartAccess",
+    "BlockEntityRenderDispatcherMixin",
+    "DebugScreenOverlayMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

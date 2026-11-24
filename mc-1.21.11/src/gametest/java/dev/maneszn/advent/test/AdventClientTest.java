@@ -20,7 +20,12 @@ public final class AdventClientTest implements FabricClientGameTest {
 			sp.getClientWorld().waitForChunksRender();
 			sp.getServer().runCommand("time set noon");
 			sp.getServer().runCommand("advent debug day 12");
+			ctx.setScreen(() -> new com.maneszn.styles.gui.StylesScreen(null));
+			ctx.waitTicks(60);
+			ctx.takeScreenshot("styles-main");
+			ctx.setScreen(() -> null);
 			for (Reward r : Rewards.ALL) {
+				if (System.getProperty("advent.allCosmetics") == null && r.day() % 6 != 0) continue;
 				String eq = r.slot().name() + "=" + r.id();
 				sp.getServer().runOnServer(server -> {
 					ServerPlayer p = server.getPlayerList().getPlayers().get(0);

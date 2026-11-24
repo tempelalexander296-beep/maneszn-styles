@@ -1,0 +1,3069 @@
+{
+  "_info": "Kategorien von Maneszn Styles. Neue Kategorie = neuer Eintrag hier, kein Code nötig. kind: item | block | entity | gui · preview3d: item | cube | crystal | flat (3D-Vorschau im Menü)",
+  "groups": [
+    {
+      "id": "combat",
+      "name": {
+        "de": "Waffen & Kampf",
+        "en": "Weapons & Combat"
+      }
+    },
+    {
+      "id": "armor",
+      "name": {
+        "de": "Rüstung",
+        "en": "Armor"
+      }
+    },
+    {
+      "id": "tools",
+      "name": {
+        "de": "Werkzeuge",
+        "en": "Tools"
+      }
+    },
+    {
+      "id": "pvp",
+      "name": {
+        "de": "PvP-Items",
+        "en": "PvP Items"
+      }
+    },
+    {
+      "id": "ores",
+      "name": {
+        "de": "Erze",
+        "en": "Ores"
+      }
+    },
+    {
+      "id": "blocks",
+      "name": {
+        "de": "Blöcke & Welt",
+        "en": "Blocks & World"
+      }
+    },
+    {
+      "id": "hud",
+      "name": {
+        "de": "HUD & Interface",
+        "en": "HUD & Interface"
+      }
+    },
+    {
+      "id": "effects",
+      "name": {
+        "de": "Effekte",
+        "en": "Effects"
+      }
+    },
+    {
+      "id": "sounds",
+      "name": {
+        "de": "Sounds",
+        "en": "Sounds"
+      }
+    },
+    {
+      "id": "misc",
+      "name": {
+        "de": "Sonstiges",
+        "en": "Misc"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": "sword",
+      "group": "combat",
+      "name": {
+        "de": "Schwert",
+        "en": "Sword"
+      },
+      "kind": "item",
+      "preview": "diamond_sword",
+      "targets": [
+        {
+          "name": "wooden_sword",
+          "path": "minecraft:textures/item/wooden_sword.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "stone_sword",
+          "path": "minecraft:textures/item/stone_sword.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "copper_sword",
+          "path": "minecraft:textures/item/copper_sword.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "iron_sword",
+          "path": "minecraft:textures/item/iron_sword.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "golden_sword",
+          "path": "minecraft:textures/item/golden_sword.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "diamond_sword",
+          "path": "minecraft:textures/item/diamond_sword.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "netherite_sword",
+          "path": "minecraft:textures/item/netherite_sword.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "axe",
+      "group": "combat",
+      "name": {
+        "de": "Axt",
+        "en": "Axe"
+      },
+      "kind": "item",
+      "preview": "diamond_axe",
+      "targets": [
+        {
+          "name": "wooden_axe",
+          "path": "minecraft:textures/item/wooden_axe.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "stone_axe",
+          "path": "minecraft:textures/item/stone_axe.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "copper_axe",
+          "path": "minecraft:textures/item/copper_axe.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "iron_axe",
+          "path": "minecraft:textures/item/iron_axe.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "golden_axe",
+          "path": "minecraft:textures/item/golden_axe.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "diamond_axe",
+          "path": "minecraft:textures/item/diamond_axe.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "netherite_axe",
+          "path": "minecraft:textures/item/netherite_axe.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mace",
+      "group": "combat",
+      "name": {
+        "de": "Mace",
+        "en": "Mace"
+      },
+      "kind": "item",
+      "preview": "mace",
+      "targets": [
+        {
+          "name": "mace",
+          "path": "minecraft:textures/item/mace.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bow",
+      "group": "combat",
+      "name": {
+        "de": "Bogen",
+        "en": "Bow"
+      },
+      "kind": "item",
+      "preview": "bow",
+      "targets": [
+        {
+          "name": "bow",
+          "path": "minecraft:textures/item/bow.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "bow_pulling_0",
+          "path": "minecraft:textures/item/bow_pulling_0.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "bow_pulling_1",
+          "path": "minecraft:textures/item/bow_pulling_1.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "bow_pulling_2",
+          "path": "minecraft:textures/item/bow_pulling_2.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wind_charge",
+      "group": "combat",
+      "name": {
+        "de": "Windkugel",
+        "en": "Wind Charge"
+      },
+      "kind": "item",
+      "preview": "wind_charge",
+      "targets": [
+        {
+          "name": "wind_charge",
+          "path": "minecraft:textures/item/wind_charge.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crossbow",
+      "group": "combat",
+      "name": {
+        "de": "Armbrust",
+        "en": "Crossbow"
+      },
+      "kind": "item",
+      "preview": "crossbow_standby",
+      "targets": [
+        {
+          "name": "crossbow_standby",
+          "path": "minecraft:textures/item/crossbow_standby.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "crossbow_pulling_0",
+          "path": "minecraft:textures/item/crossbow_pulling_0.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "crossbow_pulling_1",
+          "path": "minecraft:textures/item/crossbow_pulling_1.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "crossbow_pulling_2",
+          "path": "minecraft:textures/item/crossbow_pulling_2.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "crossbow_arrow",
+          "path": "minecraft:textures/item/crossbow_arrow.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "crossbow_firework",
+          "path": "minecraft:textures/item/crossbow_firework.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spear",
+      "group": "combat",
+      "name": {
+        "de": "Speer",
+        "en": "Spear"
+      },
+      "kind": "item",
+      "preview": "diamond_spear",
+      "targets": [
+        {
+          "name": "wooden_spear",
+          "path": "minecraft:textures/item/wooden_spear.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "wooden_spear_in_hand",
+          "path": "minecraft:textures/item/wooden_spear_in_hand.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "stone_spear",
+          "path": "minecraft:textures/item/stone_spear.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "stone_spear_in_hand",
+          "path": "minecraft:textures/item/stone_spear_in_hand.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "copper_spear",
+          "path": "minecraft:textures/item/copper_spear.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "copper_spear_in_hand",
+          "path": "minecraft:textures/item/copper_spear_in_hand.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "iron_spear",
+          "path": "minecraft:textures/item/iron_spear.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "iron_spear_in_hand",
+          "path": "minecraft:textures/item/iron_spear_in_hand.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "golden_spear",
+          "path": "minecraft:textures/item/golden_spear.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "golden_spear_in_hand",
+          "path": "minecraft:textures/item/golden_spear_in_hand.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "diamond_spear",
+          "path": "minecraft:textures/item/diamond_spear.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "diamond_spear_in_hand",
+          "path": "minecraft:textures/item/diamond_spear_in_hand.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "netherite_spear",
+          "path": "minecraft:textures/item/netherite_spear.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "netherite_spear_in_hand",
+          "path": "minecraft:textures/item/netherite_spear_in_hand.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "armor_diamond",
+      "group": "armor",
+      "name": {
+        "de": "Rüstung Diamant",
+        "en": "Diamond Armor"
+      },
+      "kind": "item",
+      "preview": "diamond_chestplate",
+      "preview3d": "armor",
+      "armor_layers": {
+        "outer": "diamond_humanoid",
+        "inner": "diamond_leggings"
+      },
+      "targets": [
+        {
+          "name": "diamond_helmet",
+          "path": "minecraft:textures/item/diamond_helmet.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "diamond_chestplate",
+          "path": "minecraft:textures/item/diamond_chestplate.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "diamond_leggings",
+          "path": "minecraft:textures/item/diamond_leggings.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "diamond_boots",
+          "path": "minecraft:textures/item/diamond_boots.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "diamond_humanoid",
+          "path": "minecraft:textures/entity/equipment/humanoid/diamond.png",
+          "size": [
+            64,
+            32
+          ],
+          "shared": false,
+          "kind": "entity",
+          "alt": [
+            "minecraft:textures/models/armor/diamond_layer_1.png"
+          ]
+        },
+        {
+          "name": "diamond_leggings",
+          "path": "minecraft:textures/entity/equipment/humanoid_leggings/diamond.png",
+          "size": [
+            64,
+            32
+          ],
+          "shared": false,
+          "kind": "entity",
+          "alt": [
+            "minecraft:textures/models/armor/diamond_layer_2.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "armor_netherite",
+      "group": "armor",
+      "name": {
+        "de": "Rüstung Netherite",
+        "en": "Netherite Armor"
+      },
+      "kind": "item",
+      "preview": "netherite_chestplate",
+      "preview3d": "armor",
+      "armor_layers": {
+        "outer": "netherite_humanoid",
+        "inner": "netherite_leggings"
+      },
+      "targets": [
+        {
+          "name": "netherite_helmet",
+          "path": "minecraft:textures/item/netherite_helmet.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "netherite_chestplate",
+          "path": "minecraft:textures/item/netherite_chestplate.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "netherite_leggings",
+          "path": "minecraft:textures/item/netherite_leggings.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "netherite_boots",
+          "path": "minecraft:textures/item/netherite_boots.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "netherite_humanoid",
+          "path": "minecraft:textures/entity/equipment/humanoid/netherite.png",
+          "size": [
+            64,
+            32
+          ],
+          "shared": false,
+          "kind": "entity",
+          "alt": [
+            "minecraft:textures/models/armor/netherite_layer_1.png"
+          ]
+        },
+        {
+          "name": "netherite_leggings",
+          "path": "minecraft:textures/entity/equipment/humanoid_leggings/netherite.png",
+          "size": [
+            64,
+            32
+          ],
+          "shared": false,
+          "kind": "entity",
+          "alt": [
+            "minecraft:textures/models/armor/netherite_layer_2.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "armor_other",
+      "group": "armor",
+      "name": {
+        "de": "Rüstung Eisen/Gold/Kette/Kupfer/Leder",
+        "en": "Other Armor"
+      },
+      "kind": "item",
+      "preview": "iron_chestplate",
+      "preview3d": "armor",
+      "armor_layers": {
+        "outer": "iron_humanoid",
+        "inner": "iron_leggings"
+      },
+      "targets": [
+        {
+          "name": "iron_helmet",
+          "path": "minecraft:textures/item/iron_helmet.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "iron_chestplate",
+          "path": "minecraft:textures/item/iron_chestplate.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "iron_leggings",
+          "path": "minecraft:textures/item/iron_leggings.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "iron_boots",
+          "path": "minecraft:textures/item/iron_boots.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "iron_humanoid",
+          "path": "minecraft:textures/entity/equipment/humanoid/iron.png",
+          "size": [
+            64,
+            32
+          ],
+          "shared": false,
+          "kind": "entity",
+          "alt": [
+            "minecraft:textures/models/armor/iron_layer_1.png"
+          ]
+        },
+        {
+          "name": "iron_leggings",
+          "path": "minecraft:textures/entity/equipment/humanoid_leggings/iron.png",
+          "size": [
+            64,
+            32
+          ],
+          "shared": false,
+          "kind": "entity",
+          "alt": [
+            "minecraft:textures/models/armor/iron_layer_2.png"
+          ]
+        },
+        {
+          "name": "golden_helmet",
+          "path": "minecraft:textures/item/golden_helmet.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "golden_chestplate",
+          "path": "minecraft:textures/item/golden_chestplate.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "golden_leggings",
+          "path": "minecraft:textures/item/golden_leggings.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "golden_boots",
+          "path": "minecraft:textures/item/golden_boots.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "gold_humanoid",
+          "path": "minecraft:textures/entity/equipment/humanoid/gold.png",
+          "size": [
+            64,
+            32
+          ],
+          "shared": false,
+          "kind": "entity",
+          "alt": [
+            "minecraft:textures/models/armor/gold_layer_1.png"
+          ]
+        },
+        {
+          "name": "gold_leggings",
+          "path": "minecraft:textures/entity/equipment/humanoid_leggings/gold.png",
+          "size": [
+            64,
+            32
+          ],
+          "shared": false,
+          "kind": "entity",
+          "alt": [
+            "minecraft:textures/models/armor/gold_layer_2.png"
+          ]
+        },
+        {
+          "name": "chainmail_helmet",
+          "path": "minecraft:textures/item/chainmail_helmet.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "chainmail_chestplate",
+          "path": "minecraft:textures/item/chainmail_chestplate.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "chainmail_leggings",
+          "path": "minecraft:textures/item/chainmail_leggings.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "chainmail_boots",
+          "path": "minecraft:textures/item/chainmail_boots.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "chainmail_humanoid",
+          "path": "minecraft:textures/entity/equipment/humanoid/chainmail.png",
+          "size": [
+            64,
+            32
+          ],
+          "shared": false,
+          "kind": "entity",
+          "alt": [
+            "minecraft:textures/models/armor/chainmail_layer_1.png"
+          ]
+        },
+        {
+          "name": "chainmail_leggings",
+          "path": "minecraft:textures/entity/equipment/humanoid_leggings/chainmail.png",
+          "size": [
+            64,
+            32
+          ],
+          "shared": false,
+          "kind": "entity",
+          "alt": [
+            "minecraft:textures/models/armor/chainmail_layer_2.png"
+          ]
+        },
+        {
+          "name": "copper_helmet",
+          "path": "minecraft:textures/item/copper_helmet.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "copper_chestplate",
+          "path": "minecraft:textures/item/copper_chestplate.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "copper_leggings",
+          "path": "minecraft:textures/item/copper_leggings.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "copper_boots",
+          "path": "minecraft:textures/item/copper_boots.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "copper_humanoid",
+          "path": "minecraft:textures/entity/equipment/humanoid/copper.png",
+          "size": [
+            64,
+            32
+          ],
+          "shared": false,
+          "kind": "entity",
+          "alt": [
+            "minecraft:textures/models/armor/copper_layer_1.png"
+          ]
+        },
+        {
+          "name": "copper_leggings",
+          "path": "minecraft:textures/entity/equipment/humanoid_leggings/copper.png",
+          "size": [
+            64,
+            32
+          ],
+          "shared": false,
+          "kind": "entity",
+          "alt": [
+            "minecraft:textures/models/armor/copper_layer_2.png"
+          ]
+        },
+        {
+          "name": "leather_helmet",
+          "path": "minecraft:textures/item/leather_helmet.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "leather_chestplate",
+          "path": "minecraft:textures/item/leather_chestplate.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "leather_leggings",
+          "path": "minecraft:textures/item/leather_leggings.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "leather_boots",
+          "path": "minecraft:textures/item/leather_boots.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "leather_humanoid",
+          "path": "minecraft:textures/entity/equipment/humanoid/leather.png",
+          "size": [
+            64,
+            32
+          ],
+          "shared": false,
+          "kind": "entity",
+          "alt": [
+            "minecraft:textures/models/armor/leather_layer_1.png"
+          ]
+        },
+        {
+          "name": "leather_leggings",
+          "path": "minecraft:textures/entity/equipment/humanoid_leggings/leather.png",
+          "size": [
+            64,
+            32
+          ],
+          "shared": false,
+          "kind": "entity",
+          "alt": [
+            "minecraft:textures/models/armor/leather_layer_2.png"
+          ]
+        },
+        {
+          "name": "leather_helmet_overlay",
+          "path": "minecraft:textures/item/leather_helmet_overlay.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "leather_chestplate_overlay",
+          "path": "minecraft:textures/item/leather_chestplate_overlay.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "leather_leggings_overlay",
+          "path": "minecraft:textures/item/leather_leggings_overlay.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "leather_boots_overlay",
+          "path": "minecraft:textures/item/leather_boots_overlay.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "leather_overlay_humanoid",
+          "path": "minecraft:textures/entity/equipment/humanoid/leather_overlay.png",
+          "size": [
+            64,
+            32
+          ],
+          "shared": false,
+          "kind": "entity",
+          "alt": [
+            "minecraft:textures/models/armor/leather_layer_1_overlay.png"
+          ]
+        },
+        {
+          "name": "leather_overlay_leggings",
+          "path": "minecraft:textures/entity/equipment/humanoid_leggings/leather_overlay.png",
+          "size": [
+            64,
+            32
+          ],
+          "shared": false,
+          "kind": "entity",
+          "alt": [
+            "minecraft:textures/models/armor/leather_layer_2_overlay.png"
+          ]
+        },
+        {
+          "name": "turtle_helmet",
+          "path": "minecraft:textures/item/turtle_helmet.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "turtle_humanoid",
+          "path": "minecraft:textures/entity/equipment/humanoid/turtle_scute.png",
+          "size": [
+            64,
+            32
+          ],
+          "shared": false,
+          "kind": "entity",
+          "alt": [
+            "minecraft:textures/models/armor/turtle_layer_1.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "elytra",
+      "group": "armor",
+      "name": {
+        "de": "Elytra",
+        "en": "Elytra"
+      },
+      "kind": "item",
+      "preview": "elytra",
+      "preview3d": "flat",
+      "targets": [
+        {
+          "name": "elytra",
+          "path": "minecraft:textures/item/elytra.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "broken_elytra",
+          "path": "minecraft:textures/item/broken_elytra.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "elytra_wings",
+          "path": "minecraft:textures/entity/equipment/wings/elytra.png",
+          "size": [
+            64,
+            32
+          ],
+          "shared": false,
+          "kind": "entity",
+          "alt": [
+            "minecraft:textures/entity/elytra.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pickaxe",
+      "group": "tools",
+      "name": {
+        "de": "Spitzhacke",
+        "en": "Pickaxe"
+      },
+      "kind": "item",
+      "preview": "diamond_pickaxe",
+      "targets": [
+        {
+          "name": "wooden_pickaxe",
+          "path": "minecraft:textures/item/wooden_pickaxe.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "stone_pickaxe",
+          "path": "minecraft:textures/item/stone_pickaxe.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "copper_pickaxe",
+          "path": "minecraft:textures/item/copper_pickaxe.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "iron_pickaxe",
+          "path": "minecraft:textures/item/iron_pickaxe.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "golden_pickaxe",
+          "path": "minecraft:textures/item/golden_pickaxe.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "diamond_pickaxe",
+          "path": "minecraft:textures/item/diamond_pickaxe.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "netherite_pickaxe",
+          "path": "minecraft:textures/item/netherite_pickaxe.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shovel",
+      "group": "tools",
+      "name": {
+        "de": "Schaufel",
+        "en": "Shovel"
+      },
+      "kind": "item",
+      "preview": "diamond_shovel",
+      "targets": [
+        {
+          "name": "wooden_shovel",
+          "path": "minecraft:textures/item/wooden_shovel.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "stone_shovel",
+          "path": "minecraft:textures/item/stone_shovel.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "copper_shovel",
+          "path": "minecraft:textures/item/copper_shovel.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "iron_shovel",
+          "path": "minecraft:textures/item/iron_shovel.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "golden_shovel",
+          "path": "minecraft:textures/item/golden_shovel.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "diamond_shovel",
+          "path": "minecraft:textures/item/diamond_shovel.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "netherite_shovel",
+          "path": "minecraft:textures/item/netherite_shovel.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hoe",
+      "group": "tools",
+      "name": {
+        "de": "Hacke",
+        "en": "Hoe"
+      },
+      "kind": "item",
+      "preview": "diamond_hoe",
+      "targets": [
+        {
+          "name": "wooden_hoe",
+          "path": "minecraft:textures/item/wooden_hoe.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "stone_hoe",
+          "path": "minecraft:textures/item/stone_hoe.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "copper_hoe",
+          "path": "minecraft:textures/item/copper_hoe.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "iron_hoe",
+          "path": "minecraft:textures/item/iron_hoe.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "golden_hoe",
+          "path": "minecraft:textures/item/golden_hoe.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "diamond_hoe",
+          "path": "minecraft:textures/item/diamond_hoe.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "netherite_hoe",
+          "path": "minecraft:textures/item/netherite_hoe.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "totem",
+      "group": "pvp",
+      "name": {
+        "de": "Totem",
+        "en": "Totem"
+      },
+      "kind": "item",
+      "preview": "totem_of_undying",
+      "targets": [
+        {
+          "name": "totem_of_undying",
+          "path": "minecraft:textures/item/totem_of_undying.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ender_pearl",
+      "group": "pvp",
+      "name": {
+        "de": "Enderperle",
+        "en": "Ender Pearl"
+      },
+      "kind": "item",
+      "preview": "ender_pearl",
+      "targets": [
+        {
+          "name": "ender_pearl",
+          "path": "minecraft:textures/item/ender_pearl.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "golden_apple",
+      "group": "pvp",
+      "name": {
+        "de": "Goldapfel",
+        "en": "Golden Apple"
+      },
+      "kind": "item",
+      "preview": "golden_apple",
+      "targets": [
+        {
+          "name": "golden_apple",
+          "path": "minecraft:textures/item/golden_apple.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "end_crystal",
+      "group": "pvp",
+      "name": {
+        "de": "End-Kristall",
+        "en": "End Crystal"
+      },
+      "kind": "item",
+      "preview": "end_crystal",
+      "targets": [
+        {
+          "name": "end_crystal",
+          "path": "minecraft:textures/item/end_crystal.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "end_crystal_entity",
+          "path": "minecraft:textures/entity/end_crystal/end_crystal.png",
+          "size": [
+            64,
+            32
+          ],
+          "shared": false,
+          "kind": "entity"
+        }
+      ],
+      "preview3d": "crystal"
+    },
+    {
+      "id": "obsidian",
+      "group": "pvp",
+      "name": {
+        "de": "Obsidian",
+        "en": "Obsidian"
+      },
+      "kind": "block",
+      "preview": "obsidian",
+      "targets": [
+        {
+          "name": "obsidian",
+          "path": "minecraft:textures/block/obsidian.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tnt",
+      "group": "pvp",
+      "name": {
+        "de": "TNT",
+        "en": "TNT"
+      },
+      "kind": "block",
+      "preview": "tnt_side",
+      "targets": [
+        {
+          "name": "tnt_side",
+          "path": "minecraft:textures/block/tnt_side.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "tnt_top",
+          "path": "minecraft:textures/block/tnt_top.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "tnt_bottom",
+          "path": "minecraft:textures/block/tnt_bottom.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ],
+      "preview3d": "cube",
+      "faces": {
+        "up": "tnt_top",
+        "down": "tnt_bottom",
+        "side": "tnt_side"
+      }
+    },
+    {
+      "id": "cobweb",
+      "group": "pvp",
+      "name": {
+        "de": "Spinnennetz",
+        "en": "Cobweb"
+      },
+      "kind": "item",
+      "preview": "cobweb",
+      "targets": [
+        {
+          "name": "cobweb",
+          "path": "minecraft:textures/block/cobweb.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ],
+      "preview3d": "flat"
+    },
+    {
+      "id": "firework_rocket",
+      "group": "pvp",
+      "name": {
+        "de": "Feuerwerksrakete",
+        "en": "Firework Rocket"
+      },
+      "kind": "item",
+      "preview": "firework_rocket",
+      "targets": [
+        {
+          "name": "firework_rocket",
+          "path": "minecraft:textures/item/firework_rocket.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "enchanted_golden_apple",
+      "group": "pvp",
+      "name": {
+        "de": "Verzauberter Goldapfel",
+        "en": "Enchanted Golden Apple"
+      },
+      "kind": "item",
+      "preview": "enchanted_golden_apple",
+      "preview3d": "flat",
+      "targets": [
+        {
+          "name": "enchanted_golden_apple",
+          "path": "maneszn_styles:textures/item/enchanted_golden_apple.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ],
+      "extra_files": {
+        "assets/minecraft/models/item/enchanted_golden_apple.json": "{\n  \"parent\": \"minecraft:item/generated\",\n  \"textures\": { \"layer0\": \"maneszn_styles:item/enchanted_golden_apple\" }\n}\n"
+      }
+    },
+    {
+      "id": "respawn_anchor",
+      "group": "pvp",
+      "name": {
+        "de": "Respawn-Anker",
+        "en": "Respawn Anchor"
+      },
+      "kind": "block",
+      "preview": "respawn_anchor_side4",
+      "preview3d": "cube",
+      "faces": {
+        "up": "respawn_anchor_top",
+        "down": "respawn_anchor_bottom",
+        "side": "respawn_anchor_side4"
+      },
+      "targets": [
+        {
+          "name": "respawn_anchor_top",
+          "path": "minecraft:textures/block/respawn_anchor_top.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "respawn_anchor_top_off",
+          "path": "minecraft:textures/block/respawn_anchor_top_off.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "respawn_anchor_bottom",
+          "path": "minecraft:textures/block/respawn_anchor_bottom.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "respawn_anchor_side0",
+          "path": "minecraft:textures/block/respawn_anchor_side0.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "respawn_anchor_side1",
+          "path": "minecraft:textures/block/respawn_anchor_side1.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "respawn_anchor_side2",
+          "path": "minecraft:textures/block/respawn_anchor_side2.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "respawn_anchor_side3",
+          "path": "minecraft:textures/block/respawn_anchor_side3.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "respawn_anchor_side4",
+          "path": "minecraft:textures/block/respawn_anchor_side4.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "glowstone",
+      "group": "pvp",
+      "name": {
+        "de": "Glowstone",
+        "en": "Glowstone"
+      },
+      "kind": "block",
+      "preview": "glowstone",
+      "preview3d": "cube",
+      "faces": {
+        "up": "glowstone",
+        "down": "glowstone",
+        "side": "glowstone"
+      },
+      "targets": [
+        {
+          "name": "glowstone",
+          "path": "minecraft:textures/block/glowstone.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "erz_diamant",
+      "group": "ores",
+      "name": {
+        "de": "Diamanterz",
+        "en": "Diamond Ore"
+      },
+      "kind": "block",
+      "preview": "diamond_ore",
+      "preview3d": "cube",
+      "faces": {
+        "up": "diamond_ore",
+        "down": "diamond_ore",
+        "side": "diamond_ore"
+      },
+      "targets": [
+        {
+          "name": "diamond_ore",
+          "path": "minecraft:textures/block/diamond_ore.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "deepslate_diamond_ore",
+          "path": "minecraft:textures/block/deepslate_diamond_ore.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "erz_smaragd",
+      "group": "ores",
+      "name": {
+        "de": "Smaragderz",
+        "en": "Emerald Ore"
+      },
+      "kind": "block",
+      "preview": "emerald_ore",
+      "preview3d": "cube",
+      "faces": {
+        "up": "emerald_ore",
+        "down": "emerald_ore",
+        "side": "emerald_ore"
+      },
+      "targets": [
+        {
+          "name": "emerald_ore",
+          "path": "minecraft:textures/block/emerald_ore.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "deepslate_emerald_ore",
+          "path": "minecraft:textures/block/deepslate_emerald_ore.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "erz_gold",
+      "group": "ores",
+      "name": {
+        "de": "Golderz",
+        "en": "Gold Ore"
+      },
+      "kind": "block",
+      "preview": "gold_ore",
+      "preview3d": "cube",
+      "faces": {
+        "up": "gold_ore",
+        "down": "gold_ore",
+        "side": "gold_ore"
+      },
+      "targets": [
+        {
+          "name": "gold_ore",
+          "path": "minecraft:textures/block/gold_ore.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "deepslate_gold_ore",
+          "path": "minecraft:textures/block/deepslate_gold_ore.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "nether_gold_ore",
+          "path": "minecraft:textures/block/nether_gold_ore.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "erz_eisen",
+      "group": "ores",
+      "name": {
+        "de": "Eisenerz",
+        "en": "Iron Ore"
+      },
+      "kind": "block",
+      "preview": "iron_ore",
+      "preview3d": "cube",
+      "faces": {
+        "up": "iron_ore",
+        "down": "iron_ore",
+        "side": "iron_ore"
+      },
+      "targets": [
+        {
+          "name": "iron_ore",
+          "path": "minecraft:textures/block/iron_ore.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "deepslate_iron_ore",
+          "path": "minecraft:textures/block/deepslate_iron_ore.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "erz_redstone",
+      "group": "ores",
+      "name": {
+        "de": "Redstone-Erz",
+        "en": "Redstone Ore"
+      },
+      "kind": "block",
+      "preview": "redstone_ore",
+      "preview3d": "cube",
+      "faces": {
+        "up": "redstone_ore",
+        "down": "redstone_ore",
+        "side": "redstone_ore"
+      },
+      "targets": [
+        {
+          "name": "redstone_ore",
+          "path": "minecraft:textures/block/redstone_ore.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "deepslate_redstone_ore",
+          "path": "minecraft:textures/block/deepslate_redstone_ore.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "erz_lapis",
+      "group": "ores",
+      "name": {
+        "de": "Lapislazulierz",
+        "en": "Lapis Ore"
+      },
+      "kind": "block",
+      "preview": "lapis_ore",
+      "preview3d": "cube",
+      "faces": {
+        "up": "lapis_ore",
+        "down": "lapis_ore",
+        "side": "lapis_ore"
+      },
+      "targets": [
+        {
+          "name": "lapis_ore",
+          "path": "minecraft:textures/block/lapis_ore.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "deepslate_lapis_ore",
+          "path": "minecraft:textures/block/deepslate_lapis_ore.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "erz_kohle",
+      "group": "ores",
+      "name": {
+        "de": "Steinkohle",
+        "en": "Coal Ore"
+      },
+      "kind": "block",
+      "preview": "coal_ore",
+      "preview3d": "cube",
+      "faces": {
+        "up": "coal_ore",
+        "down": "coal_ore",
+        "side": "coal_ore"
+      },
+      "targets": [
+        {
+          "name": "coal_ore",
+          "path": "minecraft:textures/block/coal_ore.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "deepslate_coal_ore",
+          "path": "minecraft:textures/block/deepslate_coal_ore.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "erz_kupfer",
+      "group": "ores",
+      "name": {
+        "de": "Kupfererz",
+        "en": "Copper Ore"
+      },
+      "kind": "block",
+      "preview": "copper_ore",
+      "preview3d": "cube",
+      "faces": {
+        "up": "copper_ore",
+        "down": "copper_ore",
+        "side": "copper_ore"
+      },
+      "targets": [
+        {
+          "name": "copper_ore",
+          "path": "minecraft:textures/block/copper_ore.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "deepslate_copper_ore",
+          "path": "minecraft:textures/block/deepslate_copper_ore.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "erz_quarz",
+      "group": "ores",
+      "name": {
+        "de": "Netherquarzerz",
+        "en": "Nether Quartz Ore"
+      },
+      "kind": "block",
+      "preview": "nether_quartz_ore",
+      "preview3d": "cube",
+      "faces": {
+        "up": "nether_quartz_ore",
+        "down": "nether_quartz_ore",
+        "side": "nether_quartz_ore"
+      },
+      "targets": [
+        {
+          "name": "nether_quartz_ore",
+          "path": "minecraft:textures/block/nether_quartz_ore.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "antiker_schrott",
+      "group": "ores",
+      "name": {
+        "de": "Antiker Schrott",
+        "en": "Ancient Debris"
+      },
+      "kind": "block",
+      "preview": "ancient_debris_side",
+      "preview3d": "cube",
+      "faces": {
+        "up": "ancient_debris_top",
+        "down": "ancient_debris_top",
+        "side": "ancient_debris_side"
+      },
+      "targets": [
+        {
+          "name": "ancient_debris_side",
+          "path": "minecraft:textures/block/ancient_debris_side.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "ancient_debris_top",
+          "path": "minecraft:textures/block/ancient_debris_top.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stone",
+      "group": "blocks",
+      "name": {
+        "de": "Stein",
+        "en": "Stone"
+      },
+      "kind": "block",
+      "preview": "stone",
+      "targets": [
+        {
+          "name": "stone",
+          "path": "minecraft:textures/block/stone.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cobblestone",
+      "group": "blocks",
+      "name": {
+        "de": "Bruchstein",
+        "en": "Cobblestone"
+      },
+      "kind": "block",
+      "preview": "cobblestone",
+      "targets": [
+        {
+          "name": "cobblestone",
+          "path": "minecraft:textures/block/cobblestone.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dirt",
+      "group": "blocks",
+      "name": {
+        "de": "Erde",
+        "en": "Dirt"
+      },
+      "kind": "block",
+      "preview": "dirt",
+      "targets": [
+        {
+          "name": "dirt",
+          "path": "minecraft:textures/block/dirt.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sand",
+      "group": "blocks",
+      "name": {
+        "de": "Sand",
+        "en": "Sand"
+      },
+      "kind": "block",
+      "preview": "sand",
+      "targets": [
+        {
+          "name": "sand",
+          "path": "minecraft:textures/block/sand.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "glass",
+      "group": "blocks",
+      "name": {
+        "de": "Glas",
+        "en": "Glass"
+      },
+      "kind": "item",
+      "preview": "glass",
+      "targets": [
+        {
+          "name": "glass",
+          "path": "minecraft:textures/block/glass.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ],
+      "preview3d": "cube"
+    },
+    {
+      "id": "netherrack",
+      "group": "blocks",
+      "name": {
+        "de": "Netherrack",
+        "en": "Netherrack"
+      },
+      "kind": "block",
+      "preview": "netherrack",
+      "targets": [
+        {
+          "name": "netherrack",
+          "path": "minecraft:textures/block/netherrack.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "end_stone",
+      "group": "blocks",
+      "name": {
+        "de": "Endstein",
+        "en": "End Stone"
+      },
+      "kind": "block",
+      "preview": "end_stone",
+      "targets": [
+        {
+          "name": "end_stone",
+          "path": "minecraft:textures/block/end_stone.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fire",
+      "group": "blocks",
+      "name": {
+        "de": "Feuer",
+        "en": "Fire"
+      },
+      "kind": "item",
+      "preview": "fire_0",
+      "preview3d": "flat",
+      "targets": [
+        {
+          "name": "fire_0",
+          "path": "minecraft:textures/block/fire_0.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "fire_1",
+          "path": "minecraft:textures/block/fire_1.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "soul_fire_0",
+          "path": "minecraft:textures/block/soul_fire_0.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "soul_fire_1",
+          "path": "minecraft:textures/block/soul_fire_1.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sky",
+      "group": "blocks",
+      "name": {
+        "de": "Himmel",
+        "en": "Sky"
+      },
+      "kind": "sky",
+      "preview": "sky",
+      "preview3d": "flat",
+      "note": {
+        "de": "Der Himmel wird direkt von Maneszn Styles angezeigt (Oberwelt).",
+        "en": "The sky is drawn by Maneszn Styles itself (Overworld)."
+      },
+      "targets": [
+        {
+          "name": "sky",
+          "path": "minecraft:optifine/sky/world0/maneszn_sky.png",
+          "size": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "extra_files": {
+        "assets/minecraft/optifine/sky/world0/sky1.properties": "# Maneszn Styles – Himmel (wird mit Skyboxify oder OptiFine angezeigt)\nsource=minecraft:optifine/sky/world0/maneszn_sky.png\nblend=replace\nrotate=false\n"
+      }
+    },
+    {
+      "id": "crosshair",
+      "group": "hud",
+      "name": {
+        "de": "Fadenkreuz",
+        "en": "Crosshair"
+      },
+      "kind": "gui",
+      "preview": "crosshair",
+      "targets": [
+        {
+          "name": "crosshair",
+          "path": "minecraft:textures/gui/sprites/hud/crosshair.png",
+          "size": [
+            15,
+            15
+          ]
+        }
+      ],
+      "preview3d": "flat"
+    },
+    {
+      "id": "hearts",
+      "group": "hud",
+      "name": {
+        "de": "Herzen",
+        "en": "Hearts"
+      },
+      "kind": "gui",
+      "preview": "heart_full",
+      "preview3d": "flat",
+      "include_folders": [
+        "minecraft:textures/gui/sprites/hud/heart/"
+      ],
+      "targets": [
+        {
+          "name": "heart_full",
+          "path": "minecraft:textures/gui/sprites/hud/heart/full.png",
+          "size": [
+            9,
+            9
+          ]
+        },
+        {
+          "name": "heart_half",
+          "path": "minecraft:textures/gui/sprites/hud/heart/half.png",
+          "size": [
+            9,
+            9
+          ]
+        },
+        {
+          "name": "heart_container",
+          "path": "minecraft:textures/gui/sprites/hud/heart/container.png",
+          "size": [
+            9,
+            9
+          ]
+        },
+        {
+          "name": "heart_full_blinking",
+          "path": "minecraft:textures/gui/sprites/hud/heart/full_blinking.png",
+          "size": [
+            9,
+            9
+          ]
+        },
+        {
+          "name": "heart_half_blinking",
+          "path": "minecraft:textures/gui/sprites/hud/heart/half_blinking.png",
+          "size": [
+            9,
+            9
+          ]
+        },
+        {
+          "name": "heart_container_blinking",
+          "path": "minecraft:textures/gui/sprites/hud/heart/container_blinking.png",
+          "size": [
+            9,
+            9
+          ]
+        },
+        {
+          "name": "heart_absorbing_full",
+          "path": "minecraft:textures/gui/sprites/hud/heart/absorbing_full.png",
+          "size": [
+            9,
+            9
+          ]
+        },
+        {
+          "name": "heart_absorbing_half",
+          "path": "minecraft:textures/gui/sprites/hud/heart/absorbing_half.png",
+          "size": [
+            9,
+            9
+          ]
+        },
+        {
+          "name": "heart_hardcore_full",
+          "path": "minecraft:textures/gui/sprites/hud/heart/hardcore_full.png",
+          "size": [
+            9,
+            9
+          ]
+        },
+        {
+          "name": "heart_hardcore_half",
+          "path": "minecraft:textures/gui/sprites/hud/heart/hardcore_half.png",
+          "size": [
+            9,
+            9
+          ]
+        },
+        {
+          "name": "heart_poisoned_full",
+          "path": "minecraft:textures/gui/sprites/hud/heart/poisoned_full.png",
+          "size": [
+            9,
+            9
+          ]
+        },
+        {
+          "name": "heart_poisoned_half",
+          "path": "minecraft:textures/gui/sprites/hud/heart/poisoned_half.png",
+          "size": [
+            9,
+            9
+          ]
+        },
+        {
+          "name": "heart_withered_full",
+          "path": "minecraft:textures/gui/sprites/hud/heart/withered_full.png",
+          "size": [
+            9,
+            9
+          ]
+        },
+        {
+          "name": "heart_withered_half",
+          "path": "minecraft:textures/gui/sprites/hud/heart/withered_half.png",
+          "size": [
+            9,
+            9
+          ]
+        },
+        {
+          "name": "heart_frozen_full",
+          "path": "minecraft:textures/gui/sprites/hud/heart/frozen_full.png",
+          "size": [
+            9,
+            9
+          ]
+        },
+        {
+          "name": "heart_frozen_half",
+          "path": "minecraft:textures/gui/sprites/hud/heart/frozen_half.png",
+          "size": [
+            9,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hunger",
+      "group": "hud",
+      "name": {
+        "de": "Hunger",
+        "en": "Hunger"
+      },
+      "kind": "gui",
+      "preview": "food_full",
+      "preview3d": "flat",
+      "targets": [
+        {
+          "name": "food_full",
+          "path": "minecraft:textures/gui/sprites/hud/food_full.png",
+          "size": [
+            9,
+            9
+          ]
+        },
+        {
+          "name": "food_half",
+          "path": "minecraft:textures/gui/sprites/hud/food_half.png",
+          "size": [
+            9,
+            9
+          ]
+        },
+        {
+          "name": "food_empty",
+          "path": "minecraft:textures/gui/sprites/hud/food_empty.png",
+          "size": [
+            9,
+            9
+          ]
+        },
+        {
+          "name": "food_full_hunger",
+          "path": "minecraft:textures/gui/sprites/hud/food_full_hunger.png",
+          "size": [
+            9,
+            9
+          ]
+        },
+        {
+          "name": "food_half_hunger",
+          "path": "minecraft:textures/gui/sprites/hud/food_half_hunger.png",
+          "size": [
+            9,
+            9
+          ]
+        },
+        {
+          "name": "food_empty_hunger",
+          "path": "minecraft:textures/gui/sprites/hud/food_empty_hunger.png",
+          "size": [
+            9,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "id": "armor_bar",
+      "group": "hud",
+      "name": {
+        "de": "Rüstungsleiste",
+        "en": "Armor Bar"
+      },
+      "kind": "gui",
+      "preview": "armor_full",
+      "preview3d": "flat",
+      "targets": [
+        {
+          "name": "armor_full",
+          "path": "minecraft:textures/gui/sprites/hud/armor_full.png",
+          "size": [
+            9,
+            9
+          ]
+        },
+        {
+          "name": "armor_half",
+          "path": "minecraft:textures/gui/sprites/hud/armor_half.png",
+          "size": [
+            9,
+            9
+          ]
+        },
+        {
+          "name": "armor_empty",
+          "path": "minecraft:textures/gui/sprites/hud/armor_empty.png",
+          "size": [
+            9,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hotbar",
+      "group": "hud",
+      "name": {
+        "de": "Hotbar",
+        "en": "Hotbar"
+      },
+      "kind": "layout",
+      "preview": "hotbar",
+      "preview3d": "flat",
+      "targets": [
+        {
+          "name": "hotbar",
+          "path": "minecraft:textures/gui/sprites/hud/hotbar.png",
+          "size": [
+            182,
+            22
+          ],
+          "shared": false
+        },
+        {
+          "name": "hotbar_selection",
+          "path": "minecraft:textures/gui/sprites/hud/hotbar_selection.png",
+          "size": [
+            24,
+            23
+          ],
+          "shared": false
+        },
+        {
+          "name": "hotbar_offhand_left",
+          "path": "minecraft:textures/gui/sprites/hud/hotbar_offhand_left.png",
+          "size": [
+            29,
+            24
+          ],
+          "shared": false
+        },
+        {
+          "name": "hotbar_offhand_right",
+          "path": "minecraft:textures/gui/sprites/hud/hotbar_offhand_right.png",
+          "size": [
+            29,
+            24
+          ],
+          "shared": false
+        }
+      ]
+    },
+    {
+      "id": "xp_bar",
+      "group": "hud",
+      "name": {
+        "de": "XP-Leiste",
+        "en": "XP Bar"
+      },
+      "kind": "layout",
+      "preview": "experience_bar_progress",
+      "preview3d": "flat",
+      "targets": [
+        {
+          "name": "experience_bar_background",
+          "path": "minecraft:textures/gui/sprites/hud/experience_bar_background.png",
+          "size": [
+            182,
+            5
+          ],
+          "shared": false
+        },
+        {
+          "name": "experience_bar_progress",
+          "path": "minecraft:textures/gui/sprites/hud/experience_bar_progress.png",
+          "size": [
+            182,
+            5
+          ],
+          "shared": false
+        }
+      ]
+    },
+    {
+      "id": "inventory",
+      "group": "hud",
+      "name": {
+        "de": "Inventar",
+        "en": "Inventory"
+      },
+      "kind": "layout",
+      "preview": "inventory",
+      "preview3d": "flat",
+      "preview_crop": [
+        0,
+        0,
+        176,
+        166
+      ],
+      "targets": [
+        {
+          "name": "inventory",
+          "path": "minecraft:textures/gui/container/inventory.png",
+          "size": [
+            256,
+            256
+          ]
+        }
+      ]
+    },
+    {
+      "id": "containers",
+      "group": "hud",
+      "name": {
+        "de": "Truhe & Container",
+        "en": "Chests & Containers"
+      },
+      "kind": "layout",
+      "preview": "generic_54",
+      "preview3d": "flat",
+      "preview_crop": [
+        0,
+        0,
+        176,
+        222
+      ],
+      "targets": [
+        {
+          "name": "generic_54",
+          "path": "minecraft:textures/gui/container/generic_54.png",
+          "size": [
+            256,
+            256
+          ],
+          "shared": false
+        },
+        {
+          "name": "shulker_box",
+          "path": "minecraft:textures/gui/container/shulker_box.png",
+          "size": [
+            256,
+            256
+          ],
+          "shared": false
+        },
+        {
+          "name": "crafting_table",
+          "path": "minecraft:textures/gui/container/crafting_table.png",
+          "size": [
+            256,
+            256
+          ],
+          "shared": false
+        },
+        {
+          "name": "furnace",
+          "path": "minecraft:textures/gui/container/furnace.png",
+          "size": [
+            256,
+            256
+          ],
+          "shared": false
+        }
+      ]
+    },
+    {
+      "id": "buttons",
+      "group": "hud",
+      "name": {
+        "de": "Buttons",
+        "en": "Buttons"
+      },
+      "kind": "layout",
+      "preview": "button",
+      "preview3d": "flat",
+      "targets": [
+        {
+          "name": "button",
+          "path": "minecraft:textures/gui/sprites/widget/button.png",
+          "size": [
+            200,
+            20
+          ],
+          "shared": false
+        },
+        {
+          "name": "button_highlighted",
+          "path": "minecraft:textures/gui/sprites/widget/button_highlighted.png",
+          "size": [
+            200,
+            20
+          ],
+          "shared": false
+        },
+        {
+          "name": "button_disabled",
+          "path": "minecraft:textures/gui/sprites/widget/button_disabled.png",
+          "size": [
+            200,
+            20
+          ],
+          "shared": false
+        }
+      ]
+    },
+    {
+      "id": "glint",
+      "group": "effects",
+      "name": {
+        "de": "Verzauberungs-Glint",
+        "en": "Enchantment Glint"
+      },
+      "kind": "entity",
+      "preview": "enchanted_glint_item",
+      "preview3d": "flat",
+      "targets": [
+        {
+          "name": "enchanted_glint_item",
+          "path": "minecraft:textures/misc/enchanted_glint_item.png",
+          "size": [
+            128,
+            128
+          ]
+        },
+        {
+          "name": "enchanted_glint_armor",
+          "path": "minecraft:textures/misc/enchanted_glint_armor.png",
+          "size": [
+            128,
+            128
+          ]
+        },
+        {
+          "name": "enchanted_glint_entity",
+          "path": "minecraft:textures/misc/enchanted_glint_entity.png",
+          "size": [
+            128,
+            128
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crit_particles",
+      "group": "effects",
+      "name": {
+        "de": "Krit-Partikel",
+        "en": "Crit Particles"
+      },
+      "kind": "entity",
+      "preview": "critical_hit",
+      "preview3d": "flat",
+      "targets": [
+        {
+          "name": "critical_hit",
+          "path": "minecraft:textures/particle/critical_hit.png",
+          "size": [
+            8,
+            8
+          ]
+        },
+        {
+          "name": "enchanted_hit",
+          "path": "minecraft:textures/particle/enchanted_hit.png",
+          "size": [
+            8,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sweep",
+      "group": "effects",
+      "name": {
+        "de": "Schwert-Schwung",
+        "en": "Sword Sweep"
+      },
+      "kind": "entity",
+      "preview": "sweep_3",
+      "preview3d": "flat",
+      "targets": [
+        {
+          "name": "sweep_0",
+          "path": "minecraft:textures/particle/sweep_0.png",
+          "size": [
+            32,
+            16
+          ]
+        },
+        {
+          "name": "sweep_1",
+          "path": "minecraft:textures/particle/sweep_1.png",
+          "size": [
+            32,
+            16
+          ]
+        },
+        {
+          "name": "sweep_2",
+          "path": "minecraft:textures/particle/sweep_2.png",
+          "size": [
+            32,
+            16
+          ]
+        },
+        {
+          "name": "sweep_3",
+          "path": "minecraft:textures/particle/sweep_3.png",
+          "size": [
+            32,
+            16
+          ]
+        },
+        {
+          "name": "sweep_4",
+          "path": "minecraft:textures/particle/sweep_4.png",
+          "size": [
+            32,
+            16
+          ]
+        },
+        {
+          "name": "sweep_5",
+          "path": "minecraft:textures/particle/sweep_5.png",
+          "size": [
+            32,
+            16
+          ]
+        },
+        {
+          "name": "sweep_6",
+          "path": "minecraft:textures/particle/sweep_6.png",
+          "size": [
+            32,
+            16
+          ]
+        },
+        {
+          "name": "sweep_7",
+          "path": "minecraft:textures/particle/sweep_7.png",
+          "size": [
+            32,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shield",
+      "group": "combat",
+      "name": {
+        "de": "Schild",
+        "en": "Shield"
+      },
+      "kind": "entity",
+      "preview": "shield_base_nopattern",
+      "preview3d": "flat",
+      "targets": [
+        {
+          "name": "shield_base_nopattern",
+          "path": "minecraft:textures/entity/shield_base_nopattern.png",
+          "size": [
+            64,
+            64
+          ]
+        },
+        {
+          "name": "shield_base",
+          "path": "minecraft:textures/entity/shield_base.png",
+          "size": [
+            64,
+            64
+          ]
+        }
+      ]
+    },
+    {
+      "id": "potions",
+      "group": "pvp",
+      "name": {
+        "de": "Tränke",
+        "en": "Potions"
+      },
+      "kind": "item",
+      "preview": "splash_potion",
+      "targets": [
+        {
+          "name": "potion",
+          "path": "minecraft:textures/item/potion.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "splash_potion",
+          "path": "minecraft:textures/item/splash_potion.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "lingering_potion",
+          "path": "minecraft:textures/item/lingering_potion.png",
+          "size": [
+            16,
+            16
+          ]
+        },
+        {
+          "name": "potion_overlay",
+          "path": "minecraft:textures/item/potion_overlay.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "water",
+      "group": "blocks",
+      "name": {
+        "de": "Wasser",
+        "en": "Water"
+      },
+      "kind": "entity",
+      "preview": "water_still",
+      "preview3d": "flat",
+      "targets": [
+        {
+          "name": "water_still",
+          "path": "minecraft:textures/block/water_still.png",
+          "size": [
+            16,
+            512
+          ]
+        },
+        {
+          "name": "water_flow",
+          "path": "minecraft:textures/block/water_flow.png",
+          "size": [
+            32,
+            1024
+          ]
+        },
+        {
+          "name": "water_overlay",
+          "path": "minecraft:textures/block/water_overlay.png",
+          "size": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lava",
+      "group": "blocks",
+      "name": {
+        "de": "Lava",
+        "en": "Lava"
+      },
+      "kind": "entity",
+      "preview": "lava_still",
+      "preview3d": "flat",
+      "targets": [
+        {
+          "name": "lava_still",
+          "path": "minecraft:textures/block/lava_still.png",
+          "size": [
+            16,
+            320
+          ]
+        },
+        {
+          "name": "lava_flow",
+          "path": "minecraft:textures/block/lava_flow.png",
+          "size": [
+            32,
+            1024
+          ]
+        }
+      ]
+    },
+    {
+      "id": "font",
+      "group": "hud",
+      "name": {
+        "de": "Schrift",
+        "en": "Font"
+      },
+      "kind": "layout",
+      "preview": "ascii",
+      "preview3d": "flat",
+      "targets": [
+        {
+          "name": "ascii",
+          "path": "minecraft:textures/font/ascii.png",
+          "size": [
+            128,
+            128
+          ]
+        },
+        {
+          "name": "accented",
+          "path": "minecraft:textures/font/accented.png",
+          "size": [
+            144,
+            288
+          ]
+        },
+        {
+          "name": "nonlatin_european",
+          "path": "minecraft:textures/font/nonlatin_european.png",
+          "size": [
+            128,
+            384
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hit_sound",
+      "group": "sounds",
+      "name": {
+        "de": "Treffer-Sound (Schaden)",
+        "en": "Hit Sound (Damage)"
+      },
+      "kind": "sound",
+      "preview": "hit1",
+      "sound_events": [
+        "entity.player.hurt",
+        "entity.generic.hurt"
+      ],
+      "targets": [
+        {
+          "name": "hit1",
+          "path": "minecraft:sounds/damage/hit1.ogg",
+          "size": [
+            0,
+            0
+          ]
+        },
+        {
+          "name": "hit2",
+          "path": "minecraft:sounds/damage/hit2.ogg",
+          "size": [
+            0,
+            0
+          ]
+        },
+        {
+          "name": "hit3",
+          "path": "minecraft:sounds/damage/hit3.ogg",
+          "size": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "totem_sound",
+      "group": "sounds",
+      "name": {
+        "de": "Totem-Sound",
+        "en": "Totem Sound"
+      },
+      "kind": "sound",
+      "preview": "use_totem",
+      "sound_events": [
+        "item.totem.use"
+      ],
+      "targets": [
+        {
+          "name": "use_totem",
+          "path": "minecraft:sounds/item/totem/use_totem.ogg",
+          "size": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pearl_sound",
+      "group": "sounds",
+      "name": {
+        "de": "Teleport-Sound (Perle)",
+        "en": "Teleport Sound (Pearl)"
+      },
+      "kind": "sound",
+      "preview": "portal",
+      "sound_events": [
+        "entity.player.teleport",
+        "entity.enderman.teleport"
+      ],
+      "targets": [
+        {
+          "name": "portal",
+          "path": "minecraft:sounds/mob/endermen/portal.ogg",
+          "size": [
+            0,
+            0
+          ]
+        },
+        {
+          "name": "portal2",
+          "path": "minecraft:sounds/mob/endermen/portal2.ogg",
+          "size": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "explode_sound",
+      "group": "sounds",
+      "name": {
+        "de": "Explosions-Sound",
+        "en": "Explosion Sound"
+      },
+      "kind": "sound",
+      "preview": "explode1",
+      "sound_events": [
+        "entity.generic.explode"
+      ],
+      "targets": [
+        {
+          "name": "explode1",
+          "path": "minecraft:sounds/random/explode1.ogg",
+          "size": [
+            0,
+            0
+          ]
+        },
+        {
+          "name": "explode2",
+          "path": "minecraft:sounds/random/explode2.ogg",
+          "size": [
+            0,
+            0
+          ]
+        },
+        {
+          "name": "explode3",
+          "path": "minecraft:sounds/random/explode3.ogg",
+          "size": [
+            0,
+            0
+          ]
+        },
+        {
+          "name": "explode4",
+          "path": "minecraft:sounds/random/explode4.ogg",
+          "size": [
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  ]
+}

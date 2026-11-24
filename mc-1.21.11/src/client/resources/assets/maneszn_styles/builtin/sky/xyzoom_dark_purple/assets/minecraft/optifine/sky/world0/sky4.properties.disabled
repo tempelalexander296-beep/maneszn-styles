@@ -1,0 +1,11 @@
+source=./sky_sunflare.png
+blend=alpha
+rotate=false
+weather=clear
+priority=30
+
+startFadeIn=04:40
+endFadeIn=05:35
+
+startFadeOut=06:10
+endFadeOut=06:55

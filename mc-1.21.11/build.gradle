@@ -2,14 +2,14 @@ plugins {
 	id 'net.fabricmc.fabric-loom-remap'
 }
 
-version = "${rootProject.mod_version}+mc${project.minecraft_version}"
+version = "24.0.0"
 group = rootProject.maven_group
-base { archivesName = rootProject.archives_base_name }
+base { archivesName = "maneszn-styles" }
 
 loom {
 	splitEnvironmentSourceSets()
 	mods {
-		"adventcosmetics" {
+		"maneszn_styles" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}

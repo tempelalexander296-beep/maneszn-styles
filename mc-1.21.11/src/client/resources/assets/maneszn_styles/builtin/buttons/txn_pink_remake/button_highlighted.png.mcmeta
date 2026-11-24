@@ -1,0 +1,16 @@
+{
+ "gui": {
+  "scaling": {
+   "type": "nine_slice",
+   "width": 200,
+   "height": 20,
+   "border": 3
+  }
+ },
+ "animation": {
+  "width": 200,
+  "height": 20,
+  "frametime": 2,
+  "interpolate": true
+ }
+}
