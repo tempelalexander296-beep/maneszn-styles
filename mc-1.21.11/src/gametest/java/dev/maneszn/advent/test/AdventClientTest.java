@@ -25,6 +25,11 @@ public final class AdventClientTest implements FabricClientGameTest {
 				ctx.waitTicks(60);
 				ctx.takeScreenshot("styles-" + tab.toLowerCase());
 			}
+			for (String type : (System.getProperty("ms.cosTypes", "HAT,AURA,WINGS,PET,BACK,CAPE")).split(",")) {
+				ctx.setScreen(() -> com.maneszn.styles.gui.StylesScreen.withCosmeticType(null, type));
+				ctx.waitTicks(100);
+				ctx.takeScreenshot("cos-" + type.toLowerCase());
+			}
 			ctx.setScreen(() -> null);
 			for (Reward r : Rewards.ALL) {
 				if (System.getProperty("advent.allCosmetics") == null && r.day() % 6 != 0) continue;

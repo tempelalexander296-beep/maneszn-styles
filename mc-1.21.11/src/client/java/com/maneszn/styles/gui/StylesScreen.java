@@ -154,6 +154,14 @@ public class StylesScreen extends Screen {
       return new StylesScreen(parent);
    }
 
+   /** Opens the cosmetics tab on a given cosmetic type – used by QA tests. */
+   public static StylesScreen withCosmeticType(Screen parent, String type) {
+      lastTab = StylesScreen.Tab.COSMETICS;
+      cosType = Cosmetic.Type.valueOf(type);
+      outfitView = false;
+      return new StylesScreen(parent);
+   }
+
    public StylesScreen(Screen parent) {
       super(Component.literal("Maneszn Styles"));
       this.parent = parent;
