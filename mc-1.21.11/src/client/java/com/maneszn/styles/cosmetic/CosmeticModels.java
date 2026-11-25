@@ -105,7 +105,9 @@ public final class CosmeticModels {
 
       Identifier tex = CosmeticManager.texture(c.texture() + ".png");
       RenderType type = c.translucent() ? RenderTypes.entityTranslucent(tex) : RenderTypes.entityCutoutNoCull(tex);
-      return new CosmeticModels.Baked(baked, used, type, c.glow(), List.copyOf(anim));
+      CosmeticModels.Baked result = new CosmeticModels.Baked(baked, used, type, c.glow(), List.copyOf(anim));
+      if (c.glow()) result.halo = RenderTypes.entityTranslucentEmissive(tex);
+      return result;
    }
 
    public static CosmeticModels.Mini mini(boolean slim) {
@@ -193,6 +195,8 @@ public final class CosmeticModels {
       public final boolean hasLegL;
       public final RenderType renderType;
       public final boolean glow;
+      /** v24: additive glow shell rendered around glowing cosmetics (null = none). */
+      public RenderType halo;
       private final List<CosmeticModels.Animated> animated;
 
       Baked(ModelPart[] roots, boolean[] used, RenderType type, boolean glow, List<CosmeticModels.Animated> animated) {

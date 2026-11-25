@@ -113,6 +113,16 @@ public class CosmeticLayer extends RenderLayer<AvatarRenderState, PlayerModel> {
 
    private static void submit(SubmitNodeCollector collector, ModelPart part, PoseStack poseStack, CosmeticModels.Baked b, int light, int tint) {
       collector.submitModelPart(part, poseStack, b.renderType, light, OverlayTexture.NO_OVERLAY, null, false, false, tint, null, 0);
+      if (b.halo != null) {
+         // soft pulsing glow shell (bloom-like) around glowing cosmetics
+         double t = System.currentTimeMillis() / 1000.0;
+         int alpha = (int)(0x38 + 0x20 * Math.sin(t * 2.4));
+         int rgb = tint == -1 ? 0xFFFFFF : tint & 0xFFFFFF;
+         poseStack.pushPose();
+         poseStack.scale(1.06F, 1.06F, 1.06F);
+         collector.submitModelPart(part, poseStack, b.halo, 15728880, OverlayTexture.NO_OVERLAY, null, false, false, alpha << 24 | rgb, null, 0);
+         poseStack.popPose();
+      }
    }
 
    private static void renderSkinEffect(

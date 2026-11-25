@@ -11,7 +11,8 @@ Idempotent: originals are cached in tools/remaster_src/ on first run and always 
 import colorsys, json, math, os, random, shutil, sys
 from PIL import Image
 
-SCALE = 8  # output pixels per logical texel
+SCALE = 16       # output pixels per logical texel for 3D models (HD)
+CAPE_SCALE = 4   # capes keep their original resolution (fine art, many animation frames)
 
 def clamp(v): return 0 if v < 0 else 255 if v > 255 else int(v)
 
@@ -27,11 +28,14 @@ def logical(img, tw, th):
             op[x, y] = px[min(W - 1, int((x + .5) * sx)), min(H - 1, int((y + .5) * sy))]
     return out
 
-def material(r, g, b):
+METAL_WORDS = ('silber', 'silver', 'eisen', 'iron', 'diamant', 'diamond', 'schwert', 'sword', 'ruestung', 'rüstung', 'armor',
+               'krone', 'crown', 'ritter', 'knight', 'helm', 'stahl', 'steel', 'netherit', 'chrom', 'robot', 'axt', 'hammer', 'klinge', 'blade')
+
+def material(r, g, b, metal_ok=False, isolated=False):
     h, l, s = colorsys.rgb_to_hls(r / 255, g / 255, b / 255)
     if s > .45 and .09 < h < .17 and l > .35: return 'gold'
-    if s < .12 and l > .62: return 'silver'
-    if s > .55 and l > .25 and l < .75 and (h < .03 or h > .92 or .53 < h < .78 or .27 < h < .45): return 'gem'
+    if metal_ok and s < .12 and l > .55: return 'silver'
+    if isolated and s > .5 and .2 < l < .8: return 'gem'
     if l < .12: return 'dark'
     return 'cloth'
 
@@ -50,52 +54,78 @@ def face_map(cosmetic, tw, th):
                         if 0 <= xx < tw and 0 <= yy < th: m[(xx, yy)] = (kind, fx, fy, fw, fh)
     return m
 
-def render(img, tw, th, fmap, glow, rng, cape=False):
-    """img: original texture (any multiple of tw x th). Output: SCALE px per texel, detail preserved."""
+def render(img, tw, th, fmap, glow, rng, cape=False, metal_ok=False):
+    """Vectorised remaster. img: original texture (any multiple of tw x th). Output: SCALE px per texel."""
+    import numpy as np
+    S = CAPE_SCALE if cape else SCALE
     W, H = img.size
-    sx = W / tw
-    up = img.resize((tw * SCALE, th * SCALE), Image.NEAREST)
-    up_p = up.load(); src = img.load()
-    out = Image.new('RGBA', up.size, (0, 0, 0, 0)); op = out.load()
-    S = SCALE
-    uniform = {}
-    for y in range(th):
-        for x in range(tw):
-            x0, y0 = int(x * sx), int(y * sx)
-            c0 = src[min(W - 1, x0), min(H - 1, y0)]
-            uniform[(x, y)] = all(src[min(W - 1, x0 + i), min(H - 1, y0 + j)] == c0 for i in range(max(1, int(sx))) for j in range(max(1, int(sx))))
-    for Y in range(th * S):
-        y, py = divmod(Y, S)
-        for X in range(tw * S):
-            x, pxl = divmod(X, S)
-            r, g, b, a = up_p[X, Y]
-            if a == 0: continue
-            kind, fx, fy, fw, fh = fmap.get((x, y), ('side', 0, 0, tw, th) if cape else ('side', x, y, 1, 1))
-            mat = material(r, g, b)
-            fxp = (x - fx + pxl / S) / max(1, fw); fyp = (y - fy + py / S) / max(1, fh)
-            if cape: k = 1.06 - .14 * fyp
-            elif kind == 'top': k = 1.10
-            elif kind == 'bottom': k = .80
-            else: k = 1.07 - .17 * fyp
-            add = 0
-            if not cape and uniform[(x, y)]:
-                e = min(pxl, py, S - 1 - pxl, S - 1 - py)
-                if e == 0: k *= 1.07 if (pxl == 0 or py == 0) else .90
-                elif e == 1: k *= 1.02 if (pxl == 1 or py == 1) else .98
-            if mat in ('gold', 'silver'):
-                band = math.sin((fxp - fyp * .6) * math.pi * 1.4)
-                k *= 1 + .13 * band
-                if band > .96: add += 30
-            elif mat == 'gem' and not cape:
-                if uniform[(x, y)] and 1 <= pxl <= 2 and 1 <= py <= 2: add += 65
-            elif mat == 'cloth':
-                k *= 1 + (((X + Y) % 4 == 0) * .03 - ((X - Y) % 4 == 0) * .025)
-            if glow:
-                cx = abs(pxl - (S - 1) / 2) / S; cy = abs(py - (S - 1) / 2) / S
-                add += int(70 * max(0, .5 - math.hypot(cx, cy)))
-            n = (rng.random() - .5) * (8 if mat == 'cloth' else 4)
-            op[X, Y] = (clamp(r * k + add + n), clamp(g * k + add + n), clamp(b * k + add + n), a)
-    return out
+    src = np.asarray(img, dtype=np.float32)
+    up = np.asarray(img.resize((tw * S, th * S), Image.NEAREST), dtype=np.float32)
+    OH, OW = up.shape[:2]
+    # logical texel colours (block centres)
+    cy = np.minimum(H - 1, ((np.arange(th) + .5) * H / th).astype(int))
+    cx = np.minimum(W - 1, ((np.arange(tw) + .5) * W / tw).astype(int))
+    lg = src[cy][:, cx]                                   # (th, tw, 4)
+    def far(dx, dy):
+        sh = np.zeros((th, tw), bool)
+        nb = np.full((th + 2, tw + 2, 4), -1000.0, np.float32); nb[1:-1, 1:-1] = lg
+        q = nb[1 + dy:1 + dy + th, 1 + dx:1 + dx + tw]
+        return (q[..., 3] <= 0) | (np.abs(q[..., :3] - lg[..., :3]).sum(-1) > 90)
+    bl, br, bt, bb = far(-1, 0), far(1, 0), far(0, -1), far(0, 1)
+    isolated_t = (bl.astype(int) + br + bt + bb) >= 3
+    # per-texel face data
+    kind_t = np.zeros((th, tw), np.int8); fx_t = np.zeros((th, tw)); fy_t = np.zeros((th, tw)); fw_t = np.ones((th, tw)); fh_t = np.ones((th, tw))
+    if cape:
+        fw_t[:] = tw; fh_t[:] = th
+    else:
+        fx_t[:] = np.arange(tw)[None, :]; fy_t[:] = np.arange(th)[:, None]
+    for (x, y), (kind, fx, fy, fw, fh) in fmap.items():
+        kind_t[y, x] = {'side': 0, 'top': 1, 'bottom': 2}[kind]; fx_t[y, x] = fx; fy_t[y, x] = fy; fw_t[y, x] = max(1, fw); fh_t[y, x] = max(1, fh)
+    Y, X = np.mgrid[0:OH, 0:OW]
+    ty, tx = Y // S, X // S; py, pxl = Y % S, X % S
+    kind = kind_t[ty, tx]; fw = fw_t[ty, tx]; fh = fh_t[ty, tx]
+    fxp = (tx - fx_t[ty, tx] + pxl / S) / fw; fyp = (ty - fy_t[ty, tx] + py / S) / fh
+    r, g, b, a = up[..., 0], up[..., 1], up[..., 2], up[..., 3]
+    mx = np.maximum(np.maximum(r, g), b) / 255; mn = np.minimum(np.minimum(r, g), b) / 255
+    l = (mx + mn) / 2; d = mx - mn
+    sat = np.where(d == 0, 0, d / np.where(l > .5, 2 - mx - mn, mx + mn + 1e-9))
+    rn, gn, bn = r / 255, g / 255, b / 255
+    hue = np.where(d == 0, 0, np.where(mx == rn, ((gn - bn) / (d + 1e-9)) % 6, np.where(mx == gn, (bn - rn) / (d + 1e-9) + 2, (rn - gn) / (d + 1e-9) + 4))) / 6
+    gold = (sat > .45) & (hue > .09) & (hue < .17) & (l > .35)
+    silver = (~gold) & metal_ok & (sat < .12) & (l > .55)
+    gem = (~gold) & (~silver) & isolated_t[ty, tx] & (sat > .5) & (l > .2) & (l < .8) & (not cape)
+    cloth = ~(gold | silver | gem | (l < .12))
+    if cape:
+        k = 1.06 - .14 * fyp
+    else:
+        k = np.where(kind == 1, 1.10, np.where(kind == 2, .80, 1.07 - .17 * fyp))
+    add = np.zeros_like(k)
+    if not cape:
+        edge = np.minimum(np.minimum(fxp, 1 - fxp) * fw, np.minimum(fyp, 1 - fyp) * fh)
+        k = np.where(edge < .5, k * (.80 + .40 * edge), k)
+        add += np.where((fyp * fh < .25) & (kind == 0), 22, 0)
+        rim = max(1, S // 8)
+        k *= np.where(bl[ty, tx] & (pxl < rim), 1.10, 1)
+        k *= np.where(bt[ty, tx] & (py < rim), 1.12, 1)
+        k *= np.where(br[ty, tx] & (pxl >= S - rim), .86, 1)
+        k *= np.where(bb[ty, tx] & (py >= S - rim), .82, 1)
+    band = np.sin((fxp - fyp * .6) * np.pi * 1.4)
+    metal = gold | silver
+    k = np.where(metal, k * (1 + .13 * band), k)
+    add += np.where(metal & (band > .96), 30, 0)
+    k = np.where(gem, k * np.where(pxl + py < S, 1.10, .82), k)
+    add += np.where(gem & (pxl >= S // 8) & (pxl <= S // 4) & (py >= S // 8) & (py <= S // 4), 80, 0)
+    k = np.where(cloth, k * (1 + ((X + Y) % 4 == 0) * .03 - ((X - Y) % 4 == 0) * .025), k)
+    if glow:
+        gcx = np.abs(pxl - (S - 1) / 2) / S; gcy = np.abs(py - (S - 1) / 2) / S
+        add += 70 * np.maximum(0, .5 - np.hypot(gcx, gcy))
+    gen = np.random.default_rng(rng.randrange(1 << 30))
+    noise = (gen.random(k.shape) - .5) * np.where(cloth, 8, 4)
+    rr, gg, bb2 = r * k + add + noise, g * k + add + noise, b * k + add + noise
+    lum = .299 * rr + .587 * gg + .114 * bb2
+    out = np.stack([lum + (rr - lum) * 1.15, lum + (gg - lum) * 1.15, lum + (bb2 - lum) * 1.15, a], -1)
+    out[..., :3] = np.where(a[..., None] > 0, out[..., :3], 0)
+    return Image.fromarray(np.clip(out, 0, 255).astype(np.uint8), 'RGBA')
 
 def main():
     assets = sys.argv[1]
@@ -124,7 +154,8 @@ def main():
             else:
                 tw, th = 64, max(1, round(64 * img.size[1] / img.size[0])); fmap = {}; cape = True
             rng = random.Random(sum(map(ord, c['id'])))
-            render(img, tw, th, fmap, bool(c.get('glow')), rng, cape).save(path, optimize=True)
+            metal = any(w in c['id'].lower() or w in json.dumps(c.get('names', {})).lower() for w in METAL_WORDS)
+            render(img, tw, th, fmap, bool(c.get('glow')), rng, cape, metal).save(path, optimize=True)
             done += 1
     print('remastered textures:', done)
 

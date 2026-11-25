@@ -26,6 +26,10 @@ public final class AuraTicker {
             if (!p.isInvisible() && !p.isSpectator()) {
                double maxD = ModConfig.get().fpsBoost ? 16.0 : 48.0;
                if (!(p.distanceToSqr(mc.player) > maxD * maxD)) {
+                  if ((tick + p.getId()) % 7L == 0L && !(p == mc.player && mc.options.getCameraType().isFirstPerson())) {
+                     rarityShimmer(p);
+                  }
+
                   Cosmetic aura = CosmeticManager.get(p.getUUID(), Cosmetic.Type.AURA);
                   if (aura != null && aura.particle() != null) {
                      int rate = Math.max(1, aura.rate()) * (ModConfig.get().fpsBoost ? 2 : 1);
@@ -79,6 +83,25 @@ public final class AuraTicker {
             }
          }
       }
+   }
+
+   /** v24: exclusive (VIP / Legend / Admin / Owner) cosmetics sparkle subtly so their rarity is visible. */
+   private static void rarityShimmer(AbstractClientPlayer p) {
+      int tier = 0;
+      for (String id : CosmeticManager.loadout(p.getUUID()).values()) {
+         if (id == null) continue;
+         if (id.startsWith("owner_")) tier = Math.max(tier, 4);
+         else if (id.startsWith("admin_")) tier = Math.max(tier, 3);
+         else if (id.startsWith("legend_")) tier = Math.max(tier, 2);
+         else if (id.startsWith("vip_")) tier = Math.max(tier, 1);
+      }
+      if (tier == 0) return;
+      int color = switch (tier) { case 4 -> 0xC77DFF; case 3 -> 0xFF4D5E; case 2 -> 0xFFD36B; default -> 0xFFE9A8; };
+      double ang = RNG.nextDouble() * Math.PI * 2.0;
+      double r = 0.35 + RNG.nextDouble() * 0.35;
+      double hy = 0.6 + RNG.nextDouble() * (p.getBbHeight() - 0.4);
+      emit(new DustParticleOptions(color, 0.55F), p.getX() + Math.cos(ang) * r, p.getY() + hy, p.getZ() + Math.sin(ang) * r, 0.0, 0.01, 0.0);
+      if (tier >= 3 && RNG.nextInt(3) == 0) emit(ParticleTypes.END_ROD, p.getX() + Math.cos(ang + 1) * r, p.getY() + hy, p.getZ() + Math.sin(ang + 1) * r, 0.0, 0.005, 0.0);
    }
 
    private static void emit(ParticleOptions p, double x, double y, double z, double dx, double dy, double dz) {
