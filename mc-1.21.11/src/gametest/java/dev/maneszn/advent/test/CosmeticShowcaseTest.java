@@ -14,6 +14,11 @@ public final class CosmeticShowcaseTest implements FabricClientGameTest {
 		{ "schmetterling_blau", "blaetterwirbel", "holzschwert" }, { "cyber", "admin_bannkreis", "lila_klinge" },
 	};
 
+	private static final String[] PETS = { "katze", "schwarze_katze", "fuchs", "hund", "hase", "panda", "pinguin", "frosch", "axolotl", "biene", "drache", "eule", "schleim",
+		"ente", "owner_drache", "mini_baer", "capybara", "igel", "hummel", "otter", "kugelfisch", "eichhoernchen", "ht4_kristall", "koi", "schildkroete", "qualle",
+		"vip_sonnenkueken", "owner_diamantwaechter", "legend_glutfuchs", "admin_waechterdrohne", "chamaeleon", "raupe", "schaf", "waschbaer", "koala", "roter_panda",
+		"schneemann", "lebkuchenmann", "papagei" };
+
 	@Override
 	public void runTest(ClientGameTestContext ctx) {
 		if (System.getProperty("ms.showcase") == null) return;
@@ -30,6 +35,11 @@ public final class CosmeticShowcaseTest implements FabricClientGameTest {
 					ctx.waitTicks(20);
 					ctx.takeScreenshot("show-" + set[0] + "-" + (cam == CameraType.THIRD_PERSON_BACK ? "back" : "front"));
 				}
+			}
+			for (String pet : PETS) {
+				ctx.runOnClient(mc -> { var lo = ModConfig.get().cosmetics; lo.clear(); lo.put("pet", pet); mc.options.setCameraType(CameraType.THIRD_PERSON_FRONT); });
+				ctx.waitTicks(12);
+				ctx.takeScreenshot("pet-" + pet);
 			}
 			ctx.runOnClient(mc -> { ModConfig.get().cosmetics.clear(); mc.options.setCameraType(CameraType.FIRST_PERSON); });
 		}

@@ -183,6 +183,12 @@ def build_sword(c, assets):
     m.cube(belt, (-4, 10, -2), (8, 1, 4), '#3b2a20', .3); m.cube(belt, (-1, 9.8, -2.5), (2, 1, 1), '#c9a45a', .1)
     m.cube(belt, (3.6, 10.6, -2.9), (2, 2.2, 1.2), '#4a3424', .05)  # frog / holder
     s = m.part('body', (4.7, 11.2, -2.4), (0.42, 0, -0.1), 'none')
+    K = 1.35
+    _cube = m.cube
+    def scaled(p, frm, size, color, inflate=0.0):
+        if p is s: frm = tuple(v * K for v in frm); size = tuple(v * K for v in size)
+        _cube(p, frm, size, color, inflate)
+    m.cube = scaled
     bw = 1.1 if katana else 1.7
     # pommel + gem
     m.cube(s, (-.6, -5.4, -.6), (1.2, 1.2, 1.2), guard); m.cube(s, (-.35, -5.15, -.72), (.7, .7, .25), gem)
@@ -249,13 +255,13 @@ def build_wings(c, assets):
             return p
         if style == 'feather':
             # arm bone
-            blade(-.15, 12, 1.3, 1, b)
-            for i in range(8):  # primaries (long, back layer)
-                t = i / 7; blade(-.3 + t * 1.35, 13.5 - t * 4.5, 1.25, .35, mix(a, b, .15 + t * .25), acc, z=.55)
-            for i in range(7):  # secondaries
-                t = i / 6; blade(-.1 + t * 1.15, 9 - t * 2.5, 1.2, .35, mix(a, acc, .15 * t), None, z=.1)
-            for i in range(6):  # coverts (front, short)
-                t = i / 5; blade(.05 + t * .9, 4.6 - t * 1.2, 1.15, .35, mix(a, '#ffffff', .25), None, z=-.3)
+            blade(-.2, 11.5, 1.6, 1.1, b)
+            for i in range(11):  # primaries (long, back layer) – wide and overlapping
+                t = i / 10; blade(-.25 + t * 1.45, 14 - t * 5.5, 3.0, .35, mix(a, b, .1 + t * .3), acc, z=.55 + .02 * i)
+            for i in range(9):  # secondaries
+                t = i / 8; blade(-.1 + t * 1.25, 9.5 - t * 3, 2.6, .35, mix(a, acc, .12 * t), None, z=.1 + .02 * i)
+            for i in range(7):  # coverts (front, short)
+                t = i / 6; blade(.0 + t * 1.0, 5 - t * 1.3, 2.4, .35, mix(a, '#ffffff', .25), None, z=-.3)
         elif style in ('membrane',):
             bones = [(0.0, 13.5), (.38, 12.5), (.8, 11), (1.2, 8.5)]
             for ang, ln in bones:
@@ -266,11 +272,11 @@ def build_wings(c, assets):
                     ln = bones[k][1] + (bones[k + 1][1] - bones[k][1]) * t - 1.2
                     blade(ang, ln, 2.2, .25, mix(a, b, .1 + j * .08), None, z=.25)
         elif style == 'crystal':
-            for i in range(9):
-                t = i / 8; ln = 12.5 - abs(t - .3) * 7; col = a if i % 2 == 0 else b
-                p = blade(-.1 + t * 1.3, ln, 1.4, 1.0, col, acc, z=.1 * (i % 3))
-            for i in range(5):
-                t = i / 4; blade(.2 + t * 1.0, 4 + i * .4, .9, .8, acc, None, z=-.4)
+            for i in range(12):
+                t = i / 11; ln = 13 - abs(t - .3) * 7; col = a if i % 2 == 0 else b
+                p = blade(-.2 + t * 1.4, ln, 2.6, 1.1, col, acc, z=.1 * (i % 3))
+            for i in range(6):
+                t = i / 5; blade(.1 + t * 1.1, 4.5 + i * .5, 1.6, .9, acc, None, z=-.45)
         elif style == 'insect':
             for k, (ang, ln, w) in enumerate([(-.45, 10, 5), (-.25, 11, 5.5), (.55, 7.5, 4), (.8, 6.5, 3.4)]):
                 p = blade(ang, ln, w, .25, a if k < 2 else mix(a, b, .35), None, z=.2)
