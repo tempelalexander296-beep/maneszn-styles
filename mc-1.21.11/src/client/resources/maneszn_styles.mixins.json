@@ -15,7 +15,10 @@
     "CameraMixin",
     "GameRendererMixin",
     "MouseHandlerMixin",
-    "MultiPlayerGameModeMixin"
+    "MultiPlayerGameModeMixin",
+    "AbstractContainerScreenAccessor",
+    "LocalPlayerDropMixin",
+    "CreativeDropMixin"
   ],
   "injectors": {
     "defaultRequire": 1

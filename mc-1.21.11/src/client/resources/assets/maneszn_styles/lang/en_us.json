@@ -446,5 +446,13 @@
   "maneszn_styles.code.owner_nocodes": "Owner is not available as a code – enter a name and press “Give”.",
   "maneszn_styles.code.advent": "🎄 Advent calendar",
   "maneszn_styles.code.advent_sent": "Sent: /%s – see the chat for the result (needs OP or cheats).",
-  "maneszn_styles.code.advent_noworld": "Only works while you are in a world or on a server."
+  "maneszn_styles.code.advent_noworld": "Only works while you are in a world or on a server.",
+  "key.maneszn_styles.drop_lock": "Lock/unlock item (drop protection)",
+  "maneszn_styles.droplock.toggle": "🔒 Drop protection (never drop locked items)",
+  "maneszn_styles.droplock.clear": "Unlock all locked items",
+  "maneszn_styles.droplock.cleared": "%s item type(s) unlocked",
+  "maneszn_styles.droplock.info": "Lock: hover an item in your inventory or hold it and press [%s] – %s locked",
+  "maneszn_styles.droplock.locked": "%s is locked – it can't be dropped any more",
+  "maneszn_styles.droplock.unlocked": "%s is unlocked again",
+  "maneszn_styles.droplock.blocked": "%s is locked and won't be dropped – [%s] to unlock"
 }

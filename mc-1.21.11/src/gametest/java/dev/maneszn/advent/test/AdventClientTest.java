@@ -16,7 +16,7 @@ import net.minecraft.server.level.ServerPlayer;
 public final class AdventClientTest implements FabricClientGameTest {
 	@Override
 	public void runTest(ClientGameTestContext ctx) {
-		if (System.getProperty("ms.showcase") != null || System.getProperty("ms.admin") != null) return;
+		if (System.getProperty("ms.showcase") != null || System.getProperty("ms.admin") != null || System.getProperty("ms.droplock") != null) return;
 		try (TestSingleplayerContext sp = ctx.worldBuilder().create()) {
 			sp.getClientWorld().waitForChunksRender();
 			sp.getServer().runCommand("time set noon");

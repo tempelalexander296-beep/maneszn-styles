@@ -1434,6 +1434,24 @@ public class StylesScreen extends Screen {
             });
             ry = this.actionRow(g, mx, my, th, x, ry, "maneszn_styles.trim.open", () -> this.minecraft.setScreen(new TrimScreen(this)));
             ry = this.actionRow(g, mx, my, th, x, ry, "maneszn_styles.mapart.open", () -> this.minecraft.setScreen(new MapartScreen(this)));
+            ry = this.toggleRow(g, mx, my, th, x, ry, "maneszn_styles.droplock.toggle", cfg.dropLock, () -> {
+               cfg.dropLock = !cfg.dropLock;
+               ModConfig.save();
+            });
+            ry = this.actionRow(g, mx, my, th, x, ry, "maneszn_styles.droplock.clear", () -> {
+               int n = cfg.lockedItems.size();
+               cfg.lockedItems.clear();
+               ModConfig.save();
+               this.toast(Ui.tr("maneszn_styles.droplock.cleared", n));
+            });
+            Ui.text(
+               g,
+               Ui.trim("• " + Ui.tr("maneszn_styles.droplock.info", com.maneszn.styles.tools.DropLock.lockKey == null ? "N" : com.maneszn.styles.tools.DropLock.lockKey.getTranslatedKeyMessage().getString(), cfg.lockedItems.size()), this.midW - 28),
+               x + 12,
+               ry,
+               -6646866
+            );
+            ry += 13;
             ry = this.toggleRow(g, mx, my, th, x, ry, "maneszn_styles.duraguard.toggle", cfg.duraGuard, () -> {
                cfg.duraGuard = !cfg.duraGuard;
                ModConfig.save();

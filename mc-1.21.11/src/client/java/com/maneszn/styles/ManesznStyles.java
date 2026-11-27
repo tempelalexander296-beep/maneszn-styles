@@ -91,12 +91,14 @@ public final class ManesznStyles implements ClientModInitializer {
          safe("armorwarn", () -> ArmorWarn.tick(client));
          safe("capes", () -> CustomCapes.tick(client));
          safe("overlay", () -> OverlayColor.tick(client));
+         safe("droplock", () -> com.maneszn.styles.tools.DropLock.tick(client));
       });
       safe("init-hud", HudManager::register);
       safe("init-pvp", PvpStats::register);
       safe("init-access", Access::register);
       safe("init-web", Website::register);
       safe("init-updater", Updater::register);
+      safe("init-droplock", com.maneszn.styles.tools.DropLock::register);
       safe(
          "init-layer",
          () -> LivingEntityFeatureRendererRegistrationCallback.EVENT

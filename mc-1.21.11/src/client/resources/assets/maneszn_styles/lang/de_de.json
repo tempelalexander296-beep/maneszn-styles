@@ -446,5 +446,13 @@
   "maneszn_styles.code.owner_nocodes": "Owner gibt es nicht als Code – Namen eingeben und „Geben“ drücken.",
   "maneszn_styles.code.advent": "🎄 Adventskalender",
   "maneszn_styles.code.advent_sent": "Gesendet: /%s – das Ergebnis steht im Chat (braucht OP bzw. Cheats an).",
-  "maneszn_styles.code.advent_noworld": "Geht nur, wenn du in einer Welt oder auf einem Server bist."
+  "maneszn_styles.code.advent_noworld": "Geht nur, wenn du in einer Welt oder auf einem Server bist.",
+  "key.maneszn_styles.drop_lock": "Item sperren/entsperren (Drop-Schutz)",
+  "maneszn_styles.droplock.toggle": "🔒 Drop-Schutz (gesperrte Items nie droppen)",
+  "maneszn_styles.droplock.clear": "Alle gesperrten Items freigeben",
+  "maneszn_styles.droplock.cleared": "%s Item-Art(en) wieder freigegeben",
+  "maneszn_styles.droplock.info": "Sperren: Item im Inventar anvisieren oder in die Hand nehmen und [%s] drücken – %s gesperrt",
+  "maneszn_styles.droplock.locked": "%s ist gesperrt – kann nicht mehr gedroppt werden",
+  "maneszn_styles.droplock.unlocked": "%s ist wieder freigegeben",
+  "maneszn_styles.droplock.blocked": "%s ist gesperrt und wird nicht gedroppt – [%s] zum Entsperren"
 }

@@ -59,6 +59,8 @@ public final class ModConfig {
    public boolean calcButton = true;
    public boolean elytraSwap = false;
    public boolean duraGuard = true;
+   public boolean dropLock = true;
+   public List<String> lockedItems = new ArrayList<>();
    public int duraGuardPercent = 5;
    public boolean duraGuardAllTools = false;
    public String pingServer = "";
@@ -129,6 +131,10 @@ public final class ModConfig {
 
                if (instance.rankLedger == null) {
                   instance.rankLedger = new ArrayList<>();
+               }
+
+               if (instance.lockedItems == null) {
+                  instance.lockedItems = new ArrayList<>();
                }
 
                if (instance.tpaFriends == null) {
