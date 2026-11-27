@@ -42,6 +42,32 @@ public final class PlayerAdvent {
 		return ClaimResult.OK;
 	}
 
+	/** Admin: give one door (1–24) or every door (0), ignoring the date. Equips what it gives (day 24 for "all"). */
+	public boolean grant(int day) {
+		if (day == 0) {
+			int before = claimedMask;
+			claimedMask = 0x1FFFFFE;
+			Reward top = Rewards.byDay(AdventClock.LAST_DAY);
+			equipped.put(top.slot(), top.id());
+			return before != claimedMask;
+		}
+		Reward r = Rewards.byDay(day);
+		if (r == null) return false;
+		boolean had = isClaimed(day);
+		claimedMask |= 1 << day;
+		equipped.put(r.slot(), r.id());
+		return !had;
+	}
+
+	/** Admin: take one door (1–24) or every door (0) away again, and unequip what is no longer owned. */
+	public boolean revoke(int day) {
+		int before = claimedMask;
+		if (day == 0) claimedMask = 0;
+		else if (Rewards.byDay(day) != null) claimedMask &= ~(1 << day);
+		equipped.entrySet().removeIf(e -> { Reward r = Rewards.byId(e.getValue()); return r == null || !isClaimed(r.day()); });
+		return before != claimedMask;
+	}
+
 	/** Equip (id) or unequip (null) — only owned cosmetics. */
 	public boolean equip(CosmeticSlot slot, String id) {
 		if (id == null || id.isEmpty()) { equipped.remove(slot); return true; }

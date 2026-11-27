@@ -35,22 +35,36 @@ public class CodeScreen extends Screen {
       return false;
    }
 
+   private boolean lastWide;
+
+   /** Admins bekommen ein breites Fenster: links Code einlösen, rechts Admin-Werkzeuge (passt auch auf kleine Bildschirme). */
+   private boolean wide() {
+      return ApiClient.get().isAdmin() && this.width >= 400;
+   }
+
    private int pw() {
-      return Math.min(this.width - 20, 330);
+      return this.wide() ? Math.min(this.width - 20, 600) : Math.min(this.width - 20, 330);
+   }
+
+   /** Breite der linken Spalte (bzw. der ganzen Fläche, wenn es nur eine Spalte gibt). */
+   private int lw() {
+      return this.wide() ? this.pw() / 2 - 15 : this.pw() - 20;
    }
 
    @Override
    protected void init() {
       int pw = this.pw();
       int px = (this.width - pw) / 2;
+      int lw = this.lw();
+      this.lastWide = this.wide();
       String self = this.minecraft.getUser() == null ? "" : this.minecraft.getUser().getName();
       String oldName = this.nameBox == null ? self : this.nameBox.getValue();
       String oldCode = this.codeBox == null ? "" : this.codeBox.getValue();
-      this.nameBox = new EditBox(this.font, px + 10, 52, pw - 20, 16, Component.translatable("maneszn_styles.code.name"));
+      this.nameBox = new EditBox(this.font, px + 10, 52, lw, 16, Component.translatable("maneszn_styles.code.name"));
       this.nameBox.setMaxLength(16);
       this.nameBox.setValue(oldName);
       this.addRenderableWidget(this.nameBox);
-      this.codeBox = new EditBox(this.font, px + 10, 86, pw - 20, 16, Component.translatable("maneszn_styles.code.code"));
+      this.codeBox = new EditBox(this.font, px + 10, 86, lw, 16, Component.translatable("maneszn_styles.code.code"));
       this.codeBox.setMaxLength(19);
       this.codeBox.setValue(oldCode);
       this.codeBox.setResponder(v -> {
@@ -98,9 +112,15 @@ public class CodeScreen extends Screen {
    @Override
    public void render(GuiGraphics g, int mx, int my, float partialTick) {
       this.zones.clear();
+      if (this.wide() != this.lastWide) {
+         this.rebuildWidgets();
+      }
+
       Theme th = Theme.current();
       ApiClient api = ApiClient.get();
       int pw = this.pw();
+      int lw = this.lw();
+      boolean wide = this.lastWide;
       int px = (this.width - pw) / 2;
       int py = 10;
       int ph = this.height - 20;
@@ -119,18 +139,18 @@ public class CodeScreen extends Screen {
       Ui.text(g, Ui.tr("maneszn_styles.code.name"), px + 10, 42, -1185282);
       Ui.text(g, Ui.tr("maneszn_styles.code.code"), px + 10, 76, -1185282);
       int len = plain(this.codeBox.getValue()).length();
-      Ui.textRight(g, len + "/16", px + pw - 10, 76, len == 16 ? -14498466 : -9739136);
+      Ui.textRight(g, len + "/16", px + 10 + lw, 76, len == 16 ? -14498466 : -9739136);
       super.render(g, mx, my, partialTick);
       boolean ready = len == 16 && !this.nameBox.getValue().isBlank() && !this.busy && api.loggedIn();
       int by = 108;
-      boolean hov = Ui.hover(mx, my, px + 10, by, pw - 20, 18);
-      Ui.button(g, px + 10, by, pw - 20, 18, Ui.tr(this.busy ? "maneszn_styles.code.checking" : "maneszn_styles.code.redeem"), hov && ready, ready, th);
+      boolean hov = Ui.hover(mx, my, px + 10, by, lw, 18);
+      Ui.button(g, px + 10, by, lw, 18, Ui.tr(this.busy ? "maneszn_styles.code.checking" : "maneszn_styles.code.redeem"), hov && ready, ready, th);
       if (ready) {
-         this.zones.add(px + 10, by, pw - 20, 18, this::redeem);
+         this.zones.add(px + 10, by, lw, 18, this::redeem);
       }
 
       String msg = !api.loggedIn() ? Ui.tr("maneszn_styles.code.offline") : this.message;
-      Ui.text(g, Ui.trim(msg, pw - 20), px + 10, by + 23, !api.loggedIn() ? -34953 : this.messageColor);
+      Ui.text(g, Ui.trim(msg, lw), px + 10, by + 23, !api.loggedIn() ? -34953 : this.messageColor);
       int y = by + 38;
 
       for (String tier : new String[]{"vip", "legend"}) {
@@ -144,16 +164,21 @@ public class CodeScreen extends Screen {
          }
 
          boolean has = api.entitled(tier);
-         Ui.rect(g, px + 10, y, pw - 20, 14, -14607314);
+         Ui.rect(g, px + 10, y, lw, 14, -14607314);
          Ui.rect(g, px + 10, y, 2, 14, col);
          Ui.text(g, tier.toUpperCase(Locale.ROOT), px + 16, y + 3, col);
-         Ui.text(g, Ui.trim(Ui.tr("maneszn_styles.code.tier_" + tier, n), pw - 110), px + 58, y + 3, -6646866);
-         Ui.textRight(g, has ? "✔" : "\ud83d\udd12", px + pw - 14, y + 3, has ? -14498466 : -9739136);
+         Ui.text(g, Ui.trim(Ui.tr("maneszn_styles.code.tier_" + tier, n), lw - 90), px + 58, y + 3, -6646866);
+         Ui.textRight(g, has ? "✔" : "\ud83d\udd12", px + 10 + lw - 4, y + 3, has ? -14498466 : -9739136);
          y += 16;
       }
 
       if (api.isAdmin()) {
-         y = this.renderAdmin(g, mx, my, th, px, pw, y + 6, py + ph - 26);
+         if (wide) {
+            Ui.rect(g, px + pw / 2 - 1, py + 32, 1, ph - 60, -14015424);
+            this.renderAdmin(g, mx, my, th, px + pw / 2 + 5, pw / 2 - 15, py + 30, py + ph - 26);
+         } else {
+            y = this.renderAdmin(g, mx, my, th, px + 10, pw - 20, y + 6, py + ph - 26);
+         }
       }
 
       int dy = py + ph - 22;
@@ -162,23 +187,31 @@ public class CodeScreen extends Screen {
       this.zones.add(px + 10, dy, pw - 20, 16, this::onClose);
    }
 
-   private int renderAdmin(GuiGraphics g, int mx, int my, Theme th, int px, int pw, int y, int maxY) {
+   private int renderAdmin(GuiGraphics g, int mx, int my, Theme th, int x0, int w, int y, int maxY) {
       ApiClient api = ApiClient.get();
-      Ui.rect(g, px + 10, y, pw - 20, 1, -54742);
+      Ui.rect(g, x0, y, w, 1, -54742);
       y += 5;
-      Ui.text(g, "⚑ " + Ui.tr("maneszn_styles.code.admin"), px + 10, y, -54742);
+      Ui.text(g, Ui.trim("⚑ " + Ui.tr("maneszn_styles.code.admin"), w), x0, y, -54742);
       y += 12;
-      int x = px + 10;
-      String[] tiers = api.isOwner() ? new String[]{"vip", "legend", "admin"} : new String[]{"vip", "legend"};
-
-      for (String r : tiers) {
-         int w = tiers.length > 2 ? 42 : 50;
-         boolean hv = Ui.hover(mx, my, x, y, w, 14);
-         Ui.button(g, x, y, w, 14, r.toUpperCase(Locale.ROOT), hv, r.equals(this.reward), th);
-         this.zones.add(x, y, w, 14, () -> this.reward = r);
-         x += w + 3;
+      int x = x0;
+      String[] tiers = api.isMainOwner()
+         ? new String[]{"vip", "legend", "admin", "owner"}
+         : (api.isOwner() ? new String[]{"vip", "legend", "admin"} : new String[]{"vip", "legend"});
+      if (!List.of(tiers).contains(this.reward)) {
+         this.reward = "vip";
       }
 
+      int tw = Math.min(50, (w - 9) / 4);
+      for (String r : tiers) {
+         boolean hv = Ui.hover(mx, my, x, y, tw, 14);
+         Ui.button(g, x, y, tw, 14, r.toUpperCase(Locale.ROOT), hv, r.equals(this.reward), th);
+         Ui.rect(g, x + 3, y + 11, tw - 6, 1, tierColor(r));
+         this.zones.add(x, y, tw, 14, () -> this.reward = r);
+         x += tw + 3;
+      }
+
+      y += 18;
+      x = x0;
       x = this.stepper(
          g,
          mx,
@@ -202,14 +235,17 @@ public class CodeScreen extends Screen {
          () -> this.uses = Math.min(100, this.uses + 1)
       );
       y += 18;
-      int half = (pw - 24) / 2;
-      boolean h1 = Ui.hover(mx, my, px + 10, y, half, 16);
-      Ui.button(g, px + 10, y, half, 16, Ui.tr("maneszn_styles.code.create"), h1 && !this.busy, !this.busy, th);
-      if (!this.busy) {
-         this.zones.add(px + 10, y, half, 16, this::createCodes);
+      int half = (w - 4) / 2;
+      boolean canCode = !this.busy && !"owner".equals(this.reward);
+      boolean h1 = Ui.hover(mx, my, x0, y, half, 16);
+      Ui.button(g, x0, y, half, 16, Ui.tr("maneszn_styles.code.create"), h1 && canCode, canCode, th);
+      if (canCode) {
+         this.zones.add(x0, y, half, 16, this::createCodes);
+      } else if ("owner".equals(this.reward)) {
+         this.zones.add(x0, y, half, 16, () -> this.say(Ui.tr("maneszn_styles.code.owner_nocodes"), -34953));
       }
 
-      int gx = px + 14 + half;
+      int gx = x0 + 4 + half;
       int gw = (half - 3) / 2;
       boolean h2 = Ui.hover(mx, my, gx, y, gw, 16);
       boolean h3 = Ui.hover(mx, my, gx + gw + 3, y, gw, 16);
@@ -218,8 +254,17 @@ public class CodeScreen extends Screen {
       this.zones.add(gx, y, gw, 16, () -> this.grant(false));
       this.zones.add(gx + gw + 3, y, gw, 16, () -> this.grant(true));
       y += 20;
+      // Adventskalender: läuft über die Minecraft-Welt bzw. den Server (Befehl /advent give|take, braucht OP/Cheats)
+      Ui.text(g, Ui.trim(Ui.tr("maneszn_styles.code.advent"), half), x0, y + 4, -12486);
+      boolean h4 = Ui.hover(mx, my, gx, y, gw, 16);
+      boolean h5 = Ui.hover(mx, my, gx + gw + 3, y, gw, 16);
+      Ui.button(g, gx, y, gw, 16, Ui.tr("maneszn_styles.code.grant"), h4, false, th);
+      Ui.button(g, gx + gw + 3, y, gw, 16, Ui.tr("maneszn_styles.code.revoke"), h5, false, th);
+      this.zones.add(gx, y, gw, 16, () -> this.advent(true));
+      this.zones.add(gx + gw + 3, y, gw, 16, () -> this.advent(false));
+      y += 20;
       if (!this.newCodes.isEmpty()) {
-         Ui.text(g, Ui.trim(Ui.tr("maneszn_styles.code.copy_hint"), pw - 20), px + 10, y, -9739136);
+         Ui.text(g, Ui.trim(Ui.tr("maneszn_styles.code.copy_hint"), w), x0, y, -9739136);
          y += 11;
 
          for (String c : this.newCodes) {
@@ -227,11 +272,11 @@ public class CodeScreen extends Screen {
                break;
             }
 
-            boolean hv = Ui.hover(mx, my, px + 10, y, pw - 20, 12);
-            Ui.rect(g, px + 10, y, pw - 20, 12, hv ? -14015424 : -14607314);
-            Ui.text(g, c, px + 14, y + 2, -1);
-            Ui.textRight(g, "⧉", px + pw - 14, y + 2, th.accent);
-            this.zones.add(px + 10, y, pw - 20, 12, () -> {
+            boolean hv = Ui.hover(mx, my, x0, y, w, 12);
+            Ui.rect(g, x0, y, w, 12, hv ? -14015424 : -14607314);
+            Ui.text(g, c, x0 + 4, y + 2, -1);
+            Ui.textRight(g, "⧉", x0 + w - 4, y + 2, th.accent);
+            this.zones.add(x0, y, w, 12, () -> {
                this.minecraft.keyboardHandler.setClipboard(c);
                this.say(Ui.tr("maneszn_styles.code.copied", c), -14498466);
             });
@@ -285,17 +330,49 @@ public class CodeScreen extends Screen {
       });
    }
 
+   private static int tierColor(String r) {
+      return switch (r) {
+         case "owner" -> -5085441;
+         case "admin" -> -54742;
+         case "legend" -> -45715;
+         default -> -12486;
+      };
+   }
+
    private void grant(boolean revoke) {
       String name = this.nameBox.getValue().trim();
-      if (!name.isEmpty()) {
-         ApiClient.get().adminGrant(name, this.reward, revoke, err -> {
-            if (!err.isEmpty()) {
-               this.say(err, -34953);
-            } else {
-               this.say(Ui.tr(revoke ? "maneszn_styles.code.revoked" : "maneszn_styles.code.granted", name, this.reward.toUpperCase(Locale.ROOT)), -14498466);
-            }
-         });
+      if (name.isEmpty()) {
+         return;
       }
+
+      String rank = this.reward;
+      this.say(Ui.tr("maneszn_styles.code.checking"), -6646866);
+      ApiClient.get().adminGrant(name, rank, revoke, (res, err) -> {
+         if (!err.isEmpty() || res == null) {
+            this.say("offline".equals(err) ? Ui.tr("maneszn_styles.code.offline") : err, -34953);
+         } else if (res.ranks().isEmpty()) {
+            this.say(Ui.tr("maneszn_styles.code.ranks_none", res.name()), -14498466);
+         } else {
+            this.say(Ui.tr("maneszn_styles.code.ranks_now", res.name(), String.join(", ", res.ranks()).toUpperCase(Locale.ROOT)), -14498466);
+         }
+      });
+   }
+
+   private void advent(boolean give) {
+      String name = this.nameBox.getValue().trim();
+      if (name.isEmpty() || !name.matches("[A-Za-z0-9_]{1,16}")) {
+         this.say(Ui.tr("maneszn_styles.code.name"), -34953);
+         return;
+      }
+
+      if (this.minecraft.player == null || this.minecraft.getConnection() == null) {
+         this.say(Ui.tr("maneszn_styles.code.advent_noworld"), -34953);
+         return;
+      }
+
+      String cmd = "advent " + (give ? "give " : "take ") + name;
+      this.minecraft.getConnection().sendCommand(cmd);
+      this.say(Ui.tr("maneszn_styles.code.advent_sent", cmd), -14498466);
    }
 
    @Override

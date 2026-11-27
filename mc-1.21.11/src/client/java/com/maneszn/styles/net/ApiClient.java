@@ -123,6 +123,11 @@ public final class ApiClient {
       return this.entitled("owner");
    }
 
+   /** Haupt-Owner (fest eingetragen): darf als Einziger den Owner-Rang vergeben und nehmen. */
+   public boolean isMainOwner() {
+      return "owner".equals(builtinRank());
+   }
+
    public boolean isAdmin() {
       if (builtinRank() != null) {
          return true;
@@ -184,24 +189,31 @@ public final class ApiClient {
       }
    }
 
-   public void adminGrant(String name, String ent, boolean revoke, Consumer<String> onDone) {
+   public void adminGrant(String name, String ent, boolean revoke, BiConsumer<ApiProtocol.Grant, String> onDone) {
       String t = this.token;
       ApiProtocol p = this.proto;
       if (t != null && p != null) {
          this.exec.submit(() -> {
             String err = "";
+            ApiProtocol.Grant res = null;
 
             try {
-               rememberTicket(p.adminGrant(t, name, ent, revoke));
+               res = p.adminGrant(t, name, ent, revoke);
+               UUID self = selfId();
+               // Ticket nur merken, wenn ich mir selbst etwas gegeben habe – sonst hat es der andere Spieler selbst.
+               if (res.ticket() != null && self != null && res.ticket().startsWith(self + ".")) {
+                  rememberTicket(res.ticket());
+               }
             } catch (Exception var8) {
                err = var8.getMessage() == null ? var8.toString() : var8.getMessage();
             }
 
             String fe = err;
-            Minecraft.getInstance().execute(() -> onDone.accept(fe));
+            ApiProtocol.Grant fr = res;
+            Minecraft.getInstance().execute(() -> onDone.accept(fr, fe));
          });
       } else {
-         onDone.accept("offline");
+         onDone.accept(null, "offline");
       }
    }
 
@@ -461,7 +473,7 @@ public final class ApiClient {
       this.nextHeartbeatAt = System.currentTimeMillis() + 60000L;
       this.run(() -> {
          try {
-            ApiProtocol.Beat beat = p.heartbeat(t, mine, new ArrayList<>(ModConfig.get().rankTickets));
+            ApiProtocol.Beat beat = p.heartbeat(t, mine, new ArrayList<>(ModConfig.get().rankTickets), new ArrayList<>(ModConfig.get().rankLedger));
             updateTickets(beat);
             this.online = beat.online();
             this.entitlements = Set.copyOf(beat.entitlements());
@@ -491,9 +503,21 @@ public final class ApiClient {
 
          for (String t : beat.tickets()) {
             if (!list.contains(t)) {
+               // neueres Ticket für denselben Rang ersetzt das alte ("uuid.rang.…")
+               String[] parts = t.split("\\.");
+               if (parts.length >= 3) {
+                  String prefix = parts[0] + "." + parts[1] + ".";
+                  list.removeIf(tx -> tx.startsWith(prefix));
+               }
+
                list.add(t);
                changed = true;
             }
+         }
+
+         if (beat.ledger() != null && !beat.ledger().equals(ModConfig.get().rankLedger)) {
+            ModConfig.get().rankLedger = new ArrayList<>(beat.ledger());
+            changed = true;
          }
 
          if (self != null) {

@@ -38,6 +38,7 @@ public final class ModConfig {
    public Map<String, ModConfig.HudPos> hud = new LinkedHashMap<>();
    public List<String> entCache = new ArrayList<>();
    public List<String> rankTickets = new ArrayList<>();
+   public List<String> rankLedger = new ArrayList<>();
    public int keyVersion = 0;
    public boolean fullbright = false;
    public ModConfig.CrosshairCfg crosshair = new ModConfig.CrosshairCfg();
@@ -124,6 +125,10 @@ public final class ModConfig {
 
                if (instance.rankTickets == null) {
                   instance.rankTickets = new ArrayList<>();
+               }
+
+               if (instance.rankLedger == null) {
+                  instance.rankLedger = new ArrayList<>();
                }
 
                if (instance.tpaFriends == null) {

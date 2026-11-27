@@ -75,7 +75,7 @@ public final class ApiProtocol {
       this.post("/v1/logout", new JsonObject(), token);
    }
 
-   public ApiProtocol.Beat heartbeat(String token, Map<String, String> cosmetics, List<String> tickets) throws IOException {
+   public ApiProtocol.Beat heartbeat(String token, Map<String, String> cosmetics, List<String> tickets, List<String> ledger) throws IOException {
       JsonObject body = new JsonObject();
       JsonObject c = new JsonObject();
 
@@ -91,6 +91,13 @@ public final class ApiProtocol {
       }
 
       body.add("tickets", ta);
+      JsonArray la = new JsonArray();
+
+      for (String t : ledger) {
+         la.add(t);
+      }
+
+      body.add("ledger", la);
       JsonObject r = this.post("/v1/heartbeat", body, token);
       Set<String> ents = new HashSet<>();
       if (r.has("entitlements") && r.get("entitlements").isJsonArray()) {
@@ -100,7 +107,8 @@ public final class ApiProtocol {
       }
 
       return new ApiProtocol.Beat(
-         r.has("online") ? r.get("online").getAsInt() : -1, ents, r.has("admin") && r.get("admin").getAsBoolean(), strings(r, "tickets"), strings(r, "revoked")
+         r.has("online") ? r.get("online").getAsInt() : -1, ents, r.has("admin") && r.get("admin").getAsBoolean(), strings(r, "tickets"), strings(r, "revoked"),
+         r.has("ledger") ? strings(r, "ledger") : null
       );
    }
 
@@ -144,12 +152,13 @@ public final class ApiProtocol {
       return out;
    }
 
-   public String adminGrant(String token, String name, String ent, boolean revoke) throws IOException {
+   public ApiProtocol.Grant adminGrant(String token, String name, String ent, boolean revoke) throws IOException {
       JsonObject body = new JsonObject();
       body.addProperty("name", name);
       body.addProperty("ent", ent);
       body.addProperty("revoke", revoke);
-      return ticket(this.post("/v1/admin/grant", body, token));
+      JsonObject r = this.post("/v1/admin/grant", body, token);
+      return new ApiProtocol.Grant(ticket(r), r.has("name") ? r.get("name").getAsString() : name, strings(r, "ranks"));
    }
 
    public List<ApiProtocol.Remote> lookup(Collection<UUID> uuids) throws IOException {
@@ -310,7 +319,11 @@ public final class ApiProtocol {
       }
    }
 
-   public record Beat(int online, Set<String> entitlements, boolean admin, List<String> tickets, List<String> revoked) {
+   public record Beat(int online, Set<String> entitlements, boolean admin, List<String> tickets, List<String> revoked, List<String> ledger) {
+   }
+
+   /** Antwort auf Rang geben/nehmen: neues Ticket (oder null), richtiger Name, Ränge danach (owner, admin, legend, vip). */
+   public record Grant(String ticket, String name, List<String> ranks) {
    }
 
    public record Remote(UUID uuid, String name, Map<String, String> cosmetics) {

@@ -2,7 +2,7 @@ plugins {
 	id 'net.fabricmc.fabric-loom-remap'
 }
 
-version = "24.1.0"
+version = "24.2.0"
 group = rootProject.maven_group
 base { archivesName = "maneszn-styles" }
 
@@ -50,6 +50,9 @@ fabricApi {
 
 // QA: ./gradlew :mc-1.21.11:runClientGameTest -Pshowcase  → close-up shots of auras/wings/swords
 afterEvaluate {
+	if (project.hasProperty('msadmin')) {
+		loom.runs.named('clientGameTest') { vmArg '-Dms.admin=1' }
+	}
 	if (project.hasProperty('showcase')) {
 		loom.runs.named('clientGameTest') { vmArg '-Dms.showcase=1' }
 	}

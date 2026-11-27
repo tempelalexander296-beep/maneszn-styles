@@ -307,7 +307,7 @@
   "maneszn_styles.code.rank": "Your rank: %s",
   "maneszn_styles.code.tier_vip": "%s cosmetics: gold logo, crown, twin katanas …",
   "maneszn_styles.code.tier_legend": "%s cosmetics: Crimson Void, Split Halo … (+ VIP)",
-  "maneszn_styles.code.admin": "Admin: create codes / grant rank",
+  "maneszn_styles.code.admin": "Admin: ranks & codes",
   "maneszn_styles.code.count": "%s pcs",
   "maneszn_styles.code.uses": "%s× usable",
   "maneszn_styles.code.create": "Create codes",
@@ -440,5 +440,11 @@
   "maneszn_styles.duraguard.percent": "Stop at … % durability (click)",
   "maneszn_styles.duraguard.now": "Dura Guard at %s %%",
   "maneszn_styles.duraguard.all": "Dura Guard also for axe, shovel & hoe",
-  "maneszn_styles.duraguard.blocked": "Dura Guard: tool almost broken (%s left) – repair it first!"
+  "maneszn_styles.duraguard.blocked": "Dura Guard: tool almost broken (%s left) – repair it first!",
+  "maneszn_styles.code.ranks_now": "✔ %s now has: %s",
+  "maneszn_styles.code.ranks_none": "✔ %s has no rank any more.",
+  "maneszn_styles.code.owner_nocodes": "Owner is not available as a code – enter a name and press “Give”.",
+  "maneszn_styles.code.advent": "🎄 Advent calendar",
+  "maneszn_styles.code.advent_sent": "Sent: /%s – see the chat for the result (needs OP or cheats).",
+  "maneszn_styles.code.advent_noworld": "Only works while you are in a world or on a server."
 }

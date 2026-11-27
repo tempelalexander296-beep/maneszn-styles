@@ -17,6 +17,7 @@ import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.ChatFormatting;
+import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
 import net.minecraft.commands.arguments.EntityArgument;
 import net.minecraft.network.chat.Component;
@@ -26,6 +27,7 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import java.util.Collection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -73,7 +75,18 @@ public final class AdventMod implements ModInitializer {
 					p.setAttached(DATA, AdventData.EMPTY);
 					c.getSource().sendSuccess(() -> Component.literal("Advent progress reset for " + p.getName().getString()), true);
 					return 1;
-				}))))));
+				}))))
+			// /advent give <spieler> [tag]  – ganzer Kalender (ohne Tag) oder ein Türchen; /advent take … nimmt es wieder weg
+			.then(Commands.literal("give").requires(Commands.hasPermission(Commands.LEVEL_GAMEMASTERS))
+				.then(Commands.argument("targets", EntityArgument.players())
+					.executes(c -> change(c.getSource(), EntityArgument.getPlayers(c, "targets"), 0, true))
+					.then(Commands.argument("day", IntegerArgumentType.integer(1, 24))
+						.executes(c -> change(c.getSource(), EntityArgument.getPlayers(c, "targets"), IntegerArgumentType.getInteger(c, "day"), true)))))
+			.then(Commands.literal("take").requires(Commands.hasPermission(Commands.LEVEL_GAMEMASTERS))
+				.then(Commands.argument("targets", EntityArgument.players())
+					.executes(c -> change(c.getSource(), EntityArgument.getPlayers(c, "targets"), 0, false))
+					.then(Commands.argument("day", IntegerArgumentType.integer(1, 24))
+						.executes(c -> change(c.getSource(), EntityArgument.getPlayers(c, "targets"), IntegerArgumentType.getInteger(c, "day"), false)))))));
 		LOG.info("Christmas Advent Calendar ready – unlock zone {}", clock.zone());
 	}
 
@@ -112,6 +125,23 @@ public final class AdventMod implements ModInitializer {
 			if (r.day() == 24) player.level().getServer().getPlayerList().broadcastSystemMessage(Component.literal("✨ " + player.getName().getString() + " hat die ULTIMATE CHRISTMAS AURA freigeschaltet!").withStyle(ChatFormatting.GOLD, ChatFormatting.BOLD), false);
 		}
 		ServerPlayNetworking.send(player, new Payloads.ClaimResult(day, res.ordinal()));
+	}
+
+	/** Admin-Befehl: Türchen geben/nehmen (day 0 = alle 24). */
+	private static int change(CommandSourceStack src, Collection<ServerPlayer> targets, int day, boolean give) {
+		String what = day == 0 ? "den ganzen Adventskalender (alle 24 Cosmetics)" : "Türchen " + day + " (" + Rewards.byDay(day).name() + ")";
+		for (ServerPlayer p : targets) {
+			PlayerAdvent st = p.getAttachedOrElse(DATA, AdventData.EMPTY).toLogic();
+			if (give) st.grant(day); else st.revoke(day);
+			p.setAttached(DATA, AdventData.of(st));
+			p.sendSystemMessage(Component.literal(give ? "🎁 Du hast " + what + " bekommen! Öffne ihn mit /advent." : "🎄 Dir wurde " + what + " weggenommen.")
+				.withStyle(give ? ChatFormatting.GOLD : ChatFormatting.GRAY));
+			if (give) p.level().playSound(null, p.blockPosition(), SoundEvents.UI_TOAST_CHALLENGE_COMPLETE, SoundSource.PLAYERS, 0.8f, 1.2f);
+		}
+		int n = targets.size();
+		String who = n == 1 ? targets.iterator().next().getName().getString() : n + " Spieler";
+		src.sendSuccess(() -> Component.literal((give ? "✔ " + who + " hat jetzt " : "✔ " + who + " hat nicht mehr ") + what + "."), true);
+		return n;
 	}
 
 	private static void handleEquip(ServerPlayer player, int slotOrdinal, String id) {

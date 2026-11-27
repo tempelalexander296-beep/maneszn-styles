@@ -307,7 +307,7 @@
   "maneszn_styles.code.rank": "Dein Rang: %s",
   "maneszn_styles.code.tier_vip": "%s Cosmetics: Gold-Logo, Krone, Doppel-Katana …",
   "maneszn_styles.code.tier_legend": "%s Cosmetics: Crimson Void, Zwiespalt-Halo … (+ VIP)",
-  "maneszn_styles.code.admin": "Admin: Codes erstellen / Rang vergeben",
+  "maneszn_styles.code.admin": "Admin: Ränge & Codes",
   "maneszn_styles.code.count": "%s Stück",
   "maneszn_styles.code.uses": "%s× nutzbar",
   "maneszn_styles.code.create": "Codes erstellen",
@@ -440,5 +440,11 @@
   "maneszn_styles.duraguard.percent": "Stoppen ab … % Haltbarkeit (klicken)",
   "maneszn_styles.duraguard.now": "Dura Guard ab %s %%",
   "maneszn_styles.duraguard.all": "Dura Guard auch für Axt, Schaufel & Hacke",
-  "maneszn_styles.duraguard.blocked": "Dura Guard: Werkzeug fast kaputt (%s übrig) – erst reparieren!"
+  "maneszn_styles.duraguard.blocked": "Dura Guard: Werkzeug fast kaputt (%s übrig) – erst reparieren!",
+  "maneszn_styles.code.ranks_now": "✔ %s hat jetzt: %s",
+  "maneszn_styles.code.ranks_none": "✔ %s hat jetzt keinen Rang mehr.",
+  "maneszn_styles.code.owner_nocodes": "Owner gibt es nicht als Code – Namen eingeben und „Geben“ drücken.",
+  "maneszn_styles.code.advent": "🎄 Adventskalender",
+  "maneszn_styles.code.advent_sent": "Gesendet: /%s – das Ergebnis steht im Chat (braucht OP bzw. Cheats an).",
+  "maneszn_styles.code.advent_noworld": "Geht nur, wenn du in einer Welt oder auf einem Server bist."
 }
