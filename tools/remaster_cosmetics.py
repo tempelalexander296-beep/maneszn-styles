@@ -136,7 +136,7 @@ def main():
     for c in data:
         if only and c['id'] not in only: continue
         tex = c.get('texture')
-        if not tex: continue
+        if not tex or c.get('gen') == 'v24': continue  # rebuilt by build_v24_cosmetics.py
         files = []
         if c.get('parts'): files = [tex + '.png']
         elif c['type'] == 'cape':

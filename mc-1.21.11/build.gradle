@@ -47,3 +47,10 @@ fabricApi {
 		eula = false
 	}
 }
+
+// QA: ./gradlew :mc-1.21.11:runClientGameTest -Pshowcase  → close-up shots of auras/wings/swords
+afterEvaluate {
+	if (project.hasProperty('showcase')) {
+		loom.runs.named('clientGameTest') { vmArg '-Dms.showcase=1' }
+	}
+}

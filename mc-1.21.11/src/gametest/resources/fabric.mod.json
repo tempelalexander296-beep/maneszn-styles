@@ -2,8 +2,15 @@
   "schemaVersion": 1,
   "id": "adventcosmetics-test",
   "version": "1.0.0",
-  "name": "Advent Cosmetics – client QA",
+  "name": "Advent Cosmetics \u2013 client QA",
   "environment": "*",
-  "entrypoints": { "fabric-client-gametest": ["dev.maneszn.advent.test.AdventClientTest"] },
-  "depends": { "maneszn_styles": "*" }
+  "entrypoints": {
+    "fabric-client-gametest": [
+      "dev.maneszn.advent.test.AdventClientTest",
+      "dev.maneszn.advent.test.CosmeticShowcaseTest"
+    ]
+  },
+  "depends": {
+    "maneszn_styles": "*"
+  }
 }
