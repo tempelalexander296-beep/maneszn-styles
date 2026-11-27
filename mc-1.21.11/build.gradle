@@ -2,7 +2,7 @@ plugins {
 	id 'net.fabricmc.fabric-loom-remap'
 }
 
-version = "24.3.0"
+version = "24.4.0"
 group = rootProject.maven_group
 base { archivesName = "maneszn-styles" }
 

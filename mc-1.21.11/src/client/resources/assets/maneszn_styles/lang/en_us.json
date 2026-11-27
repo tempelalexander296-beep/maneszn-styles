@@ -454,5 +454,16 @@
   "maneszn_styles.droplock.info": "Lock: hover an item in your inventory or hold it and press [%s] – %s locked",
   "maneszn_styles.droplock.locked": "%s is locked – it can't be dropped any more",
   "maneszn_styles.droplock.unlocked": "%s is unlocked again",
-  "maneszn_styles.droplock.blocked": "%s is locked and won't be dropped – [%s] to unlock"
+  "maneszn_styles.droplock.blocked": "%s is locked and won't be dropped – [%s] to unlock",
+  "maneszn_styles.advent.side": "Advent calendar",
+  "maneszn_styles.advent.sub": "%s of 24 unlocked · click = wear/remove",
+  "maneszn_styles.advent.hint": "Open new doors in the calendar – unlocked items show up here.",
+  "maneszn_styles.advent.offline": "Only in worlds/on servers running Maneszn Styles (24.2+).",
+  "maneszn_styles.advent.none": "nothing worn",
+  "maneszn_styles.advent.worn": "%s worn",
+  "maneszn_styles.advent.door": "Door %s",
+  "maneszn_styles.advent.locked": "🔒 Not unlocked yet – open door %s in the calendar.",
+  "maneszn_styles.advent.equip": "Wear",
+  "maneszn_styles.advent.unequip": "Remove",
+  "maneszn_styles.advent.open": "🎄 Open calendar"
 }

@@ -85,6 +85,8 @@ public class StylesScreen extends Screen {
       Cosmetic.Type.LOGO
    };
    private static boolean outfitView;
+   private static boolean adventView;
+   private String hoveredAdvent;
    private int hoveredOutfit = -1;
    private String hoveredCos;
    private final Screen parent;
@@ -155,6 +157,13 @@ public class StylesScreen extends Screen {
    }
 
    /** Opens the cosmetics tab on a given cosmetic type – used by QA tests. */
+   public static StylesScreen withAdvent(Screen parent) {
+      lastTab = StylesScreen.Tab.COSMETICS;
+      adventView = true;
+      outfitView = false;
+      return new StylesScreen(parent);
+   }
+
    public static StylesScreen withCosmeticType(Screen parent, String type) {
       lastTab = StylesScreen.Tab.COSMETICS;
       cosType = Cosmetic.Type.valueOf(type);
@@ -214,6 +223,13 @@ public class StylesScreen extends Screen {
    }
 
    @Override
+   public void removed() {
+      dev.maneszn.advent.client.ClientAdvent.externalPreview = false;
+      dev.maneszn.advent.client.ClientAdvent.previewId = null;
+      super.removed();
+   }
+
+   @Override
    public void onClose() {
       ModConfig.save();
       if (this.soundsDirty) {
@@ -241,6 +257,12 @@ public class StylesScreen extends Screen {
       boolean zoom = this.zoomStyle != null;
       int mx = zoom ? -9999 : mouseX;
       int my = zoom ? -9999 : mouseY;
+      dev.maneszn.advent.client.ClientAdvent.externalPreview = this.tab == StylesScreen.Tab.COSMETICS && adventView;
+      if (!dev.maneszn.advent.client.ClientAdvent.externalPreview && this.hoveredAdvent != null) {
+         this.hoveredAdvent = null;
+         dev.maneszn.advent.client.ClientAdvent.previewId = null;
+      }
+
       this.renderHeader(g, mx, my, th);
       this.renderLeft(g, mx, my, th);
       switch (this.tab) {
@@ -248,7 +270,9 @@ public class StylesScreen extends Screen {
             this.renderGrid(g, mx, my, th);
             break;
          case COSMETICS:
-            if (outfitView) {
+            if (adventView) {
+               this.renderAdvent(g, mx, my, th);
+            } else if (outfitView) {
                this.renderOutfits(g, mx, my, th);
             } else {
                this.renderCosmetics(g, mx, my, th);
@@ -781,7 +805,7 @@ public class StylesScreen extends Screen {
       int cy = this.listY - (int)this.leftScroll;
 
       for (Cosmetic.Type t : COS_TYPES) {
-         boolean sel = t == cosType && !outfitView;
+         boolean sel = t == cosType && !outfitView && !adventView;
          boolean hov = this.inList(mx, my) && Ui.hover(mx, my, x + 2, cy, w - 4, 24);
          if (sel || hov) {
             Ui.rect(g, x + 2, cy, w - 4, 24, sel ? th.accentDim() : -14015424);
@@ -808,12 +832,13 @@ public class StylesScreen extends Screen {
          this.zones.addClipped(x + 2, cy, w - 4, 24, this.listY, this.listY + this.listH, () -> {
             cosType = t;
             outfitView = false;
+            adventView = false;
             this.gridScroll = 0.0;
          }, null);
          cy += 25;
       }
 
-      boolean selx = outfitView;
+      boolean selx = outfitView && !adventView;
       boolean hovx = this.inList(mx, my) && Ui.hover(mx, my, x + 2, cy, w - 4, 24);
       if (selx || hovx) {
          Ui.rect(g, x + 2, cy, w - 4, 24, selx ? th.accentDim() : -14015424);
@@ -830,6 +855,26 @@ public class StylesScreen extends Screen {
       Ui.textRight(g, count, x + w - 7, cy + 8, -9739136);
       this.zones.addClipped(x + 2, cy, w - 4, 24, this.listY, this.listY + this.listH, () -> {
          outfitView = true;
+         adventView = false;
+         this.gridScroll = 0.0;
+      }, null);
+      cy += 25;
+      // 🎄 Adventskalender: die freigeschalteten Advent-Cosmetics wie alle anderen anlegen
+      boolean sela = adventView;
+      boolean hova = this.inList(mx, my) && Ui.hover(mx, my, x + 2, cy, w - 4, 24);
+      if (sela || hova) {
+         Ui.rect(g, x + 2, cy, w - 4, 24, sela ? th.accentDim() : -14015424);
+      }
+
+      Ui.rect(g, x + 2, cy, 2, 24, sela ? th.accent : -2271166);
+      String acount = AdventView.owned() + "/24";
+      int atextW = w - 20 - Ui.width(acount);
+      Ui.text(g, Ui.trim("\ud83c\udf84 " + Ui.tr("maneszn_styles.advent.side"), atextW), x + 9, cy + 3, -1185282);
+      Ui.text(g, Ui.trim(AdventView.equippedLine(), atextW), x + 9, cy + 13, sela ? th.accent : -6646866);
+      Ui.textRight(g, acount, x + w - 7, cy + 8, -9739136);
+      this.zones.addClipped(x + 2, cy, w - 4, 24, this.listY, this.listY + this.listH, () -> {
+         adventView = true;
+         outfitView = false;
          this.gridScroll = 0.0;
       }, null);
       cy += 25;
@@ -849,6 +894,53 @@ public class StylesScreen extends Screen {
       this.leftMaxScroll = Math.max(0, leftContentH - this.listH);
       this.leftScroll = Math.max(0.0, Math.min(this.leftScroll, (double)this.leftMaxScroll));
       this.drawScrollbar(g, x + w - 3, this.listY, this.listH, this.leftScroll, this.leftMaxScroll, leftContentH, th);
+   }
+
+   private void renderAdvent(GuiGraphics g, int mx, int my, Theme th) {
+      int x = this.midX;
+      int y = this.top + 4;
+      Ui.rect(g, x, y, this.midW, this.bottom - y - 4, -15462116);
+      Ui.textShadow(g, Ui.trim("\ud83c\udf84 " + Ui.tr("maneszn_styles.advent.side"), this.midW - 16), x + 8, y + 6, -1185282);
+      Ui.text(g, Ui.trim(Ui.tr("maneszn_styles.advent.sub", AdventView.owned()), this.midW - 16), x + 8, y + 18, -6646866);
+      Ui.text(g, Ui.trim(AdventView.statusLine(), this.midW - 16), x + 8, y + 28, AdventView.connected() ? -6646866 : -34953);
+      this.gridY = y + 40;
+      this.gridH = this.bottom - 8 - this.gridY;
+      int inner = this.midW - 12;
+      int cols = inner >= 242 ? 4 : Math.max(1, (inner + 6) / 62);
+      int cardW = (inner - (cols - 1) * 6) / cols;
+      int pv = cardW - 8;
+      int cardH = pv + 20;
+      g.enableScissor(x + 2, this.gridY, x + this.midW - 2, this.gridY + this.gridH);
+      String hov = null;
+      List<dev.maneszn.advent.core.Reward> all = dev.maneszn.advent.core.Rewards.ALL;
+
+      for (int i = 0; i < all.size(); i++) {
+         dev.maneszn.advent.core.Reward r = all.get(i);
+         int cx = x + 6 + i % cols * (cardW + 6);
+         int cy = this.gridY + i / cols * (cardH + 6) - (int)this.gridScroll;
+         if (cy <= this.gridY + this.gridH && cy + cardH >= this.gridY) {
+            boolean h = my >= this.gridY && my < this.gridY + this.gridH && Ui.hover(mx, my, cx, cy, cardW, cardH);
+            if (h) {
+               hov = r.id();
+            }
+
+            AdventView.card(g, th, r, cx, cy, cardW, cardH, pv, h);
+            this.zones.addClipped(cx, cy, cardW, cardH, this.gridY, this.gridY + this.gridH, () -> AdventView.toggle(r), () -> AdventView.unequip(r));
+         }
+      }
+
+      if (!java.util.Objects.equals(hov, this.hoveredAdvent)) {
+         this.hoveredAdvent = hov;
+      }
+
+      dev.maneszn.advent.client.ClientAdvent.previewId = hov != null && AdventView.owns(hov) ? hov : null;
+      dev.maneszn.advent.client.ClientAdvent.previewIntro = 1.0F;
+      g.disableScissor();
+      int rows = (all.size() + cols - 1) / cols;
+      int contentH = rows * (cardH + 6);
+      this.gridMaxScroll = Math.max(0, contentH - this.gridH);
+      this.gridScroll = Math.max(0.0, Math.min(this.gridScroll, (double)this.gridMaxScroll));
+      this.drawScrollbar(g, x + this.midW - 4, this.gridY, this.gridH, this.gridScroll, this.gridMaxScroll, contentH, th);
    }
 
    private void renderCosmetics(GuiGraphics g, int mx, int my, Theme th) {
@@ -1954,6 +2046,9 @@ public class StylesScreen extends Screen {
          Ui.button(g, x + 8, by, w - 16, 14, (fav ? "★ " : "☆ ") + Ui.tr("maneszn_styles.ui.favorite"), hovF, false, th);
          this.zones.add(x + 8, by, w - 16, 14, () -> cfg.toggleFavorite(c.id(), target));
          ty = by + 22;
+      } else if (this.tab == StylesScreen.Tab.COSMETICS && adventView) {
+         AdventView.inspector(g, this.zones, mx, my, th, x, y, w, px, pw, this.hoveredAdvent);
+         return;
       } else if (this.tab == StylesScreen.Tab.COSMETICS && outfitView) {
          this.previewX = px;
          this.previewY = y + 8;

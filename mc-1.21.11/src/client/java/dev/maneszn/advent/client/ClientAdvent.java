@@ -17,6 +17,8 @@ public final class ClientAdvent {
 	public static Payloads.Clock clock = new Payloads.Clock(0, System.currentTimeMillis(), -1, 0, "UTC", false);
 	public static long clockReceivedAt = System.currentTimeMillis();
 	public static String previewId; public static float previewIntro = 1;
+	/** true while another menu (Maneszn Styles → Cosmetics → Adventskalender) shows the preview on the local player. */
+	public static boolean externalPreview;
 
 	public static long serverNow() { return clock.serverNowMs() + (System.currentTimeMillis() - clockReceivedAt); }
 

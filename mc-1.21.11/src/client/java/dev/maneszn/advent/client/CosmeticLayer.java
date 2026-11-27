@@ -32,7 +32,7 @@ public final class CosmeticLayer extends RenderLayer<AvatarRenderState, PlayerMo
 			Entity e = mc.level.getEntity(state.id);
 			EnumMap<CosmeticSlot, String> eq = ClientAdvent.equippedOf(e);
 			boolean isLocal = mc.player != null && state.id == mc.player.getId();
-			boolean preview = isLocal && mc.screen instanceof CalendarScreen;
+			boolean preview = isLocal && (mc.screen instanceof CalendarScreen || ClientAdvent.externalPreview && mc.screen != null);
 			float intro = 1;
 			if (preview && ClientAdvent.previewId != null) {
 				var r = Rewards.byId(ClientAdvent.previewId);

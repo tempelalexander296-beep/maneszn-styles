@@ -454,5 +454,16 @@
   "maneszn_styles.droplock.info": "Sperren: Item im Inventar anvisieren oder in die Hand nehmen und [%s] drücken – %s gesperrt",
   "maneszn_styles.droplock.locked": "%s ist gesperrt – kann nicht mehr gedroppt werden",
   "maneszn_styles.droplock.unlocked": "%s ist wieder freigegeben",
-  "maneszn_styles.droplock.blocked": "%s ist gesperrt und wird nicht gedroppt – [%s] zum Entsperren"
+  "maneszn_styles.droplock.blocked": "%s ist gesperrt und wird nicht gedroppt – [%s] zum Entsperren",
+  "maneszn_styles.advent.side": "Adventskalender",
+  "maneszn_styles.advent.sub": "%s von 24 freigeschaltet · Klick = anlegen/ablegen",
+  "maneszn_styles.advent.hint": "Neue Türchen öffnest du im Kalender – freigeschaltete erscheinen hier.",
+  "maneszn_styles.advent.offline": "Geht nur in Welten/auf Servern, auf denen Maneszn Styles (ab 24.2) läuft.",
+  "maneszn_styles.advent.none": "nichts angelegt",
+  "maneszn_styles.advent.worn": "%s angelegt",
+  "maneszn_styles.advent.door": "Türchen %s",
+  "maneszn_styles.advent.locked": "🔒 Noch nicht freigeschaltet – öffne Türchen %s im Kalender.",
+  "maneszn_styles.advent.equip": "Anlegen",
+  "maneszn_styles.advent.unequip": "Ablegen",
+  "maneszn_styles.advent.open": "🎄 Kalender öffnen"
 }

@@ -33,6 +33,12 @@ public final class AdminToolsTest implements FabricClientGameTest {
 			ctx.waitTicks(20);
 			expect(sp, 0x1FFFFFE, "ultimate_christmas_aura", true, "client command give");
 
+			sp.getServer().runCommand("advent take " + name.get() + " 1");
+			ctx.setScreen(() -> com.maneszn.styles.gui.StylesScreen.withAdvent(null));
+			ctx.waitTicks(40);
+			ctx.takeScreenshot("advent-in-cosmetics");
+			ctx.setScreen(() -> null);
+
 			ctx.runOnClient(mc -> ModConfig.get().entCache = new java.util.ArrayList<>(List.of("owner", "admin", "legend", "vip")));
 			ctx.setScreen(() -> new CodeScreen(null));
 			ctx.waitTicks(20);
