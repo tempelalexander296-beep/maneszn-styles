@@ -151,6 +151,12 @@ public class StylesScreen extends Screen {
    private static final String[] GROUND_STYLES = new String[]{"vanilla", "2d", "flat", "static"};
 
    /** Opens the screen on a given tab (COLLECTIONS, COSMETICS, EXTRAS) – used by QA tests. */
+   public static StylesScreen withCategory(Screen parent, String category) {
+      lastTab = StylesScreen.Tab.COLLECTIONS;
+      lastCategory = category;
+      return new StylesScreen(parent);
+   }
+
    public static StylesScreen withTab(Screen parent, String tab) {
       lastTab = StylesScreen.Tab.valueOf(tab);
       return new StylesScreen(parent);

@@ -18,6 +18,7 @@ public final class Style {
    private final String packName;
    private final Path root;
    private final List<String> applyTo;
+   private Optional<Path> packSky;
 
    public Style(String id, String name, String categoryId, String author, LocalDate date, Style.Source source, String packName, Path root, List<String> applyTo) {
       this.id = id;
@@ -82,6 +83,15 @@ public final class Style {
    public Optional<Path> resolve(Target t) {
       try {
          if (this.source == Style.Source.PACK) {
+            if (t.packPath().endsWith("/maneszn_sky.png")) {
+               // Himmel aus Texturpacks (OptiFine/MCPatcher/FabricSkyboxes) – einmal suchen, dann merken
+               if (this.packSky == null) {
+                  this.packSky = PackSky.find(this.root);
+               }
+
+               return this.packSky;
+            }
+
             Path p = this.root.resolve(t.packPath());
             if (Files.isRegularFile(p)) {
                return Optional.of(p);

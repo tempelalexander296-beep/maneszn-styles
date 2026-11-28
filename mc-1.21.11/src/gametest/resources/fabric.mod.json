@@ -9,7 +9,8 @@
       "dev.maneszn.advent.test.AdventClientTest",
       "dev.maneszn.advent.test.CosmeticShowcaseTest",
       "dev.maneszn.advent.test.AdminToolsTest",
-      "dev.maneszn.advent.test.DropLockTest"
+      "dev.maneszn.advent.test.DropLockTest",
+      "dev.maneszn.advent.test.SkyPackTest"
     ]
   },
   "depends": {
